@@ -64,10 +64,9 @@ else{
 }
 
 const store = createStoreWithMiddleware(appReducers);
-
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={history}>
+        <Router history={history} basename={'/martin-test'}>
             <Switch>
                 <Route path="/" component={Layout}/>
             </Switch>
