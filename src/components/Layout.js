@@ -34,7 +34,7 @@ class Layout extends Component {
                     <Route path="/productos" component={Productos}/>
                     <Route path="/servicios" component={Servicios}/>
                     <Route path="/contacto" component={Contacto}/>
-                    <Route path="*" component={NotFound}/>
+                    {/*<Route path="*" component={NotFound}/>*/}
                 </Switch>
             </div>
         );

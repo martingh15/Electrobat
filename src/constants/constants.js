@@ -4,7 +4,7 @@ if (process.env.NODE_ENV === 'development' && !process.env.REACT_APP_ENVI)
     BASE_URL = "http://localhost:8888/api";
 
 //testing
-if (process.env.REACT_APP_ENVI == 'develop')
+if (process.env.REACT_APP_ENVI === 'develop')
     BASE_URL = "http://www.rosariobateriasbat.com/BE/api";
 
 //Produccion

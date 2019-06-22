@@ -1,0 +1,9 @@
+.contacto .forminput {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto input, .contacto textarea {
+     margin-bottom: 20px;
+    padding: 5px;
+}

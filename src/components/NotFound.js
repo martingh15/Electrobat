@@ -13,7 +13,7 @@ class NotFound extends Component {
         window.scrollTo(0, 0);
         setTimeout(() => {
             history.push("/");
-        }, 3000);
+        }, 30000);
     }
 
 

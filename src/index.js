@@ -44,29 +44,29 @@ else{
     createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
     //chau console.los metodo 4 de esta pagina https://stapp.space/how-to-remove-javascript-console-log-pros-2/
-    (function () {
-        var method;
-        var noop = function noop() { };
-        var methods = [
-            'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-            'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-            'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-            'timeStamp', 'trace', 'warn'
-        ];
-        var length = methods.length;
-        var console = (window.console = window.console || {});
-
-        while (length--) {
-            method = methods[length];
-            console[method] = noop;
-        }
-    }());
+    // (function () {
+    //     var method;
+    //     var noop = function noop() { };
+    //     var methods = [
+    //         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+    //         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+    //         'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+    //         'timeStamp', 'trace', 'warn'
+    //     ];
+    //     var length = methods.length;
+    //     var console = (window.console = window.console || {});
+    //
+    //     while (length--) {
+    //         method = methods[length];
+    //         console[method] = noop;
+    //     }
+    // }());
 }
 
 const store = createStoreWithMiddleware(appReducers);
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={history} basename={'/martin-test'}>
+        <Router history={history} basename={"/martin-test/"}>
             <Switch>
                 <Route path="/" component={Layout}/>
             </Switch>

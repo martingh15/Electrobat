@@ -1,13 +1,9 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux';
 
-import { Navbar, Nav, NavDropdown, Button, FormControl, Form } from 'react-bootstrap';
-import {NavLink} from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
 
 import history from "../history";
-
-//Images
-import bateria from "../assets/img/battery.png";
 
 //CSS
 import "../assets/css/Navegador.css";
