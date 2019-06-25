@@ -6,4 +6,17 @@
 .contacto input, .contacto textarea {
      margin-bottom: 20px;
     padding: 5px;
+    border: 1px solid black;
+}
+
+.contacto button {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        margin: 30px !important;
+    }
 }

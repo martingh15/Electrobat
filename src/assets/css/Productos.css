@@ -1,0 +1,15 @@
+.contenedorImagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.imgItem {
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imgItem img {
+    width: 200px;
+    height: 200px;
+}
