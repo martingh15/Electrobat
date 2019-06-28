@@ -1,3 +1,37 @@
 .imagenModal {
-    width: 100%;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.modal-dialog {
+    max-width: 800px !important;
+}
+
+.modal-content {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+@media (max-width: 800px) {
+    .imagenModal {
+        max-width:450px;
+    }
+
+    .modal-dialog {
+        max-width: 500px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagenModal {
+        max-width:250px;
+    }
+
+    .modal-dialog {
+        max-width: 300px !important;
+    }
 }
