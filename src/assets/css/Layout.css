@@ -1,0 +1,14 @@
+.app {
+
+}
+
+@font-face {
+    font-family: SourceSansProBlack;
+    src: url("../fonts/SourceSansPro-Black.otf");
+}
+
+@font-face {
+    font-family: DINCondensedBold;
+    src: url("../fonts/DIN Condensed Bold.ttf");
+}
+

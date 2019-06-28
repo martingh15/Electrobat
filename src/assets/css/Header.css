@@ -1,0 +1,29 @@
+/*NAVEGADOR*/
+.header .navegador {
+    top: 30px;
+    background: rgb(192, 192, 192, 0.3);
+}
+
+.header .navegador .navbar-collapse {
+    padding-right: 30px;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+/*MEDIA*/
+.header .media {
+    top: 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .media .facebook {
+    width: 30px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
