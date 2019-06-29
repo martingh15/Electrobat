@@ -1,4 +1,7 @@
 /*NAVEGADOR*/
+.header {
+    height: 200px;
+}
 .header .navegador {
     top: 30px;
     background: rgb(192, 192, 192, 0.3);

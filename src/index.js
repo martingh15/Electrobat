@@ -29,8 +29,6 @@ import './assets/css/index.css';
 import Layout from "./components/Layout";
 window.$ = window.jQuery = require("jquery");
 
-
-
 // Creates the Redux reducers with the redux-thunk middleware, which allows us
 // to do asynchronous things in the actions
 var createStoreWithMiddleware = null;

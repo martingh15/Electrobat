@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 //Router
 import {Switch} from 'react-router';

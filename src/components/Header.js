@@ -7,8 +7,8 @@ import history from "../history";
 import "../assets/css/Header.css";
 
 //Images
-import facebook from "../assets/img/facebook(64-FFFA21).png"
-import instagram from "../assets/img/instagram(64-FFFA21).png"
+import facebook from "../assets/img/facebook(64-FFFA21).png";
+import instagram from "../assets/img/instagram(64-FFFA21).png";
 
 class Header extends Component {
     render() {
