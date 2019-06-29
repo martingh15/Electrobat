@@ -11,7 +11,7 @@ import "../assets/css/Layout.css";
 
 //Componentes
 import Nosotros from "./Nosotros";
-import Productos from "./Productos";
+import Baterias from "./Baterias";
 import Servicios from "./Servicios";
 import Contacto from "./Contacto";
 import NotFound from "./NotFound";
@@ -22,6 +22,7 @@ class Layout extends Component {
             <div className="app">
                 <Switch>
                     <Route path="/" exact component={Nosotros}/>
+                    <Route path="/baterias" exact component={Baterias}/>
                     {/*<Route path="*" component={NotFound}/>*/}
                 </Switch>
             </div>
