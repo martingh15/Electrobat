@@ -28,6 +28,10 @@
     flex-direction: column;
 }
 
+.nosotros .subseccionNosotros .itemIco {
+    cursor: pointer;
+}
+
 .nosotros .subseccionNosotros .iconos {
     display: flex;
     flex-direction: row;

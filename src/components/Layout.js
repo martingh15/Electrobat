@@ -21,7 +21,7 @@ class Layout extends Component {
         return (
             <div className="app">
                 <Switch>
-                    <Route path="/" exact component={Nosotros}/>
+                    <Route path={["/","/nosotros"]} exact component={Nosotros}/>
                     <Route path="/baterias" exact component={Baterias}/>
                     {/*<Route path="*" component={NotFound}/>*/}
                 </Switch>

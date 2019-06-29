@@ -25,6 +25,7 @@ import flechaDer from "../assets/img/right-arrow.png";
 //Components
 import Footer from "../components/Footer";
 import ImagenModal from "./ImagenModal";
+import history from "../history";
 
 class Nosotros extends Component {
     constructor(props) {
@@ -71,13 +72,13 @@ class Nosotros extends Component {
                 <div className="subseccionNosotros">
                     <div className="item iconos">
                         <div className="itemIco">
-                            <img src={bateriaMini} alt="bateria"/>
+                            <img src={bateriaMini} onClick={() => history.push("/baterias")} alt="bateria"/>
                         </div>
                         <div className="itemIco">
-                            <img src={flete} alt="flete"/>
+                            <img src={flete} onClick={() => history.push("/volquetes")} alt="flete"/>
                         </div>
                         <div className="itemIco">
-                            <img src={contacto} alt="contacto"/>
+                            <img src={contacto} onClick={() => history.push("/contacto")} alt="contacto"/>
                         </div>
                     </div>
                     <p className="item">
