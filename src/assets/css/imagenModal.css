@@ -1,5 +1,5 @@
 .imagenModal {
-    max-width: 750px;
+    max-width: 550px;
     display: block;
     margin: 0 auto;
     padding: 10px;
@@ -16,9 +16,25 @@
     border: none !important;
 }
 
+.cruz {
+    position: absolute;
+    right: 110px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
 @media (max-width: 800px) {
     .imagenModal {
-        max-width:450px;
+        max-width: 450px;
+    }
+
+    .cruz {
+        right: 8px;
     }
 
     .modal-dialog {
@@ -28,7 +44,7 @@
 
 @media (max-width: 600px) {
     .imagenModal {
-        max-width:250px;
+        max-width: 250px;
     }
 
     .modal-dialog {

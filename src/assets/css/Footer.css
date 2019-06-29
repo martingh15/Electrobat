@@ -1,0 +1,25 @@
+.footer {
+    background-color: #fffbc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.footer .datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.footer .datos img {
+    width: 30px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.footer .datos p {
+    margin: 0;
+}

@@ -31,12 +31,12 @@ class Productos extends Component {
     }
 
     render() {
-        var img1 = process.env.PUBLIC_URL + "/img/1.jpeg";
-        var img2 = process.env.PUBLIC_URL + "/img/2.jpeg";
-        var img3 = process.env.PUBLIC_URL + "/img/3.jpeg";
-        var img4 = process.env.PUBLIC_URL + "/img/4.jpeg";
-        var img5 = process.env.PUBLIC_URL + "/img/5.jpeg";
-        var img6 = process.env.PUBLIC_URL + "/img/6.jpeg";
+        var img1 = process.env.PUBLIC_URL + "/img/slider/slider1.jpeg";
+        var img2 = process.env.PUBLIC_URL + "/img/slider/slider2.jpeg";
+        var img3 = process.env.PUBLIC_URL + "/img/slider/slider3.jpeg";
+        var img4 = process.env.PUBLIC_URL + "/img/slider/slider4.jpeg";
+        var img5 = process.env.PUBLIC_URL + "/img/slider/slider5.jpeg";
+        var img6 = process.env.PUBLIC_URL + "/img/slider/slider6.jpeg";
         return (
             <div className="contenedorImagenes">
                 <div className="imgItem">

@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
-import {Modal, Button} from "react-bootstrap";
-
+import {Modal} from "react-bootstrap";
 
 //CSS
-import '../assets/css/ImagenModal.css';
+import '../assets/css/imagenModal.css';
+
+//Images
+import cruz from "../assets/img/multiply.png"
 
 class ImagenModal extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
-
     render() {
         this.onHide = this.props.onHide;
         return (
@@ -24,6 +18,7 @@ class ImagenModal extends Component {
                     dialogClassName="modal-90w"
                     aria-labelledby="example-custom-modal-styling-title"
                 >
+                    <img src={cruz} onClick={this.onHide} className="cruz" alt="cruz"/>
                     <Modal.Body>
                         <img className="imagenModal" src={process.env.PUBLIC_URL + this.props.imagen}/>
                     </Modal.Body>
@@ -32,12 +27,4 @@ class ImagenModal extends Component {
         )
     }
 }
-
-function mapStateToProps(state) {
-    return {};
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {}
-};
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ImagenModal));
+export default ImagenModal;

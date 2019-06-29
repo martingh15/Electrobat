@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux';
-import $ from "jquery";
 import OwlCarousel from 'react-owl-carousel';
-
 
 //CSS
 import "../assets/css/Nosotros.css";
@@ -24,14 +22,30 @@ import slider6 from "../assets/img/sliders/slider6.jpg"
 import flechaIzq from "../assets/img/left-arrow.png";
 import flechaDer from "../assets/img/right-arrow.png";
 
+//Components
+import Footer from "../components/Footer";
+import ImagenModal from "./ImagenModal";
+
 class Nosotros extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            imagen: null,
+            show: false,
+        };
+
+        this.onHide = this.onHide.bind(this);
     }
 
-    componentDidMount() {
+    resizeImage(e, img) {
+        this.setState({
+            imagen: img,
+            show: true,
+        });
+    }
 
+    onHide() {
+        this.setState({show: false});
     }
 
     next() {
@@ -45,6 +59,10 @@ class Nosotros extends Component {
     render() {
         return (
             <div className="nosotros">
+                <ImagenModal
+                    key="modal-1"
+                    onHide={this.onHide.bind(this)}
+                    show={this.state.show} imagen={this.state.imagen}/>
                 <div className="imagenNosotros">
                     <Header/>
                     <p className="textoNosotros">NOSOTROS</p>
@@ -85,14 +103,15 @@ class Nosotros extends Component {
                                  }}
                                  dots={false}
                                  autoplayTimeout={7000}>
-                        <div className="item"><img src={slider1} alt="Owl Image"/></div>
-                        <div className="item"><img src={slider2} alt="Owl Image"/></div>
-                        <div className="item"><img src={slider3} alt="Owl Image"/></div>
-                        <div className="item"><img src={slider4} alt="Owl Image"/></div>
-                        <div className="item"><img src={slider5} alt="Owl Image"/></div>
-                        <div className="item"><img src={slider6} alt="Owl Image"/></div>
+                        <div className="item"><img src={slider1} onClick={(e) => this.resizeImage(e, slider1)} alt="slider1"/></div>
+                        <div className="item"><img src={slider2} onClick={(e) => this.resizeImage(e, slider2)} alt="slider2"/></div>
+                        <div className="item"><img src={slider3} onClick={(e) => this.resizeImage(e, slider3)} alt="slider3"/></div>
+                        <div className="item"><img src={slider4} onClick={(e) => this.resizeImage(e, slider4)} alt="slider4"/></div>
+                        <div className="item"><img src={slider5} onClick={(e) => this.resizeImage(e, slider5)} alt="slider5"/></div>
+                        <div className="item"><img src={slider6} onClick={(e) => this.resizeImage(e, slider6)} alt="slider6"/></div>
                     </OwlCarousel>
                 </div>
+                <Footer/>
             </div>
         );
     }
