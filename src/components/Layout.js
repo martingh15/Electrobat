@@ -10,10 +10,10 @@ import {Switch} from 'react-router';
 import "../assets/css/Layout.css";
 
 //Componentes
-import Nosotros from "./Nosotros";
-import Baterias from "./Baterias";
-import Servicios from "./Servicios";
-import Contacto from "./Contacto";
+import Nosotros from "./secciones/Nosotros";
+import Baterias from "./secciones/Baterias";
+import BateriaDetalle from "./secciones/BateriaDetalle";
+import Contacto from "./secciones/Contacto";
 import NotFound from "./NotFound";
 
 class Layout extends Component {
@@ -23,6 +23,7 @@ class Layout extends Component {
                 <Switch>
                     <Route path={["/","/nosotros"]} exact component={Nosotros}/>
                     <Route path="/baterias" exact component={Baterias}/>
+                    <Route path="/bateria-detalle/:idBateria" exact component={BateriaDetalle}/>
                     {/*<Route path="*" component={NotFound}/>*/}
                 </Switch>
             </div>

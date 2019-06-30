@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import imagenes from './imagenes';
+import baterias from './baterias';
 
 const appReducers = combineReducers({
-    imagenes,
+    baterias,
 });
 
 export default appReducers;

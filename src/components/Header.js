@@ -36,7 +36,8 @@ class Header extends Component {
                                     height: "100%",
                                     margin: "0 auto",
                                 }} onClick={() => {
-                                    this.setState({active: "nosotros"})
+                                    this.setState({active: "nosotros"});
+                                    history.push("/nosotros");
                                 }}>NOSOTROS</p>
                             </Nav.Link>
                             <Nav.Link eventKey={2}>
@@ -58,7 +59,7 @@ class Header extends Component {
                                     margin: "0 auto",
                                 }} onClick={() => {
                                     this.setState({active: "volquetes"});
-                                    history.push("/volquetes");
+                                    // history.push("/volquetes");
                                 }}>VOLQUETES</p>
                             </Nav.Link>
                             <Nav.Link eventKey={4}>
@@ -69,7 +70,7 @@ class Header extends Component {
                                     margin: "0 auto",
                                 }} onClick={() => {
                                     this.setState({active: "contacto"});
-                                    history.push("/contacto");
+                                    // history.push("/contacto");
                                 }}>CONTACTO</p>
                             </Nav.Link>
                         </Nav>

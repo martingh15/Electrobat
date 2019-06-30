@@ -1,0 +1,66 @@
+.bateria-detalle .imagenBateriaDetalle {
+    background-image: url("../img/baterias.jpg");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #030015;
+    height: 250px;
+}
+
+.bateria-detalle .contenedorBateria {
+    display: flex;
+}
+
+.bateria-detalle .contenedorBateria .contenedorImagen {
+    flex-grow: 2;
+    position: relative;
+    height: 550px;
+}
+
+.bateria-detalle .contenedorBateria .detalleBateria {
+    flex-grow: 1;
+}
+
+
+.bateria-detalle .contenedorImagen .cuadradoImagen {
+    position: relative;
+    top: -120px;
+    z-index: 100;
+    margin-left: 100px;
+    width: fit-content;
+    background-color: white;
+    border: 4px solid #061833;
+}
+
+.bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
+    max-width: 600px;
+}
+
+.bateria-detalle .contenedorImagen .lupita {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    margin: 0 20px 20px 0;
+}
+
+.bateria-detalle .detallesBateria {
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.bateria-detalle .detallesBateria p, .bateria-detalle .detallesBateria > b {
+    text-align: center;
+    color: #061833;
+    margin: 0 auto;
+}
+
+.bateria-detalle .consultarPrecio {
+    padding: 10px;
+    width: fit-content;
+    background-color: yellow;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
