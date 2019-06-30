@@ -5,6 +5,7 @@
     align-items: center;
     padding: 5px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .footer .datos {
@@ -13,10 +14,12 @@
     align-items: center;
     margin: 0 10px 0 10px;
     cursor: pointer;
+    min-width: 200px !important;
 }
 
 .footer .datos a, .footer .datos p {
     color: #061833;
+    font-size: 15px;
 }
 
 .footer .datos .calle:hover {
@@ -31,4 +34,45 @@
 
 .footer .datos p {
     margin: 0;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1100px) {
+    .footer .datos {
+        margin-right: 100px;
+    }
+
+    .footer .email, .footer .whatsap {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 791px) {
+    .footer .datos {
+        margin-right: 0;
+    }
+
+    .footer .datos a, .footer .datos p {
+        font-size: 9px;
+    }
+
+    .footer .datos img {
+        width: 15px;
+    }
+}
+
+@media (max-width: 429px) {
+    .footer .datos {
+        margin-bottom: 20px;
+    }
+
+    .footer .ubicacion {
+        margin-top: 20px !important;
+    }
+
+    .footer .email, .footer .whatsap {
+        margin-top: 0;
+    }
+
+
 }

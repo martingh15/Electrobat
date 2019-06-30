@@ -21,23 +21,23 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <div className="datos" onClick={() => history.push("/contacto")}>
+                <div className="datos ubicacion" onClick={() => history.push("/contacto")}>
                     <img src={ubicacion} alt="ubicacion"/>
                     <p className="calle">Av. Córdoba 4031, Rosario, Santa Fe</p>
                 </div>
-                <div className="datos">
+                <div className="datos telefono">
                     <img src={telefono} alt="telefono"/>
                     <p><a href="tel:03414395703">(0341) 439 5703</a> | <a href="tel:341439634">(0341) 439 6347</a></p>
 
                 </div>
                 <a href="mailto: electrobat.baterias@gmail.com" target="_blank">
-                    <div className="datos">
+                    <div className="datos email">
                         <img src={email} alt="email"/>
                         <p>electrobat.baterias@gmail.com</p>
                     </div>
                 </a>
                 <a href={"https://wa.me/5493416868049"} target="_blank">
-                    <div className="datos">
+                    <div className="datos whatsap">
                         <img src={whatsap} alt="whatsap"/>
                         <p>+ 54 9 341 6868049</p>
                     </div>
