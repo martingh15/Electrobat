@@ -15,6 +15,14 @@
     cursor: pointer;
 }
 
+.footer .datos a, .footer .datos p {
+    color: #061833;
+}
+
+.footer .datos .calle:hover {
+    text-decoration: underline;
+}
+
 .footer .datos img {
     width: 30px;
     height: 100%;

@@ -10,33 +10,38 @@ import ubicacion from "../assets/img/location-pointer.png";
 import telefono from "../assets/img/call-answer.png";
 import email from "../assets/img/envelope.png";
 import whatsap from "../assets/img/whatsapp.png";
+import whatsappVerde from "../assets/img/whatsapp-verde.png";
 
 class Footer extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-        };
+        this.state = {};
     }
 
     render() {
         return (
-            <div className="footer" onClick={() => history.push("/contacto")}>
-                <div className="datos">
+            <div className="footer">
+                <div className="datos" onClick={() => history.push("/contacto")}>
                     <img src={ubicacion} alt="ubicacion"/>
-                    <p>Av. Córdoba 4031, Rosario, Santa Fe</p>
+                    <p className="calle">Av. Córdoba 4031, Rosario, Santa Fe</p>
                 </div>
                 <div className="datos">
                     <img src={telefono} alt="telefono"/>
-                    <p>(0341) 439 5703 | (0341) 439 6347</p>
+                    <p><a href="tel:03414395703">(0341) 439 5703</a> | <a href="tel:341439634">(0341) 439 6347</a></p>
+
                 </div>
-                <div className="datos">
-                    <img src={email} alt="email"/>
-                    <p>electrobat.baterias@gmail.com</p>
-                </div>
-                <div className="datos">
-                    <img src={whatsap} alt="whatsap"/>
-                    <p>+ 54 9 341 6868049</p>
-                </div>
+                <a href="mailto: electrobat.baterias@gmail.com" target="_blank">
+                    <div className="datos">
+                        <img src={email} alt="email"/>
+                        <p>electrobat.baterias@gmail.com</p>
+                    </div>
+                </a>
+                <a href={"https://wa.me/5493416868049"} target="_blank">
+                    <div className="datos">
+                        <img src={whatsap} alt="whatsap"/>
+                        <p>+ 54 9 341 6868049</p>
+                    </div>
+                </a>
             </div>
         );
     }
