@@ -59,7 +59,7 @@ class Header extends Component {
                                     margin: "0 auto",
                                 }} onClick={() => {
                                     this.setState({active: "volquetes"});
-                                    // history.push("/volquetes");
+                                    history.push("/volquetes");
                                 }}>VOLQUETES</p>
                             </Nav.Link>
                             <Nav.Link eventKey={4}>

@@ -63,9 +63,9 @@ class Nosotros extends Component {
                     key="modal-1"
                     onHide={this.onHide.bind(this)}
                     show={this.state.show} imagen={this.state.imagen}/>
-                <div className="imagenNosotros">
+                <div className="imagenNosotros imagenFondo">
                     <Header/>
-                    <p className="textoNosotros">NOSOTROS</p>
+                    <p className="textoFondo">NOSOTROS</p>
                     <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
                 </div>
                 <div className="subseccionNosotros">
@@ -98,11 +98,8 @@ class Nosotros extends Component {
                                  items={4}
                                  margin={10}
                                  autoplay
-                                 onInitialize={function () {
-                                     this.next();
-                                 }}
                                  dots={false}
-                                 autoplayTimeout={7000}>
+                                 autoplayTimeout={3000}>
                         <div className="item"><img src={slider1} onClick={(e) => this.resizeImage(e, slider1)} alt="slider1"/></div>
                         <div className="item"><img src={slider2} onClick={(e) => this.resizeImage(e, slider2)} alt="slider2"/></div>
                         <div className="item"><img src={slider3} onClick={(e) => this.resizeImage(e, slider3)} alt="slider3"/></div>

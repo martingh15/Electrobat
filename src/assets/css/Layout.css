@@ -12,3 +12,8 @@
     src: url("../fonts/DIN Condensed Bold.ttf");
 }
 
+@font-face {
+    font-family: SourceSansProRegular;
+    src: url("../fonts/SourceSansPro-Regular.otf");
+}
+

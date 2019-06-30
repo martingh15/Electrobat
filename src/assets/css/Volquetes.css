@@ -1,0 +1,68 @@
+.volquetes .imagenVolquetes {
+    background-image: url("../img/secciones/volquetes.jpg");
+}
+
+.volquetes .angle-arrow-down {
+    margin: 0 auto;
+    display: block;
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.volquetes .dosImagenes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.volquetes .dosImagenes .item {
+    width: 50%;
+}
+.volquetes .dosImagenes .item:first-child {
+    margin-right: 10px;
+}
+
+.volquetes .alquilerVolquetes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.volquetes .alquilerVolquetes p {
+    margin: 0;
+    color: #061833;
+}
+
+.volquetes .alquilerVolquetes .alquiler {
+    font-size: 60px;
+    font-family: DINCondensedBold;
+}
+
+.volquetes .alquilerVolquetes .lineaGruesa {
+    position: relative;
+    top:-10px;
+    width: 35px;
+    height: 1px;
+    border: 3px solid #061833;
+}
+
+.volquetes .alquilerVolquetes .rosario {
+    font-family: SourceSansProRegular;
+    font-size: 30px;
+}
+
+.volquetes .alquilerVolquetes .mediano {
+    font-family: SourceSansProRegular;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.volquetes .alquilerVolquetes .contactar {
+    padding: 10px 75px;
+    width: fit-content;
+    background-color: yellow;
+    margin: 0 auto;
+    border-radius: 5px;
+}

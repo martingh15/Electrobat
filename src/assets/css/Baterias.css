@@ -1,26 +1,5 @@
 .baterias .imagenBaterias {
-    background-image: url("../img/baterias.jpg");
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #030015;
-    height: fit-content;
-}
-
-.baterias .textoBaterias {
-    font-size: 80px;
-    margin: 50px 0 100px 0;
-    text-align: center;
-    color: white;
-    font-family: DINCondensedBold;
-}
-
-.baterias .angle-arrow-down {
-    margin: 0 auto;
-    display: block;
-    width: 40px;
-    margin-bottom: 20px;
+    background-image: url("../img/secciones/baterias.jpg");
 }
 
 .baterias .subseccionBaterias {

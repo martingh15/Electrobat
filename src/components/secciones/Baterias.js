@@ -32,9 +32,9 @@ class Baterias extends Component {
     render() {
         return (
             <div className="baterias">
-                <div className="imagenBaterias">
+                <div className="imagenBaterias imagenFondo">
                     <Header/>
-                    <p className="textoBaterias">BATERIAS</p>
+                    <p className="textoFondo">BATERIAS</p>
                     <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
                 </div>
                 <div className="subseccionBaterias">
