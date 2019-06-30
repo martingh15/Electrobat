@@ -94,7 +94,7 @@ class Contacto extends Component {
                 </div>
                 <div className="contenedorColumnas">
                     <div className="columnaDatos">
-                        <p className="contacto">CONTACTO</p>
+                        <p className="textocontacto">CONTACTO</p>
                         <div className="lineaGruesa"></div>
                         <div className="linea">
                             <img src={ubicacion} alt="ubicacion"/>

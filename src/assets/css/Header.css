@@ -2,18 +2,33 @@
 .header {
     height: 200px;
 }
+
 .header .navegador {
     top: 30px;
-    background: rgb(192, 192, 192, 0.3);
+    position: relative;
+    background-color: rgb(192, 192, 192, 0.3);
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header .navegador .navbar-collapse {
-    padding-right: 30px;
+.header .navegador p {
+    margin: 0;
+    padding: 8px 0;
+    color: white;
+    margin-right: 20px;
 }
 
-.header .link {
-    color: white !important;
+.header .navegador p:hover {
+    text-decoration: underline;
 }
+
+.header .links {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /*MEDIA*/
 .header .media {

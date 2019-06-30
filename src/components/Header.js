@@ -13,69 +13,83 @@ import instagram from "../assets/img/instagram(64-FFFA21).png";
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            active: 'nosotros',
-        };
+        this.state = {};
+    }
+    componentDidMount() {
+        if(window.location.href.indexOf("nosotros") != -1) {
+            this.refs.nosotros.classList.add("activo");
+            this.refs.baterias.classList.remove("activo");
+            this.refs.volquetes.classList.remove("activo");
+            this.refs.contacto.classList.remove("activo");
+        }
+
+        if(window.location.href.indexOf("baterias") != -1) {
+            this.refs.nosotros.classList.remove("activo");
+            this.refs.baterias.classList.add("activo");
+            this.refs.volquetes.classList.remove("activo");
+            this.refs.contacto.classList.remove("activo");
+        }
+
+        if(window.location.href.indexOf("volquetes") != -1) {
+            this.refs.nosotros.classList.remove("activo");
+            this.refs.baterias.classList.remove("activo");
+            this.refs.volquetes.classList.add("activo");
+            this.refs.contacto.classList.remove("activo");
+        }
+
+        if(window.location.href.indexOf("contacto") != -1) {
+            this.refs.nosotros.classList.remove("activo");
+            this.refs.baterias.classList.remove("activo");
+            this.refs.volquetes.classList.remove("activo");
+            this.refs.contacto.classList.add("activo");
+        }
+    }
+
+    activarLink(clase) {
+        console.log(clase);
+        if (clase == "nosotros") {
+            this.refs.nosotros.classList.add("activo");
+            this.refs.baterias.classList.remove("activo");
+            this.refs.volquetes.classList.remove("activo");
+            this.refs.contacto.classList.remove("activo");
+        }
+
+        if (clase == "baterias") {
+            this.refs.nosotros.classList.remove("activo");
+            this.refs.baterias.classList.add("activo");
+            this.refs.volquetes.classList.remove("activo");
+            this.refs.contacto.classList.remove("activo");
+        }
+
+        if (clase == "volquetes") {
+            this.refs.nosotros.classList.remove("activo");
+            this.refs.baterias.classList.remove("activo");
+            this.refs.volquetes.classList.add("activo");
+            this.refs.contacto.classList.remove("activo");
+        }
+
+        if (clase == "contacto") {
+            this.refs.nosotros.classList.remove("activo");
+            this.refs.baterias.classList.remove("activo");
+            this.refs.volquetes.classList.remove("activo");
+            this.refs.contacto.classList.add("activo");
+        }
+        history.push("/" + clase);
     }
 
     render() {
-        const {active} = this.state;
         return (
             <div className="header">
-                <Navbar className="navegador" collapseOnSelect expand="lg">
-                    <Navbar.Brand href="#home">Electrobat</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
-                        </Nav>
-                        <Nav>
-                            <Nav.Link eventKey={1}>
-                                <p style={{
-                                    color: active == "nosotros" ? "yellow" : "white",
-                                    fontWeight: active ? "bold" : "100",
-                                    height: "100%",
-                                    margin: "0 auto",
-                                }} onClick={() => {
-                                    this.setState({active: "nosotros"});
-                                    history.push("/nosotros");
-                                }}>NOSOTROS</p>
-                            </Nav.Link>
-                            <Nav.Link eventKey={2}>
-                                <p style={{
-                                    color: active == "baterias" ? "yellow" : "white",
-                                    fontWeight: active ? "bold" : "100",
-                                    height: "100%",
-                                    margin: "0 auto",
-                                }} onClick={() => {
-                                    this.setState({active: "baterias"});
-                                    history.push("/baterias");
-                                }}>BATERÍAS</p>
-                            </Nav.Link>
-                            <Nav.Link eventKey={3}>
-                                <p style={{
-                                    color: active == "volquetes" ? "yellow" : "white",
-                                    fontWeight: active ? "bold" : "100",
-                                    height: "100%",
-                                    margin: "0 auto",
-                                }} onClick={() => {
-                                    this.setState({active: "volquetes"});
-                                    history.push("/volquetes");
-                                }}>VOLQUETES</p>
-                            </Nav.Link>
-                            <Nav.Link eventKey={4}>
-                                <p style={{
-                                    color: active == "contacto" ? "yellow" : "white",
-                                    fontWeight: active ? "bold" : "100",
-                                    height: "100%",
-                                    margin: "0 auto",
-                                }} onClick={() => {
-                                    this.setState({active: "contacto"});
-                                    history.push("/contacto");
-                                }}>CONTACTO</p>
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
+                <div className="navegador">
+                    <p>Logo</p>
+                    <div className="links">
+                        <p ref="nosotros" className="nosotros" onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
+                        <p ref="baterias" className="baterias" onClick={() => this.activarLink("baterias")}>BATERIAS</p>
+                        <p ref="volquetes" className="volquetes"
+                           onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
+                        <p ref="contacto" className="contacto" onClick={() => this.activarLink("contacto")}>CONTACTO</p>
+                    </div>
+                </div>
                 <div className="media">
                     <img className="itemMedia" src={facebook} alt="facebook"/>
                     <img className="itemMedia" src={instagram} alt="instagram"/>
