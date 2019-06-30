@@ -2,6 +2,26 @@
 
 }
 
+.app .whatsapp {
+    position: fixed;
+    padding-top: 8px;
+    bottom: -5px;
+    right: -10px;
+    z-index: 100;
+    width: 100px;
+}
+
+.app .whatsapp:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+
 @font-face {
     font-family: SourceSansProBlack;
     src: url("../fonts/SourceSansPro-Black.otf");
