@@ -6,15 +6,21 @@ require("class.smtp.php");
 $name = !empty($_POST['nombre']) ? $_POST['nombre'] : '';
 $email = !empty($_POST['email']) ? $_POST['email'] : '';
 $mensaje = !empty($_POST['mensaje']) ? $_POST['mensaje'] : '';
+$empresa = !empty($_POST['empresa']) ? $_POST['empresa'] : '';
+$telefono = !empty($_POST['telefono']) ? $_POST['telefono'] : '';
+$asunto = !empty($_POST['asunto']) ? $_POST['asunto'] : '';
 
 if($name == '' && $email == '' && $mensaje == ''){
     $htmlContent = "
 <h1>Consulta formulario</h1>";
 }else{
     $htmlContent = "
-<h1>Consulta desde formulario:</h1>
+<h1>Consulta realizada desde la web:</h1>
 <p><b>Nombre: </b>" . $name . "</p>
+<p><b>Empresa: </b>" . $empresa . "</p>
+<p><b>Telefono: </b>" . $telefono . "</p>
 <p><b>Email: </b>" . $email . "</p>
+<p><b>Asunto: </b>" . $asunto . "</p>
 <p><b>Mensaje: </b>" . $mensaje . "</p>
 ";
 }
@@ -30,12 +36,12 @@ try {
     $mail->Port = 587; // Cambiar Puerto a utilizar si fuese necesario
     $mail->Timeout = 60;
     $mail->SMTPKeepAlive = true;
-    $mail->From = "martinghiotti2013@gmail.com";
+    $mail->From = "electrobat.baterias@gmail.com";
     $mail->FromName = "Carpas Rosario";
     $mail->CharSet = "utf-8";
     $mail->AddAddress($email);
     $mail->IsHTML(true);
-    $mail->Subject = "Consulta";
+    $mail->Subject = "Electrobat Web - " . $asunto;
     $mail->Body = $htmlContent;
     $mail->Send();
     $result['error'] = false;

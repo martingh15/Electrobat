@@ -37,6 +37,10 @@ class Nosotros extends Component {
         this.onHide = this.onHide.bind(this);
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     resizeImage(e, img) {
         this.setState({
             imagen: img,

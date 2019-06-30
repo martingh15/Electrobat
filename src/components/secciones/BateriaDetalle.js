@@ -28,6 +28,7 @@ class BateriaDetalle extends Component {
 
     componentDidMount() {
         this.props.receiveBaterias();
+        window.scrollTo(0, 0);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -73,7 +74,8 @@ class BateriaDetalle extends Component {
                     <div className="item contenedorImagen">
                         <div className="cuadradoImagen">
                             <img className="imagenBateria" src={url} alt="imagenBateria"/>
-                            <img src={lupita} onClick={(e) => this.resizeImage(e,url)} className="lupita" alt="lupita"/>
+                            <img src={lupita} onClick={(e) => this.resizeImage(e, url)} className="lupita"
+                                 alt="lupita"/>
                         </div>
                     </div>
                     <div className="item detallesBateria">

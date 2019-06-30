@@ -1,22 +1,105 @@
+.contacto .imagenContacto {
+    background-image: url("../img/secciones/contacto.jpg");
+}
+
+.contacto .contenedorColumnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contacto .contenedorColumnas .columnaDatos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .contacto {
+    font-family: DINCondensedBold;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #061833;
+}
+
+.contacto .linea {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: -10px;
+    position: relative;
+}
+
+.contacto .linea p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contacto .linea img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contacto .linea .imgMasChica {
+    width: 25px !important;
+    margin-left: 5px;
+}
+
+.contacto .contenedorColumnas .columnaDatos .lineaGruesa {
+    position: relative;
+    top: -10px;
+    width: 35px;
+    height: 1px;
+    border: 3px solid #061833;
+}
+.contacto .columnaFormulario{
+    margin-bottom: 30px;
+}
 .contacto .forminput {
     display: flex;
     flex-direction: column;
 }
 
 .contacto input, .contacto textarea {
-     margin-bottom: 20px;
+    margin-bottom: 20px;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid #061833;
+    border-radius: 5px;
+    width: 400px;
+    color: #061833;
+    font-family: DINCondensedBold;
+}
+
+.contacto input::-webkit-input-placeholder, .contacto textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: DINCondensedBold;
+    font-size: 13px;
+}
+
+.contacto input::-moz-placeholder, .contacto textarea::-moz-placeholder { /* Firefox 19+ */
+    font-family: DINCondensedBold;
+    font-size: 13px;
+}
+
+.contacto input::-ms-input-placeholder, .contacto textarea::-ms-input-placeholder { /* IE 10+ */
+    font-family: DINCondensedBold;
+    font-size: 13px;
+}
+
+.contacto input::-moz-placeholder, .contacto textarea::-moz-placeholder { /* Firefox 18- */
+    font-family: DINCondensedBold;
+    font-size: 13px;
 }
 
 .contacto button {
     width: 200px;
     margin: 0 auto;
     display: block;
-}
-
-@media screen and (max-width: 768px) {
-    .contenedor {
-        margin: 30px !important;
-    }
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #061833;
+    color: white;
+    font-weight: bold;
 }

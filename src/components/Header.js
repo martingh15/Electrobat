@@ -70,7 +70,7 @@ class Header extends Component {
                                     margin: "0 auto",
                                 }} onClick={() => {
                                     this.setState({active: "contacto"});
-                                    // history.push("/contacto");
+                                    history.push("/contacto");
                                 }}>CONTACTO</p>
                             </Nav.Link>
                         </Nav>
