@@ -37,7 +37,7 @@ try {
     $mail->Timeout = 60;
     $mail->SMTPKeepAlive = true;
     $mail->From = "electrobat.baterias@gmail.com";
-    $mail->FromName = "Carpas Rosario";
+    $mail->FromName = "Electrobat";
     $mail->CharSet = "utf-8";
     $mail->AddAddress($email);
     $mail->IsHTML(true);

@@ -15,7 +15,7 @@ import Baterias from "./secciones/Baterias";
 import BateriaDetalle from "./secciones/BateriaDetalle";
 import Volquetes from "./secciones/Volquetes";
 import Contacto from "./secciones/Contacto";
-import NotFound from "./NotFound";
+import NotFound from "./secciones/NotFound";
 
 class Layout extends Component {
     render() {

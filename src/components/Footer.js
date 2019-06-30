@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {connect} from 'react-redux';
 import history from "../history";
 
 //CSS
@@ -11,9 +12,15 @@ import email from "../assets/img/envelope.png";
 import whatsap from "../assets/img/whatsapp.png";
 
 class Footer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+    }
+
     render() {
         return (
-            <div className="footer">
+            <div className="footer" onClick={() => history.push("/contacto")}>
                 <div className="datos">
                     <img src={ubicacion} alt="ubicacion"/>
                     <p>Av. Córdoba 4031, Rosario, Santa Fe</p>
@@ -35,4 +42,12 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+function mapStateToProps(state) {
+    return {};
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {}
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Footer);

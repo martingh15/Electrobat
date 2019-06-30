@@ -34,6 +34,23 @@ class Contacto extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
+        if (this.props.baterias.byId.consulta && this.props.baterias.byId.consulta.consulta == "detalleBateria") {
+            var consulta = this.props.baterias.byId.consulta;
+            var campos = this.state.campos;
+            campos['asunto'] = "Consulta bateria: " + consulta.bateria.voltios;
+            this.setState({
+                campos: campos,
+            });
+        }
+
+        if (this.props.baterias.byId.consulta && this.props.baterias.byId.consulta.consulta == "volquete") {
+            var consulta = this.props.baterias.byId.consulta;
+            var campos = this.state.campos;
+            campos['asunto'] = "Consulta alquiler volquete ";
+            this.setState({
+                campos: campos,
+            });
+        }
     }
 
     onChangeContacto(e) {
@@ -135,7 +152,9 @@ class Contacto extends Component {
 }
 
 function mapStateToProps(state) {
-    return {};
+    return {
+        baterias: state.baterias,
+    };
 }
 
 const mapDispatchToProps = (dispatch) => {

@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import "../../assets/css/BateriaDetalle.css";
 
 //Actions
-import {receiveBaterias} from "../../actions/BateriaAction";
+import {receiveBaterias, consultarPrecio} from "../../actions/Actions";
 
 //Components
 import Header from "../Header";
@@ -13,6 +13,7 @@ import ImagenModal from "../ImagenModal";
 
 //Images
 import lupita from "../../assets/img/searcher.png";
+import history from "../../history";
 
 class BateriaDetalle extends Component {
     constructor(props) {
@@ -55,6 +56,11 @@ class BateriaDetalle extends Component {
         this.setState({show: false});
     }
 
+    consultarPrecio() {
+        this.props.consultarPrecio(this.state.bateria);
+        history.push("/contacto");
+    }
+
     render() {
         const {bateria} = this.state;
         var url = "";
@@ -88,7 +94,7 @@ class BateriaDetalle extends Component {
                         <p>Ancho: {bateria ? bateria.ancho : ""}</p>
                         <p>Alto: {bateria ? bateria.alto : ""}</p>
                         <br/>
-                        <div className="consultarPrecio">
+                        <div className="consultarPrecio" onClick={() => this.consultarPrecio()}>
                             <p><b>CONSULTAR PRECIO</b></p>
                         </div>
                     </div>
@@ -109,6 +115,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         receiveBaterias: (pedido) => {
             dispatch(receiveBaterias(pedido))
+        },
+        consultarPrecio: (bateria) => {
+            dispatch(consultarPrecio(bateria))
         },
     }
 };

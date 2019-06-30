@@ -1,4 +1,5 @@
 export const RECEIVE_BATERIAS = 'RECEIVE_BATERIAS';
+export const CONSULTAR_PRECIO = 'CONSULTAR_PRECIO';
 
 export function receiveBaterias() {
     var baterias = [];
@@ -65,6 +66,28 @@ export function receiveBaterias() {
     return {
         type: RECEIVE_BATERIAS,
         baterias: baterias,
+        receivedAt: Date.now()
+    }
+}
+
+export function consultarPrecio(bateria) {
+    var consulta = {};
+    consulta.bateria = bateria;
+    consulta.consulta = "detalleBateria";
+
+    return {
+        type: CONSULTAR_PRECIO,
+        consulta: consulta,
+        receivedAt: Date.now()
+    }
+}
+
+export function consultarVolquete() {
+    var consulta = {};
+    consulta.consulta = "volquete";
+    return {
+        type: CONSULTAR_PRECIO,
+        consulta: consulta,
         receivedAt: Date.now()
     }
 }

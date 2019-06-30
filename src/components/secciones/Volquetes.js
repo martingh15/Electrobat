@@ -12,6 +12,11 @@ import flechaAbajo from "../../assets/img/angle-arrow-down.png";
 import volquete from "../../assets/img/volquetes/volquete.jpg";
 import camion from "../../assets/img/volquetes/camion.jpg";
 
+//Actions
+import {consultarVolquete} from "../../actions/Actions";
+import {connect} from "react-redux";
+import history from "../../history";
+
 class Volquetes extends Component {
     constructor(props) {
         super(props);
@@ -20,6 +25,11 @@ class Volquetes extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
+    }
+
+    contactar() {
+        this.props.consultarVolquete();
+        history.push("/contacto");
     }
 
     render() {
@@ -40,7 +50,7 @@ class Volquetes extends Component {
                     <p className="rosario">ROSARIO Y ALREDEDORES</p>
                     <p className="mediano">MEDIANO | GRANDE</p>
                     <br/>
-                    <p className="contactar"><b>CONTACTAR</b></p>
+                    <p onClick={() => this.contactar()} className="contactar"><b>CONTACTAR</b></p>
                 </div>
                 <Footer/>
             </div>
@@ -48,4 +58,16 @@ class Volquetes extends Component {
     }
 }
 
-export default Volquetes;
+function mapStateToProps(state) {
+    return {};
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        consultarVolquete: () => {
+            dispatch(consultarVolquete())
+        },
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Volquetes);

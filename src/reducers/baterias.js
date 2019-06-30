@@ -1,19 +1,22 @@
 import {
-    RECEIVE_BATERIAS
-} from '../actions/BateriaAction';
+    RECEIVE_BATERIAS,
+    CONSULTAR_PRECIO
+} from '../actions/Actions';
 import { combineReducers } from 'redux';
 
 function bateriasById(state = {
-    isFetching: false,
-    didInvalidate: true,
-    baterias: []
+    baterias: [],
+    consulta: {},
 }, action) {
     switch (action.type) {
         case RECEIVE_BATERIAS:
             return Object.assign({}, state, {
-                isFetching: false,
-                didInvalidate: false,
                 baterias: action.baterias,
+                lastUpdated: action.receivedAt
+            });
+        case CONSULTAR_PRECIO:
+            return Object.assign({}, state, {
+                consulta: action.consulta,
                 lastUpdated: action.receivedAt
             });
         default:

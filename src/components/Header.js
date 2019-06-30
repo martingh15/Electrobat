@@ -77,8 +77,8 @@ class Header extends Component {
                     </Navbar.Collapse>
                 </Navbar>
                 <div className="media">
-                    <img className="facebook" src={facebook} alt="facebook"/>
-                    <img className="facebook" src={instagram} alt="instagram"/>
+                    <img className="itemMedia" src={facebook} alt="facebook"/>
+                    <img className="itemMedia" src={instagram} alt="instagram"/>
                 </div>
             </div>
         );
