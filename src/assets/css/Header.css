@@ -13,11 +13,12 @@
     justify-content: space-between;
 }
 
-.header .navegador p {
+.header p {
     margin: 0;
     padding: 8px 0;
     color: white;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 .header .navegador p:hover {
@@ -45,3 +46,56 @@
     margin-right: 60px;
 }
 
+/*NAV RESPONSIVE*/
+@media (max-width: 768px) {
+    .header .links p {
+        display: none !important;
+    }
+    .header .links .boton-responsive {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .header .links .boton-responsive {
+        display: none !important;
+    }
+    .header .links p {
+        display: block;
+    }
+}
+
+.header .links .boton-responsive {
+    font-size: 1.25rem;
+    line-height: 0.8;
+    width: 40px;
+    height: 40px;
+    margin: 5px 30px;
+    background-color: #061833;
+    opacity: 0.7;
+    border: 1px solid black;
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.header .links .boton-responsive .lineaBoton {
+    width: 30px;
+    height: 1px;
+    border: 1px solid white;
+    margin-top:5px;
+    position: relative;
+    top: -3px;
+}
+
+.header .navegadorCollapse {
+    background-color: rgb(192, 192, 192, 0.3);
+    border-top: 1px solid #061833;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    text-align: center;
+}
