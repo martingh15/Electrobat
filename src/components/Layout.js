@@ -28,8 +28,8 @@ class Layout extends Component {
                     <Route path={["/","/nosotros"]} exact component={Nosotros}/>
                     <Route path="/baterias" exact component={Baterias}/>
                     <Route path="/bateria-detalle/:idBateria" exact component={BateriaDetalle}/>
-                    {/*<Route path="/volquetes" exact component={Volquetes}/>*/}
-                    {/*<Route path="/contacto" exact component={Contacto}/>*/}
+                    <Route path="/volquetes" exact component={Volquetes}/>
+                    <Route path="/contacto" exact component={Contacto}/>
                     <Route path="*" component={NotFound}/>
                 </Switch>
                 <a href={"https://wa.me/5493416868049"} target="_blank">
