@@ -81,12 +81,12 @@ class Nosotros extends Component {
                         </div>
                         <div className="itemIco">
                             <img src={flete}
-                                 onClick={() => history.push("/volquetes")}
+                                 // onClick={() => history.push("/volquetes")}
                                  alt="flete"/>
                         </div>
                         <div className="itemIco">
                             <img src={contacto}
-                                 onClick={() => history.push("/contacto")}
+                                 // onClick={() => history.push("/contacto")}
                                  alt="contacto"/>
                         </div>
                     </div>

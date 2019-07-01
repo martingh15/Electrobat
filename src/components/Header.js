@@ -116,7 +116,8 @@ class Header extends Component {
             for (let item of list4)
                 item.classList.add("activo");
         }
-        history.push("/" + clase);
+        if (clase == "nosotros" || clase == "baterias")
+            history.push("/" + clase);
     }
 
     render() {

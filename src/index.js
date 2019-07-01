@@ -64,7 +64,7 @@ else{
 const store = createStoreWithMiddleware(appReducers);
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={history} basename={"/martin-test/"}>
+        <Router history={history}>
             <Switch>
                 <Route path="/" component={Layout}/>
             </Switch>
