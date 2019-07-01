@@ -5,11 +5,9 @@
 .contacto .contenedorColumnas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-self: center;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 50px 100px 0 100px;
 }
 
 .contacto .contenedorColumnas .columnaDatos {
@@ -55,9 +53,7 @@
     height: 1px;
     border: 3px solid #061833;
 }
-.contacto .columnaFormulario{
-    margin-bottom: 30px;
-}
+
 .contacto .forminput {
     display: flex;
     flex-direction: column;
@@ -102,4 +98,74 @@
     background-color: #061833;
     color: white;
     font-weight: bold;
+}
+
+/*CONTACTO RESPONSIVE*/
+@media (max-width: 1000px) {
+    .contacto .contenedorColumnas {
+        margin: 30px 0;
+    }
+
+    .contacto .textocontacto {
+        font-size: 50px;
+    }
+    .contacto input, .contacto textarea {
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .contacto .linea p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contacto .contenedorColumnas {
+        flex-wrap: wrap;
+        margin: 30px 100px;
+    }
+    .contacto input, .contacto textarea {
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    .contacto .columnaFormulario {
+        margin-top: 20px !important;
+    }
+
+    .contacto .textocontacto {
+        text-align: center;
+    }
+    .contacto .lineaGruesa {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contacto .linea {
+        margin-left: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacto .contenedorColumnas {
+        margin: 30px 20px;
+    }
+    .contacto .columnaFormulario {
+        margin-top: 20px !important;
+    }
+
+    .contacto .textocontacto {
+        text-align: center;
+    }
+    .contacto .lineaGruesa {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+    .contacto .linea p {
+        font-size: 10px !important;
+    }
+    .contacto .linea {
+        margin-left: 10px;
+    }
 }
