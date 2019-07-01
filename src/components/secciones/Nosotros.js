@@ -96,8 +96,6 @@ class Nosotros extends Component {
                     </p>
                 </div>
                 <div className="carousel">
-                    <img className="flechaIzq flecha" onClick={() => this.prev()} src={flechaIzq} alt="flecha-izq"/>
-                    <img className="flechaDer flecha" onClick={() => this.next()} src={flechaDer} alt="flecha-next"/>
                     <OwlCarousel ref="owldemo" className="owl-theme itemC" loop
                                  items={4}
                                  margin={10}
@@ -111,6 +109,10 @@ class Nosotros extends Component {
                         <div className="item"><img src={slider5} onClick={(e) => this.resizeImage(e, slider5)} alt="slider5"/></div>
                         <div className="item"><img src={slider6} onClick={(e) => this.resizeImage(e, slider6)} alt="slider6"/></div>
                     </OwlCarousel>
+                    <div>
+                        <img className="flechaIzq flecha" onClick={() => this.prev()} src={flechaIzq} alt="flecha-izq"/>
+                        <img className="flechaDer flecha" onClick={() => this.next()} src={flechaDer} alt="flecha-next"/>
+                    </div>
                 </div>
                 <Footer/>
             </div>

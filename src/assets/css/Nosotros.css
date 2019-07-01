@@ -47,9 +47,9 @@
 
 .nosotros .carousel .flecha {
     position: absolute;
-    top: 140px;
+    bottom: 140px;
     z-index: 100;
-    width: 50px;
+    width: 100px;
 }
 
 .nosotros .carousel .flechaIzq {
@@ -69,4 +69,93 @@
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
     transform: scale(1.2);
+}
+
+@media (max-width: 2560px) {
+    .nosotros .carousel .flecha {
+        bottom: 250px;
+    }
+}
+
+@media (max-width: 2200px) {
+    .nosotros .carousel .flecha {
+        bottom: 210px;
+    }
+}
+
+@media (max-width: 2000px) {
+    .nosotros .carousel .flecha {
+        bottom: 180px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .nosotros .carousel .flecha {
+        bottom: 180px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .nosotros .carousel .flecha {
+        bottom: 130px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .nosotros .carousel .flecha {
+        bottom: 110px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nosotros .carousel .flecha {
+        bottom: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nosotros .carousel .flecha {
+        bottom: 70px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nosotros .carousel .flecha {
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nosotros .carousel .flecha {
+        bottom: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nosotros .carousel .flecha {
+        bottom: 30px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .nosotros .carousel .flecha {
+        bottom: 25px;
+    }
+}
+
+@media (max-width: 280px) {
+    .nosotros .carousel .flecha {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 250px) {
+    .nosotros .carousel .flecha {
+        bottom: 15px;
+    }
 }
