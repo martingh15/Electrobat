@@ -19,62 +19,102 @@ class Header extends Component {
     }
 
     componentDidMount() {
+        var list1 = document.getElementsByClassName("h-nosotros");
+        var list2 = document.getElementsByClassName("h-baterias");
+        var list3 = document.getElementsByClassName("h-volquetes");
+        var list4 = document.getElementsByClassName("h-contacto");
         if (window.location.href.indexOf("nosotros") != -1) {
-            this.refs.nosotros.classList.add("activo");
-            this.refs.baterias.classList.remove("activo");
-            this.refs.volquetes.classList.remove("activo");
-            this.refs.contacto.classList.remove("activo");
+            for (let item of list1)
+                item.classList.add("activo");
+            for (let item of list2)
+                item.classList.remove("activo");
+            for (let item of list3)
+                item.classList.remove("activo");
+            for (let item of list4)
+                item.classList.remove("activo");
         }
 
         if (window.location.href.indexOf("baterias") != -1) {
-            this.refs.nosotros.classList.remove("activo");
-            this.refs.baterias.classList.add("activo");
-            this.refs.volquetes.classList.remove("activo");
-            this.refs.contacto.classList.remove("activo");
+            for (let item of list1)
+                item.classList.remove("activo");
+            for (let item of list2)
+                item.classList.add("activo");
+            for (let item of list3)
+                item.classList.remove("activo");
+            for (let item of list4)
+                item.classList.remove("activo");
         }
 
         if (window.location.href.indexOf("volquetes") != -1) {
-            this.refs.nosotros.classList.remove("activo");
-            this.refs.baterias.classList.remove("activo");
-            this.refs.volquetes.classList.add("activo");
-            this.refs.contacto.classList.remove("activo");
+            for (let item of list1)
+                item.classList.remove("activo");
+            for (let item of list2)
+                item.classList.remove("activo");
+            for (let item of list3)
+                item.classList.add("activo");
+            for (let item of list4)
+                item.classList.remove("activo");
         }
 
         if (window.location.href.indexOf("contacto") != -1) {
-            this.refs.nosotros.classList.remove("activo");
-            this.refs.baterias.classList.remove("activo");
-            this.refs.volquetes.classList.remove("activo");
-            this.refs.contacto.classList.add("activo");
+            for (let item of list1)
+                item.classList.remove("activo");
+            for (let item of list2)
+                item.classList.remove("activo");
+            for (let item of list3)
+                item.classList.remove("activo");
+            for (let item of list4)
+                item.classList.add("activo");
         }
     }
 
     activarLink(clase) {
-        if (clase == "nosotros") {
-            this.refs.nosotros.classList.add("activo");
-            this.refs.baterias.classList.remove("activo");
-            this.refs.volquetes.classList.remove("activo");
-            this.refs.contacto.classList.remove("activo");
+        var list1 = document.getElementsByClassName("h-nosotros");
+        var list2 = document.getElementsByClassName("h-baterias");
+        var list3 = document.getElementsByClassName("h-volquetes");
+        var list4 = document.getElementsByClassName("h-contacto");
+        if (clase == "h-nosotros") {
+            for (let item of list1)
+                item.classList.add("activo");
+            for (let item of list2)
+                item.classList.remove("activo");
+            for (let item of list3)
+                item.classList.remove("activo");
+            for (let item of list4)
+                item.classList.remove("activo");
         }
 
-        if (clase == "baterias") {
-            this.refs.nosotros.classList.remove("activo");
-            this.refs.baterias.classList.add("activo");
-            this.refs.volquetes.classList.remove("activo");
-            this.refs.contacto.classList.remove("activo");
+        if (clase == "h-baterias") {
+            for (let item of list1)
+                item.classList.remove("activo");
+            for (let item of list2)
+                item.classList.add("activo");
+            for (let item of list3)
+                item.classList.remove("activo");
+            for (let item of list4)
+                item.classList.remove("activo");
         }
 
-        if (clase == "volquetes") {
-            this.refs.nosotros.classList.remove("activo");
-            this.refs.baterias.classList.remove("activo");
-            this.refs.volquetes.classList.add("activo");
-            this.refs.contacto.classList.remove("activo");
+        if (clase == "h-volquetes") {
+            for (let item of list1)
+                item.classList.remove("activo");
+            for (let item of list2)
+                item.classList.remove("activo");
+            for (let item of list3)
+                item.classList.add("activo");
+            for (let item of list4)
+                item.classList.remove("activo");
         }
 
-        if (clase == "contacto") {
-            this.refs.nosotros.classList.remove("activo");
-            this.refs.baterias.classList.remove("activo");
-            this.refs.volquetes.classList.remove("activo");
-            this.refs.contacto.classList.add("activo");
+        if (clase == "h-contacto") {
+            for (let item of list1)
+                item.classList.remove("activo");
+            for (let item of list2)
+                item.classList.remove("activo");
+            for (let item of list3)
+                item.classList.remove("activo");
+            for (let item of list4)
+                item.classList.add("activo");
         }
         history.push("/" + clase);
     }
@@ -85,13 +125,16 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="navegador">
-                    <p>Logo</p>
+                    <p>Electrobat</p>
                     <div className="links">
-                        <p ref="nosotros" className="nosotros" onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
-                        <p ref="baterias" className="baterias" onClick={() => this.activarLink("baterias")}>BATERIAS</p>
-                        <p ref="volquetes" className="volquetes"
+                        <p id="h1-nosotros" className="h-nosotros"
+                           onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
+                        <p id="h1-baterias" className="h-baterias"
+                           onClick={() => this.activarLink("baterias")}>BATERIAS</p>
+                        <p id="h1-volquetes" className="h-volquetes"
                            onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
-                        <p ref="contacto" className="contacto" onClick={() => this.activarLink("contacto")}>CONTACTO</p>
+                        <p id="h1-contacto" className="h-contacto"
+                           onClick={() => this.activarLink("contacto")}>CONTACTO</p>
                         <div className="boton-responsive" onClick={() => this.setState({collapse: !collapse})}>
                             <div className="lineaBoton"></div>
                             <div className="lineaBoton"></div>
@@ -100,11 +143,14 @@ class Header extends Component {
                     </div>
                 </div>
                 <div className="navegadorCollapse" style={{display: collapse ? "block" : "none"}}>
-                    <p ref="nosotros" className="nosotros" onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
-                    <p ref="baterias" className="baterias" onClick={() => this.activarLink("baterias")}>BATERIAS</p>
-                    <p ref="volquetes" className="volquetes"
+                    <p id="h2-nosotros" className="h-nosotros"
+                       onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
+                    <p id="h2-baterias" className="h-baterias"
+                       onClick={() => this.activarLink("baterias")}>BATERIAS</p>
+                    <p id="h2-volquetes" className="h-volquetes"
                        onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
-                    <p ref="contacto" className="contacto" onClick={() => this.activarLink("contacto")}>CONTACTO</p>
+                    <p id="h2-contacto" className="h-contacto"
+                       onClick={() => this.activarLink("contacto")}>CONTACTO</p>
                 </div>
                 <div className="media">
                     <img className="itemMedia" src={facebook} alt="facebook"/>

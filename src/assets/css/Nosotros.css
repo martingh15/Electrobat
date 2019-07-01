@@ -60,7 +60,7 @@
     right:0;
 }
 
-.nosotros .carousel .flechaIzq:hover, .nosotros .carousel .flechaDer:hover{
+.nosotros .carousel .flechaIzq:hover, .nosotros .carousel .flechaDer:hover {
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.1);
     -ms-transition: all 200ms ease-in;

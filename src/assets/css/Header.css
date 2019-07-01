@@ -13,6 +13,14 @@
     justify-content: space-between;
 }
 
+.header .navegador p:first-child {
+    margin-left: 20px;
+}
+
+.activo {
+    color: yellow !important;
+}
+
 .header p {
     margin: 0;
     padding: 8px 0;
