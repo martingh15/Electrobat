@@ -14,6 +14,7 @@ import ImagenModal from "../ImagenModal";
 //Images
 import lupita from "../../assets/img/searcher.png";
 import history from "../../history";
+import {Col} from "react-bootstrap";
 
 class BateriaDetalle extends Component {
     constructor(props) {

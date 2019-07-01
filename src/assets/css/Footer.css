@@ -6,6 +6,12 @@
     padding: 5px;
     margin-bottom: 10px;
     flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+
+}
+.bateria-detalle .footer {
+    /*bottom: 0;*/
 }
 
 .footer .datos {
