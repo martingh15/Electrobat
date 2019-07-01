@@ -42,10 +42,10 @@ class Baterias extends Component {
                     <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
                 </div>
                 <div className="subseccionBaterias">
-                    <p className="item">
-                        Ofrecemos diferentes servicios automotores en general. <br/>
-                        Comercializamos baterías para autos, camiones, utilitarios, tractores, <br/>
-                        cortadoras de césped, náutica, autoelevadores, grupos electrógenos, U.P.S,<br/>
+                    <p className="textoBaterias">
+                        Ofrecemos diferentes servicios automotores en general.
+                        Comercializamos baterías para autos, camiones, utilitarios, tractores,
+                        cortadoras de césped, náutica, autoelevadores, grupos electrógenos, U.P.S,
                         subestaciones, centrales telefónicas, alarmas, autos eléctricos (tipo golf).
                     </p>
                 </div>
