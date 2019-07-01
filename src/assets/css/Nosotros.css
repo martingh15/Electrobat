@@ -1,6 +1,9 @@
 .nosotros .imagenNosotros {
     background-image: url("../img/secciones/nosotros.jpg") ;
 }
+
+/*SUBSECCION NOSOTROS*/
+
 .nosotros .subseccionNosotros {
     background-color: #061833;
     display: flex;
@@ -32,11 +35,42 @@
     background-color: #082259;
 }
 
-.nosotros .subseccionNosotros p {
+.nosotros .subseccionNosotros .textoNosotros {
     text-align: center;
     color: white;
-    padding-bottom: 40px;
+    padding: 0 25% 20px 25%;
 }
+
+/*SUBSECCION NOSOTROS RESPONSIVE*/
+
+@media (max-width: 768px) {
+    .nosotros .subseccionNosotros .iconos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .nosotros .subseccionNosotros .iconos img {
+        width: 35px;
+        height: 25px;
+    }
+
+    .nosotros .subseccionNosotros .iconos .itemIco {
+        padding: 15px;
+    }
+
+    .nosotros .subseccionNosotros .textoNosotros {
+        font-size: 13px;
+        padding: 0 15% 20px 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .nosotros .subseccionNosotros .textoNosotros {
+        font-size: 12px;
+        padding: 0 10% 20px 10%;
+    }
+}
+
+/*CAROUSEL*/
 
 .nosotros .carousel {
     margin-top: 10px;
@@ -70,6 +104,8 @@
     transition: all 200ms ease-in;
     transform: scale(1.2);
 }
+
+/*CAROUSEL RESPONSIVE*/
 
 @media (max-width: 2560px) {
     .nosotros .carousel .flecha {
@@ -115,7 +151,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .nosotros .carousel .flecha {
         bottom: 70px;
         width: 40px;

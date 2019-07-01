@@ -84,14 +84,14 @@ class Nosotros extends Component {
                             <img src={contacto} onClick={() => history.push("/contacto")} alt="contacto"/>
                         </div>
                     </div>
-                    <p className="item">
-                        Somos una empresa dedicada al abastecimiento, prestación de <br/> servicios y ventas de
+                    <p className="textoNosotros">
+                        Somos una empresa dedicada al abastecimiento, prestación de servicios y ventas de
                         baterias
-                        con 20 años de trayectoria en el rubro. <br/> Apuntamos a dar respuestas, de acuerdo a las
-                        necesidades para cada <br/> exigencia concreta, colocando recursos frente a cada
+                        con 20 años de trayectoria en el rubro. Apuntamos a dar respuestas, de acuerdo a las
+                        necesidades para cada exigencia concreta, colocando recursos frente a cada
                         requerimiento.
-                        <br/> La empresa está integrada por personas con trayectoria, idoneidad <br/>
-                        y experiencia, sumada a una permanente capacitación que afianza sus <br/>
+                        La empresa está integrada por personas con trayectoria, idoneidad
+                        y experiencia, sumada a una permanente capacitación que afianza sus
                         niveles de liderazgo y competitividad.
                     </p>
                 </div>

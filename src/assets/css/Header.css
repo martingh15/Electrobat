@@ -62,6 +62,9 @@
     .header .links .boton-responsive {
         display: block;
     }
+    .header .media .itemMedia {
+        margin-right: 40px;
+    }
 }
 
 @media (min-width: 769px) {
