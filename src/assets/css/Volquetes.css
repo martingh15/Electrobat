@@ -16,10 +16,10 @@
 }
 
 .volquetes .dosImagenes .item {
-    width: 50%;
+    width: 49%;
 }
 .volquetes .dosImagenes .item:first-child {
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 .volquetes .alquilerVolquetes {
@@ -66,4 +66,76 @@
     margin: 0 auto;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .volquetes .dosImagenes {
+        flex-wrap: wrap;
+    }
+    .volquetes .dosImagenes img {
+        min-width: 90%;
+        margin: 0 auto;
+    }
+    .volquetes .dosImagenes .item:first-child {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .volquetes .alquilerVolquetes .alquiler {
+        font-size: 40px;
+    }
+
+    .volquetes .alquilerVolquetes .lineaGruesa {
+        position: relative;
+        top:-5px;
+    }
+
+    .volquetes .alquilerVolquetes .rosario {
+        font-size: 25px;
+    }
+
+    .volquetes .alquilerVolquetes .mediano {
+        font-size: 15px;
+    }
+
+    .volquetes .alquilerVolquetes .contactar {
+        padding: 7px 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .volquetes .dosImagenes img {
+        min-width: 95%;
+    }
+    .volquetes .alquilerVolquetes {
+        padding: 30px;
+    }
+    .volquetes .alquilerVolquetes .alquiler {
+        font-size: 28px;
+    }
+
+    .volquetes .alquilerVolquetes .lineaGruesa {
+        position: relative;
+        top: 0px;
+    }
+
+    .volquetes .alquilerVolquetes .rosario {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .volquetes .alquilerVolquetes .mediano {
+        font-size: 14px;
+    }
+
+    .volquetes .alquilerVolquetes br {
+        display: none;
+    }
+
+    .volquetes .alquilerVolquetes .contactar {
+        padding: 7px 20px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
 }
