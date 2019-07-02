@@ -18,13 +18,14 @@ class ImagenModal extends Component {
                     dialogClassName="modal-90w"
                     aria-labelledby="example-custom-modal-styling-title"
                 >
-                    <img src={cruz} onClick={this.onHide} className="cruz" alt="cruz"/>
                     <Modal.Body>
-                        <img className="imagenModal" src={process.env.PUBLIC_URL + this.props.imagen}/>
+                        <img onClick={() => this.onHide()} className="imagenModal"
+                             src={process.env.PUBLIC_URL + this.props.imagen}/>
                     </Modal.Body>
                 </Modal>
             </div>
         )
     }
 }
+
 export default ImagenModal;

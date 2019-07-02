@@ -16,6 +16,8 @@ import telefono from "../../assets/img/call-answer.png";
 import email from "../../assets/img/envelope.png";
 import clock from "../../assets/img/clock.png";
 import creditCards from "../../assets/img/credit-cards-payment.png";
+import ImagenModal from "../ImagenModal";
+import MensajeEmail from "../MensajeEmail";
 
 class Contacto extends Component {
     constructor(props) {
@@ -29,6 +31,8 @@ class Contacto extends Component {
                 telefono: '',
                 asunto: '',
             },
+            show: false,
+            correcto: false,
         };
     }
 
@@ -75,18 +79,32 @@ class Contacto extends Component {
             type: "POST",
             url: "sendMail.php",
             data: datos,
-            success: function (e) {
-                console.log('Mensaje enviado');
+            success: () => {
+                this.setState({
+                    show: true,
+                    correcto: true,
+                });
             },
-            error: function (a) {
-                console.log('Hubo un error!');
+            error: () => {
+                this.setState({
+                    show: true,
+                    correcto: false,
+                });
             }
         });
+    }
+
+    onHide() {
+        this.setState({show: false});
     }
 
     render() {
         return (
             <div className="contacto">
+                <MensajeEmail
+                    key="modal-2"
+                    onHide={this.onHide.bind(this)}
+                    show={this.state.show} correcto={this.state.correcto}/>
                 <div className="imagenContacto imagenFondo">
                     <Header/>
                     <p className="textoFondo">CONTACTO</p>

@@ -8,6 +8,18 @@
     padding: 10px;
     border: 1px solid black;
     background-color: white;
+    background-image: url("../img/multiply.png");
+    background-repeat: no-repeat;
+    background-position: 98% 2%;
+    background-size: 20px 20px;
+}
+
+.contenedorModalImagen {
+
+    z-index: 110;
+    position: relative;
+
+
 }
 
 .modal-dialog {
@@ -48,10 +60,13 @@
 
 @media (max-width: 600px) {
     .imagenModal {
-        max-width: 250px;
+        max-width: 350px;
+        margin: 0 auto !important;
+        margin-top: 120px !important;
     }
 
-    .modal-dialog {
-        max-width: 300px !important;
+    .cruz {
+        right: 60px;
+        margin-top: 120px !important;
     }
 }
