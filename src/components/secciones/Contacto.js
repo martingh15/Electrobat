@@ -18,6 +18,7 @@ import clock from "../../assets/img/clock.png";
 import creditCards from "../../assets/img/credit-cards-payment.png";
 import ImagenModal from "../ImagenModal";
 import MensajeEmail from "../MensajeEmail";
+import Scrollchor from "react-scrollchor";
 
 class Contacto extends Component {
     constructor(props) {
@@ -108,9 +109,13 @@ class Contacto extends Component {
                 <div className="imagenContacto imagenFondo">
                     <Header/>
                     <p className="textoFondo">CONTACTO</p>
-                    <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    <Scrollchor animate={{duration: 500, offset: 0}}
+                                disableHistory={true}
+                                to="#scroll-contacto">
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    </Scrollchor>
                 </div>
-                <div className="contenedorColumnas">
+                <div className="contenedorColumnas" id="scroll-contacto">
                     <div className="columnaDatos">
                         <p className="textocontacto">CONTACTO</p>
                         <div className="lineaGruesa"></div>

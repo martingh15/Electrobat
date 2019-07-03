@@ -9,6 +9,7 @@ import "../assets/css/Header.css";
 //Images
 import facebook from "../assets/img/facebook(64-FFFA21).png";
 import instagram from "../assets/img/instagram(64-FFFA21).png";
+import logoElectrobat from "../assets/img/logoElectrobat.png";
 
 class Header extends Component {
     constructor(props) {
@@ -125,7 +126,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="navegador">
-                    <p>Electrobat</p>
+                    <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo"/>
                     <div className="links">
                         <p id="h1-nosotros" className="h-nosotros"
                            onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>

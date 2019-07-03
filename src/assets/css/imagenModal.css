@@ -10,16 +10,8 @@
     background-color: white;
     background-image: url("../img/multiply.png");
     background-repeat: no-repeat;
-    background-position: 98% 2%;
+    background-position: 95% 3%;
     background-size: 20px 20px;
-}
-
-.contenedorModalImagen {
-
-    z-index: 110;
-    position: relative;
-
-
 }
 
 .modal-dialog {
@@ -31,26 +23,9 @@
     border: none !important;
 }
 
-.cruz {
-    position: absolute;
-    right: 85px;
-    top: -15px;
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 100%;
-    border: 1px solid white;
-}
-
 @media (max-width: 800px) {
     .imagenModal {
         max-width: 450px;
-    }
-
-    .cruz {
-        right: 8px;
     }
 
     .modal-dialog {
@@ -64,9 +39,13 @@
         margin: 0 auto !important;
         margin-top: 120px !important;
     }
+}
 
-    .cruz {
-        right: 60px;
+@media (max-width: 600px) {
+    .imagenModal {
+        max-width: 350px;
+        margin: 0 auto !important;
         margin-top: 120px !important;
+        padding: 20px;
     }
 }

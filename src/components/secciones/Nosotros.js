@@ -26,6 +26,7 @@ import flechaDer from "../../assets/img/right-arrow.png";
 import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
 import history from "../../history";
+import Scrollchor from "react-scrollchor";
 
 class Nosotros extends Component {
     constructor(props) {
@@ -70,9 +71,13 @@ class Nosotros extends Component {
                 <div className="imagenNosotros imagenFondo">
                     <Header/>
                     <p className="textoFondo">NOSOTROS</p>
-                    <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    <Scrollchor animate={{duration: 500, offset: 0}}
+                                disableHistory={true}
+                                to="#scroll-nosotros">
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    </Scrollchor>
                 </div>
-                <div className="subseccionNosotros">
+                <div className="subseccionNosotros" id="scroll-nosotros">
                     <div className="item iconos">
                         <div className="itemIco">
                             <img src={bateriaMini}
@@ -108,16 +113,23 @@ class Nosotros extends Component {
                                  autoplay
                                  dots={false}
                                  autoplayTimeout={3000}>
-                        <div className="item"><img src={slider1} onClick={(e) => this.resizeImage(e, slider1)} alt="slider1"/></div>
-                        <div className="item"><img src={slider2} onClick={(e) => this.resizeImage(e, slider2)} alt="slider2"/></div>
-                        <div className="item"><img src={slider3} onClick={(e) => this.resizeImage(e, slider3)} alt="slider3"/></div>
-                        <div className="item"><img src={slider4} onClick={(e) => this.resizeImage(e, slider4)} alt="slider4"/></div>
-                        <div className="item"><img src={slider5} onClick={(e) => this.resizeImage(e, slider5)} alt="slider5"/></div>
-                        <div className="item"><img src={slider6} onClick={(e) => this.resizeImage(e, slider6)} alt="slider6"/></div>
+                        <div className="item"><img src={slider1} onClick={(e) => this.resizeImage(e, slider1)}
+                                                   alt="slider1"/></div>
+                        <div className="item"><img src={slider2} onClick={(e) => this.resizeImage(e, slider2)}
+                                                   alt="slider2"/></div>
+                        <div className="item"><img src={slider3} onClick={(e) => this.resizeImage(e, slider3)}
+                                                   alt="slider3"/></div>
+                        <div className="item"><img src={slider4} onClick={(e) => this.resizeImage(e, slider4)}
+                                                   alt="slider4"/></div>
+                        <div className="item"><img src={slider5} onClick={(e) => this.resizeImage(e, slider5)}
+                                                   alt="slider5"/></div>
+                        <div className="item"><img src={slider6} onClick={(e) => this.resizeImage(e, slider6)}
+                                                   alt="slider6"/></div>
                     </OwlCarousel>
                     <div>
                         <img className="flechaIzq flecha" onClick={() => this.prev()} src={flechaIzq} alt="flecha-izq"/>
-                        <img className="flechaDer flecha" onClick={() => this.next()} src={flechaDer} alt="flecha-next"/>
+                        <img className="flechaDer flecha" onClick={() => this.next()} src={flechaDer}
+                             alt="flecha-next"/>
                     </div>
                 </div>
                 <Footer/>

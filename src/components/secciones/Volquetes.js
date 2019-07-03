@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
+import history from "../../history";
 
 //CSS
 import "../../assets/css/Volquetes.css";
@@ -6,6 +8,8 @@ import "../../assets/css/Volquetes.css";
 //Components
 import Header from "../Header";
 import Footer from "../../components/Footer";
+import Scrollchor from "react-scrollchor";
+
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -14,8 +18,6 @@ import camion from "../../assets/img/volquetes/camion.jpg";
 
 //Actions
 import {consultarVolquete} from "../../actions/Actions";
-import {connect} from "react-redux";
-import history from "../../history";
 
 class Volquetes extends Component {
     constructor(props) {
@@ -38,9 +40,13 @@ class Volquetes extends Component {
                 <div className="imagenVolquetes imagenFondo">
                     <Header/>
                     <p className="textoFondo">VOLQUETES</p>
-                    <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    <Scrollchor animate={{duration: 500, offset: 0}}
+                                disableHistory={true}
+                                to="#scroll-volquetes">
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    </Scrollchor>
                 </div>
-                <div className="dosImagenes">
+                <div className="dosImagenes" id="scroll-volquetes">
                     <img className="item" src={volquete} alt="volquete"/>
                     <img className="item" src={camion} alt="camion"/>
                 </div>

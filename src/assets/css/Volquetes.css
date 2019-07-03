@@ -17,6 +17,7 @@
 
 .volquetes .dosImagenes .item {
     width: 49%;
+    height: 100%;
 }
 .volquetes .dosImagenes .item:first-child {
     margin-right: 2%;
