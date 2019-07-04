@@ -13,6 +13,7 @@
     color: white;
 }
 
+/*MARCAS*/
 .baterias .logos {
     display: flex;
     flex-direction: row;
@@ -32,6 +33,14 @@
 
 .baterias .logos img:first-child {
     max-height: 30px;
+}
+
+
+/* BATERIAS */
+.baterias .innerText {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 2px 0 0 #061833, -2px 0 0 #061833, 0 2px 0 #061833, 0 -2px 0 #061833, 1px 1px #061833, -1px -1px 0 #061833, 1px -1px 0 #061833, -1px 1px 0 #061833;
 }
 
 .baterias .galeriaBaterias {
@@ -68,7 +77,6 @@
 }
 
 .baterias .galeriaBaterias span {
-    background: rgba(240, 255, 0, 0.5);
     display: none;
     height: 250px;
     width: 250px;
@@ -77,18 +85,35 @@
     margin-bottom: -250px;
 }
 
+.baterias .galeriaBaterias .cajaBateria span.hoverImg {
+    display: none;
+    background: rgba(240, 255, 0, 0);
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
 .baterias .galeriaBaterias .cajaBateria:hover span.hoverImg {
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
-}
+    display: flex;
+    background: rgba(240, 255, 0, 0.5);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    zoom: 1;
+    filter: alpha(opacity=100);
+    opacity: 0.5;
 
-.baterias .galeriaBaterias .cajaBateria:hover span.hoverImg p {
-    /*padding-top: 30px !important;*/
 }
-
 
 .baterias .subseccionBaterias .textoBaterias {
     text-align: center;

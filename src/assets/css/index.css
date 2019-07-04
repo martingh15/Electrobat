@@ -5,29 +5,30 @@
     background-size: cover;
     background-color: #030015;
     height: 100vh;
+    min-height: 490px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 .textoFondo {
-    font-size: 120px;
-    margin: 100px 0 100px 0;
+    margin-top: 150px !important;
     text-align: center;
     color: white;
     font-family: DINCondensedBold;
+    margin: 0 auto;
+    display: block;
 }
 
-.subTitulo {
-    height: 30px;
+.chiquito {
     font-size: 50px;
-    left: -100px;
-    position: relative;
+    display:block;
+    height: 30px;
+    text-align: left;
 }
 
-.volquetes .subTitulo {
-    left: -110px !important;
+.grandote {
+    font-size: 120px;
 }
 
 .centrar {
@@ -37,40 +38,37 @@
 
 .angle-arrow-down {
     width: 40px;
-    margin-bottom: 100px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
     bottom: 0;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
     .textoFondo {
-        font-size: 90px;
-        margin: 225px 0 20px 0;
+        margin-top: 190px !important;
     }
-    .subTitulo {
-        margin-top: 15px;
-        height: 25px;
-        font-size: 40px;
-        left: -73px;
-        position: relative;
+    .contacto .textoFondo, .nosotros .textoFondo {
+        margin-top: 130px !important;
+    }
+    .chiquito {
+        font-size: 35px;
+        height: 30px;
     }
 
-    .volquetes .subTitulo {
-        left: -78px !important;
+    .grandote {
+        font-size: 80px;
     }
 }
 
 @media (max-width: 320px) {
-    .textoFondo {
-        font-size: 60px;;
-    }
-    .subTitulo {
-        height: 15px;
+    .chiquito {
         font-size: 25px;
-        left: -50px;
-        position: relative;
+        height: 30px;
     }
 
-    .volquetes .subTitulo {
-        left: -55px !important;
+    .grandote {
+        font-size: 60px;
     }
 }

@@ -109,9 +109,12 @@ class Contacto extends Component {
                 <div className="imagenContacto imagenFondo">
                     <Header/>
                     <div className="item"></div>
-                    <p className="textoFondo">CONTACTO</p>
+                    <div className="item" style={{display: "flex", flexDirection: "column"}}>
+                        <p className="textoFondo"><span className="chiquito"></span><span className="grandote">CONTACTO</span></p>
+                    </div>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
+                                className="item"
                                 to="#scroll-contacto">
                         <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
                     </Scrollchor>

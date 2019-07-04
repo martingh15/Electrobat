@@ -123,7 +123,7 @@ class Header extends Component {
         const {collapse} = this.state;
 
         return (
-            <div className="header">
+            <div className="header item">
                 <div className="navegador">
                     <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo"/>
                     <div className="links">
@@ -153,7 +153,9 @@ class Header extends Component {
                        onClick={() => this.activarLink("contacto")}>CONTACTO</p>
                 </div>
                 <div className="media">
-                    <img className="itemMedia" src={facebook} alt="facebook"/>
+                    <a href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank">
+                        <img className="itemMedia" src={facebook} alt="facebook"/>
+                    </a>
                     <a href="https://www.instagram.com/electrobatrosario/?hl=es-la">
                         <img className="itemMedia" src={instagram} alt="instagram" target="_blank"/>
                     </a>

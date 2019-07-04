@@ -70,7 +70,9 @@ class Nosotros extends Component {
                 <div className="imagenNosotros imagenFondo">
                     <Header/>
                     <div className="item"></div>
-                    <p className="textoFondo item">NOSOTROS</p>
+                    <div className="item" style={{display: "flex", flexDirection: "column"}}>
+                        <p className="textoFondo"><span className="chiquito"></span><span className="grandote">NOSOTROS</span></p>
+                    </div>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
                                 to="#scroll-nosotros">
