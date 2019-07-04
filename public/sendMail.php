@@ -30,16 +30,16 @@ try {
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
     $mail->SMTPDebug = false;
-    $mail->Host = "mail.carpasrosario.com"; // Poner SMTP a utilizar (si lo desconocen chequear el panel de administración del hosting donde está subida la web)
-    $mail->Username = "martin@carpasrosario.com";
-    $mail->Password = "soyleproso"; // poner contraseña del correo info@sensortecnologia.com
-    $mail->Port = 587; // Cambiar Puerto a utilizar si fuese necesario
-    $mail->Timeout = 60;
+    $mail->Host = "mail.electrobatrosario.com"; // Poner SMTP a utilizar (si lo desconocen chequear el panel de administración del hosting donde está subida la web)
+    $mail->Username = "martin@electrobatrosario.com";
+    $mail->Password = "k!E;e3Zw=sC;"; // poner contraseña del correo info@sensortecnologia.com
+    $mail->Port = 25; // Cambiar Puerto a utilizar si fuese necesario
+    $mail->Timeout = 120;
     $mail->SMTPKeepAlive = true;
-    $mail->From = "electrobat.baterias@gmail.com";
+    $mail->From = $email;
     $mail->FromName = "Electrobat";
     $mail->CharSet = "utf-8";
-    $mail->AddAddress($email);
+    $mail->AddAddress("electrobat.baterias@gmail.com");
     $mail->IsHTML(true);
     $mail->Subject = "Electrobat Web - " . $asunto;
     $mail->Body = $htmlContent;
