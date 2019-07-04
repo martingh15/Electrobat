@@ -6,11 +6,10 @@ import history from "../history";
 import "../assets/css/Footer.css";
 
 //Images
-import ubicacion from "../assets/img/location-pointer.png";
-import telefono from "../assets/img/call-answer.png";
-import email from "../assets/img/envelope.png";
+import ubicacion from "../assets/img/ubicacionF.png";
+import telefono from "../assets/img/telefonoF.png";
+import email from "../assets/img/emailF.png";
 import whatsap from "../assets/img/whatsapp.png";
-import whatsappVerde from "../assets/img/whatsapp-verde.png";
 
 class Footer extends Component {
     constructor(props) {

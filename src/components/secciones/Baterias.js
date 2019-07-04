@@ -39,6 +39,7 @@ class Baterias extends Component {
             <div className="baterias">
                 <div className="imagenBaterias imagenFondo">
                     <Header/>
+                    <div className="item"></div>
                     <p className="textoFondo">BATERIAS</p>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}

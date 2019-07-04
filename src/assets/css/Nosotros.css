@@ -1,5 +1,5 @@
 .nosotros .imagenNosotros {
-    background-image: url("../img/secciones/nosotros.jpg") ;
+    background-image: url("../img/secciones/nosotros.jpg");
 }
 
 /*SUBSECCION NOSOTROS*/
@@ -8,10 +8,7 @@
     background-color: #061833;
     display: flex;
     flex-direction: column;
-}
-
-.nosotros .subseccionNosotros .itemIco {
-    cursor: pointer;
+    justify-content: center;
 }
 
 .nosotros .subseccionNosotros .iconos {
@@ -22,17 +19,28 @@
     padding-bottom: 30px;
 }
 
-.nosotros .subseccionNosotros .iconos img {
-    width: 45px;
-    height: 35px;
+.nosotros .subseccionNosotros .iconos .itemIco {
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.nosotros .subseccionNosotros .iconos .itemIco {
+.nosotros .subseccionNosotros .iconos img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
     border: none;
     border-radius: 100%;
-    padding: 20px;
-    margin: 0 10px 0 10px;
     background-color: #082259;
+}
+
+.nosotros .subseccionNosotros .iconos .itemIco p {
+    color: yellow;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .nosotros .subseccionNosotros .textoNosotros {
@@ -45,12 +53,11 @@
 
 @media (max-width: 768px) {
     .nosotros .subseccionNosotros .iconos {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 0;
     }
-    .nosotros .subseccionNosotros .iconos img {
-        width: 35px;
-        height: 25px;
+
+    .nosotros .subseccionNosotros .iconos .itemIco p {
+        font-size: 12px;
     }
 
     .nosotros .subseccionNosotros .iconos .itemIco {
@@ -91,7 +98,7 @@
 }
 
 .nosotros .carousel .flechaDer {
-    right:0;
+    right: 0;
 }
 
 .nosotros .carousel .flechaIzq:hover, .nosotros .carousel .flechaDer:hover {

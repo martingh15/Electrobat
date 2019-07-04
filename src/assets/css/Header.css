@@ -1,10 +1,12 @@
 /*NAVEGADOR*/
 .header {
     height: 200px;
+    position: absolute;
+    width: 100%;
 }
 
 .header .logoElectrobat {
-    max-width: 150px;
+    max-width: 250px;
     margin-left: 50px;
     cursor: pointer;
 }

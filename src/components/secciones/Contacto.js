@@ -108,6 +108,7 @@ class Contacto extends Component {
                     show={this.state.show} correcto={this.state.correcto}/>
                 <div className="imagenContacto imagenFondo">
                     <Header/>
+                    <div className="item"></div>
                     <p className="textoFondo">CONTACTO</p>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}

@@ -39,6 +39,7 @@ class Volquetes extends Component {
             <div className="volquetes">
                 <div className="imagenVolquetes imagenFondo">
                     <Header/>
+                    <div className="item"></div>
                     <p className="textoFondo">VOLQUETES</p>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}

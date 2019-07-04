@@ -4,33 +4,41 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #030015;
-    height: fit-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .textoFondo {
-    font-size: 80px;
-    margin: 50px 0 100px 0;
+    font-size: 120px;
+    margin: 100px 0 100px 0;
     text-align: center;
     color: white;
     font-family: DINCondensedBold;
+    ;
+}
+.centrar {
+    display: flex;
+    justify-content: center;
 }
 
 .angle-arrow-down {
-    margin: 0 auto;
-    display: block;
     width: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {
     .textoFondo {
-        font-size: 50px;
-        margin: 40px 0 20px 0;
+        font-size: 90px;
+        margin: 225px 0 20px 0;
     }
 }
 
 @media (max-width: 320px) {
     .textoFondo {
-        font-size: 40px;
+        font-size: 60px;;
     }
 }

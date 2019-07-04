@@ -10,9 +10,8 @@ import Header from "../Header";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
-import bateriaMini from "../../assets/img/bateriamini.png";
-import flete from "../../assets/img/fletes.png";
-import contacto from "../../assets/img/contacto.png";
+import bateriaMini from "../../assets/img/bateriaMini.png";
+import volqueteMini from "../../assets/img/volqueteMini.png";
 import slider1 from "../../assets/img/sliders/slider1.jpg";
 import slider2 from "../../assets/img/sliders/slider2.jpg";
 import slider3 from "../../assets/img/sliders/slider3.jpg";
@@ -70,7 +69,8 @@ class Nosotros extends Component {
                     show={this.state.show} imagen={this.state.imagen}/>
                 <div className="imagenNosotros imagenFondo">
                     <Header/>
-                    <p className="textoFondo">NOSOTROS</p>
+                    <div className="item"></div>
+                    <p className="textoFondo item">NOSOTROS</p>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
                                 to="#scroll-nosotros">
@@ -83,16 +83,13 @@ class Nosotros extends Component {
                             <img src={bateriaMini}
                                  onClick={() => history.push("/baterias")}
                                  alt="bateria"/>
+                            <p>VENTA DE BATERIAS</p>
                         </div>
                         <div className="itemIco">
-                            <img src={flete}
+                            <img src={volqueteMini}
                                  onClick={() => history.push("/volquetes")}
-                                 alt="flete"/>
-                        </div>
-                        <div className="itemIco">
-                            <img src={contacto}
-                                 onClick={() => history.push("/contacto")}
-                                 alt="contacto"/>
+                                 alt="volquete"/>
+                            <p>ALQUILER DE VOLQUETES</p>
                         </div>
                     </div>
                     <p className="textoNosotros">
