@@ -1,5 +1,5 @@
 .bateria-detalle .imagenBateriaDetalle {
-    background-image: url("../img/secciones/baterias.jpg");
+    background-image: url("../img/secciones/bateria-detalle.jpg");
     height: 280px;
 }
 
@@ -61,6 +61,7 @@
     background-color: yellow;
     margin: 0 auto;
     border-radius: 5px;
+    border: 2px solid #061833;
     cursor: pointer;
 }
 
@@ -69,12 +70,15 @@
     .bateria-detalle .contenedorImagen .cuadradoImagen {
         top: -60px;
     }
+
     .bateria-detalle .detallesBateria p, .bateria-detalle .detallesBateria > b {
         font-size: 18px;
     }
-    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria  {
+
+    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
         width: 500px;
     }
+
     .bateria-detalle .detallesBateria {
         margin-right: 60px;
     }
@@ -84,13 +88,12 @@
     .bateria-detalle .contenedorImagen .cuadradoImagen {
         top: -40px;
     }
-    .bateria-detalle .detallesBateria p, .bateria-detalle .detallesBateria > b {
-        font-size: 15px;
-    }
+
     .bateria-detalle .contenedorBateria .contenedorImagen {
         height: 350px;
     }
-    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria  {
+
+    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
         width: 300px;
     }
 }
@@ -99,15 +102,15 @@
     .bateria-detalle .contenedorImagen .cuadradoImagen {
         top: -20px;
     }
+
     .bateria-detalle .detallesBateria {
         margin-top: 20px;
     }
-    .bateria-detalle .detallesBateria p, .bateria-detalle .detallesBateria > b {
-        font-size: 10px;
-    }
-    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria  {
+
+    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
         width: 200px;
     }
+
     .bateria-detalle .contenedorImagen .lupita {
         width: 30px;
         margin: 0 10px 10px 0;
@@ -120,24 +123,25 @@
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     .bateria-detalle .contenedorBateria .contenedorImagen {
         height: fit-content;
     }
+
     .bateria-detalle .contenedorImagen .cuadradoImagen {
         top: -30px;
     }
+
     .bateria-detalle .contenedorBateria {
         margin-left: 0;
     }
 }
 
 @media (max-width: 350px) {
-    .bateria-detalle .detallesBateria p, .bateria-detalle .detallesBateria > b {
-        font-size: 9px;
-    }
-    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria  {
+    .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
         width: 150px;
     }
+
     .bateria-detalle .contenedorImagen .lupita {
         width: 20px;
         margin: 0 10px 10px 0;

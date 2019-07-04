@@ -156,8 +156,8 @@ class Header extends Component {
                     <a href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank">
                         <img className="itemMedia" src={facebook} alt="facebook"/>
                     </a>
-                    <a href="https://www.instagram.com/electrobatrosario/?hl=es-la">
-                        <img className="itemMedia" src={instagram} alt="instagram" target="_blank"/>
+                    <a href="https://m.instagram.com/electrobatrosario" target="_blank">
+                        <img className="itemMedia" src={instagram} alt="instagram"/>
                     </a>
                 </div>
             </div>

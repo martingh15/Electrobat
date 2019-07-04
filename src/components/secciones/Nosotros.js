@@ -110,6 +110,25 @@ class Nosotros extends Component {
                                  items={4}
                                  margin={10}
                                  autoplay
+                                 responsive={
+                                     {
+                                         0: {
+                                             items: 2
+                                         },
+                                         // breakpoint from 480 up
+                                         480: {
+                                             items: 2
+                                         },
+                                         // breakpoint from 768 up
+                                         768: {
+                                             items: 3
+                                         },
+                                         // breakpoint from 768 up
+                                         991: {
+                                             items: 4
+                                         }
+                                     }
+                                 }
                                  dots={false}
                                  autoplayTimeout={3000}>
                         <div className="item"><img src={slider1} onClick={(e) => this.resizeImage(e, slider1)}

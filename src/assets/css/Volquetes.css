@@ -67,6 +67,7 @@
     margin: 0 auto;
     border-radius: 5px;
     cursor: pointer;
+    border: 2px solid #061833;
 }
 
 @media (max-width: 768px) {
@@ -113,7 +114,7 @@
         padding: 30px;
     }
     .volquetes .alquilerVolquetes .alquiler {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .volquetes .alquilerVolquetes .lineaGruesa {
@@ -122,12 +123,12 @@
     }
 
     .volquetes .alquilerVolquetes .rosario {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 5px;
     }
 
     .volquetes .alquilerVolquetes .mediano {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .volquetes .alquilerVolquetes br {

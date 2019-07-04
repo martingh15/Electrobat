@@ -5,10 +5,14 @@
     background-size: cover;
     background-color: #030015;
     height: 100vh;
-    min-height: 490px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.bateria-detalle .imagenFondo {
+    min-height: 150px;
 }
 
 .textoFondo {
@@ -45,13 +49,9 @@
     margin-bottom: 30px;
 }
 
+
+/*RESPONSIVE WIDTH*/
 @media (max-width: 768px) {
-    .textoFondo {
-        margin-top: 190px !important;
-    }
-    .contacto .textoFondo, .nosotros .textoFondo {
-        margin-top: 130px !important;
-    }
     .chiquito {
         font-size: 35px;
         height: 30px;
@@ -70,5 +70,15 @@
 
     .grandote {
         font-size: 60px;
+    }
+}
+
+/*RESPONSIVE HEIGHT*/
+@media (min-width: 524px) {
+    .textoFondo {
+        margin-top: 250px !important;
+    }
+    .contacto .textoFondo, .nosotros .textoFondo {
+        margin-top: 200px !important;
     }
 }

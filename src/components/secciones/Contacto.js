@@ -12,11 +12,11 @@ import Header from "../Header";
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
 import ubicacion from "../../assets/img/location-pointer.png";
+import ubicacionF from "../../assets/img/ubicacionF.png";
 import telefono from "../../assets/img/call-answer.png";
 import email from "../../assets/img/envelope.png";
 import clock from "../../assets/img/clock.png";
 import creditCards from "../../assets/img/credit-cards-payment.png";
-import ImagenModal from "../ImagenModal";
 import MensajeEmail from "../MensajeEmail";
 import Scrollchor from "react-scrollchor";
 
