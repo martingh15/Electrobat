@@ -25,7 +25,7 @@ export function receiveBaterias() {
 
     var bateria3 = {};
     bateria3.id = 3;
-    bateria3.voltios = "12 V. 100 AH.";
+    bateria3.voltios = "12 V. 100AH. Modelo Caterpillar";
     bateria3.descripcion = "Libre de mantenimiento para camiones y tractores";
     bateria3.largo = "327mm";
     bateria3.ancho = "170mm";
@@ -35,7 +35,7 @@ export function receiveBaterias() {
 
     var bateria4 = {};
     bateria4.id = 4;
-    bateria4.voltios = "12 V. 100 AH.";
+    bateria4.voltios = "12 V. 100 AH. Baja Modelo Sprinter";
     bateria4.descripcion = "Libre de mantenimiento para camionetas Diesel";
     bateria4.largo = "370mm";
     bateria4.ancho = "176mm";
@@ -62,6 +62,26 @@ export function receiveBaterias() {
     bateria6.alto = "204mm";
     bateria6.imagen  = "bateria6.png";
     baterias.push(bateria6);
+
+    var bateria7 = {};
+    bateria7.id = 7;
+    bateria7.voltios = "12 V. 45 AH. Modelo Ford K";
+    bateria7.descripcion = "";
+    bateria7.largo = "210mm";
+    bateria7.ancho = "175mm";
+    bateria7.alto = "178mm";
+    bateria7.imagen  = "bateria7.png";
+    baterias.push(bateria7);
+
+    var bateria8 = {};
+    bateria8.id = 8;
+    bateria8.voltios = "12 V. 85 AH. Modelo Ranger";
+    bateria8.descripcion = "";
+    bateria8.largo = "280mm";
+    bateria8.ancho = "175mm";
+    bateria8.alto = "190mm";
+    bateria8.imagen  = "bateria8.png";
+    baterias.push(bateria8);
 
     return {
         type: RECEIVE_BATERIAS,

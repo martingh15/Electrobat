@@ -17,8 +17,19 @@
     text-align: center;
     color: white;
     font-family: DINCondensedBold;
-    ;
 }
+
+.subTitulo {
+    height: 30px;
+    font-size: 50px;
+    left: -100px;
+    position: relative;
+}
+
+.volquetes .subTitulo {
+    left: -110px !important;
+}
+
 .centrar {
     display: flex;
     justify-content: center;
@@ -35,10 +46,31 @@
         font-size: 90px;
         margin: 225px 0 20px 0;
     }
+    .subTitulo {
+        margin-top: 15px;
+        height: 25px;
+        font-size: 40px;
+        left: -73px;
+        position: relative;
+    }
+
+    .volquetes .subTitulo {
+        left: -78px !important;
+    }
 }
 
 @media (max-width: 320px) {
     .textoFondo {
         font-size: 60px;;
+    }
+    .subTitulo {
+        height: 15px;
+        font-size: 25px;
+        left: -50px;
+        position: relative;
+    }
+
+    .volquetes .subTitulo {
+        left: -55px !important;
     }
 }

@@ -38,6 +38,7 @@ class BateriaDetalle extends Component {
             if (this.props.match.params.idBateria) {
                 this.props.baterias.allIds.forEach((idBateria) => {
                     var bateria = this.props.baterias.byId.baterias[idBateria - 1];
+                    console.log(bateria);
                     if (bateria && bateria.id == this.props.match.params.idBateria) {
                         this.setState({bateria: bateria});
                     }

@@ -22,6 +22,8 @@ import bateria3 from "../../assets/img/baterias/bateria3.png";
 import bateria4 from "../../assets/img/baterias/bateria4.png";
 import bateria5 from "../../assets/img/baterias/bateria5.png";
 import bateria6 from "../../assets/img/baterias/bateria6.png";
+import bateria7 from "../../assets/img/baterias/bateria7.png";
+import bateria8 from "../../assets/img/baterias/bateria8.png";
 import history from "../../history";
 
 class Baterias extends Component {
@@ -40,7 +42,10 @@ class Baterias extends Component {
                 <div className="imagenBaterias imagenFondo">
                     <Header/>
                     <div className="item"></div>
-                    <p className="textoFondo">BATERIAS</p>
+                    <p className="textoFondo" style={{display: "flex", flexDirection: "column"}}>
+                        <span className="subTitulo">VENTA DE</span>
+                        <span
+                            className="item">BATERIAS</span></p>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
                                 to="#scroll-baterias">
@@ -49,7 +54,7 @@ class Baterias extends Component {
                 </div>
                 <div className="subseccionBaterias" id="scroll-baterias">
                     <p className="textoBaterias">
-                        Ofrecemos diferentes servicios automotores en general.
+                        Ofrecemos diferentes <span style={{color: "yellow"}}>servicios automotores</span> en general.
                         Comercializamos baterías para autos, camiones, utilitarios, tractores,
                         cortadoras de césped, náutica, autoelevadores, grupos electrógenos, U.P.S,
                         subestaciones, centrales telefónicas, alarmas, autos eléctricos (tipo golf).
@@ -64,6 +69,14 @@ class Baterias extends Component {
                     <img src={trojan} alt="logo5"/>
                 </div>
                 <div className="galeriaBaterias">
+                    <div className="cajaBateria"
+                         onClick={() => history.push("/bateria-detalle/" + 7)}>
+                        <img src={bateria7} alt="bateria7"/>
+                        <span className="hoverImg ">
+                            <p>12 V. 45 AH. Modelo Ford K</p>
+                        </span>
+                        <p>12 V. 45 AH.</p>
+                    </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 1)}>
                         <img src={bateria1} alt="bateria1"/>
@@ -80,6 +93,16 @@ class Baterias extends Component {
                         </span>
                         <p>12 V. 75 AH.</p>
                     </div>
+                </div>
+                <div className="galeriaBaterias">
+                    <div className="cajaBateria"
+                         onClick={() => history.push("/bateria-detalle/" + 8)}>
+                        <img src={bateria8} alt="bateria7"/>
+                        <span className="hoverImg ">
+                            <p>12 V. 85 AH. Modelo Ranger</p>
+                        </span>
+                        <p>12 V. 85 AH.</p>
+                    </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 3)}>
                         <img src={bateria3} alt="bateria3"/>
@@ -88,8 +111,6 @@ class Baterias extends Component {
                         </span>
                         <p>12 V. 100 AH.</p>
                     </div>
-                </div>
-                <div className="galeriaBaterias">
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 4)}>
                         <img src={bateria4} alt="bateria4"/>
@@ -98,6 +119,8 @@ class Baterias extends Component {
                         </span>
                         <p>12 V. 100 AH.</p>
                     </div>
+                </div>
+                <div className="galeriaBaterias">
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 5)}>
                         <img src={bateria5} alt="bateria5"/>

@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {Navbar, Nav} from 'react-bootstrap';
 
 import history from "../history";
 
@@ -155,7 +154,9 @@ class Header extends Component {
                 </div>
                 <div className="media">
                     <img className="itemMedia" src={facebook} alt="facebook"/>
-                    <img className="itemMedia" src={instagram} alt="instagram"/>
+                    <a href="https://www.instagram.com/electrobatrosario/?hl=es-la">
+                        <img className="itemMedia" src={instagram} alt="instagram" target="_blank"/>
+                    </a>
                 </div>
             </div>
         );

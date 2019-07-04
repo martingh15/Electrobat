@@ -30,6 +30,10 @@
     max-height: 50px;
 }
 
+.baterias .logos img:first-child {
+    max-height: 30px;
+}
+
 .baterias .galeriaBaterias {
     margin-left: 80px;
     margin-right: 80px;
@@ -160,5 +164,11 @@
     .baterias .subseccionBaterias .textoBaterias {
         font-size: 12px;
         padding: 0 10%;
+    }
+}
+
+@media (max-width: 379px) {
+    .baterias .logos img:first-child, .baterias .logos img:nth-child(2n) {
+        margin-bottom: 20px;
     }
 }
