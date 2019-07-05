@@ -1,21 +1,24 @@
 .modal-body {
     padding: 0!important;
 }
+
 .imagenModal {
     max-width: 600px;
     display: block;
     margin: 0 auto;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 35px;
     border: 1px solid black;
-    background-color: white;
-    background-image: url("../img/multiply.png");
+    background-color: #061833;
+    background-image: url("../img/close.png");
     background-repeat: no-repeat;
-    background-position: 95% 3%;
+    background-position: 98% 2%;
     background-size: 20px 20px;
 }
 
-.modal-dialog {
-    max-width: 800px !important;
+.bateriaModal {
+    background-color: white !important;
+    background-image: url("../img/multiply.png");
 }
 
 .modal-content {
@@ -26,6 +29,7 @@
 @media (max-width: 800px) {
     .imagenModal {
         max-width: 450px;
+        margin-top: 20px;
     }
 
     .modal-dialog {
@@ -35,17 +39,15 @@
 
 @media (max-width: 600px) {
     .imagenModal {
-        max-width: 350px;
-        margin: 0 auto !important;
-        margin-top: 120px !important;
+        width: 80%;
+        padding: 7%;
+        background-position: 98% 2%;
+        background-size: 15px 15px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .imagenModal {
-        max-width: 350px;
-        margin: 0 auto !important;
-        margin-top: 120px !important;
-        padding: 20px;
+        margin-top: 100px;
     }
 }

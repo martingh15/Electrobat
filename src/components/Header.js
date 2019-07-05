@@ -153,10 +153,10 @@ class Header extends Component {
                        onClick={() => this.activarLink("contacto")}>CONTACTO</p>
                 </div>
                 <div className="media">
-                    <a href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank">
+                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank">
                         <img className="itemMedia" src={facebook} alt="facebook"/>
                     </a>
-                    <a href="https://m.instagram.com/electrobatrosario" target="_blank">
+                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.instagram.com/electrobatrosario" target="_blank">
                         <img className="itemMedia" src={instagram} alt="instagram"/>
                     </a>
                 </div>

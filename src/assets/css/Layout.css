@@ -16,6 +16,17 @@
 .activo {
     color: yellow !important;
 }
+@media (min-width: 769px) {
+    .app .whatsapp {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .app .whatsapp {
+        display: block;
+    }
+}
 
 .app .whatsapp {
     position: fixed;

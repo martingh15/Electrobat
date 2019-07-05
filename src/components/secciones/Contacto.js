@@ -12,13 +12,13 @@ import Header from "../Header";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
-import ubicacion from "../../assets/img/location-pointer.png";
-import ahora12 from "../../assets/img/ahora12.png";
-import telefono from "../../assets/img/call-answer.png";
-import email from "../../assets/img/envelope.png";
-import clock from "../../assets/img/clock.png";
-import creditCards from "../../assets/img/credit-cards-payment.png";
+import creditCards from "../../assets/img/credit-cards-payment2.png";
+import ubicacion from "../../assets/img/facebook-placeholder-for-locate-places-on-maps2.png";
+import telefono from "../../assets/img/call-answer2.png";
+import email from "../../assets/img/envelope2.png";
+import clock from "../../assets/img/clock2.png";
 import MensajeEmail from "../MensajeEmail";
+import ahora12 from "../../assets/img/ahora12.png";
 
 class Contacto extends Component {
     constructor(props) {
@@ -75,7 +75,7 @@ class Contacto extends Component {
             'empresa': this.state.campos['empresa'],
             'telefono': this.state.campos['telefono'],
             'asunto': this.state.campos['asunto']
-        }
+        };
         $.ajax({
             type: "POST",
             url: "sendMail.php",

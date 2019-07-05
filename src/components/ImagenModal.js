@@ -5,10 +5,11 @@ import {Modal} from "react-bootstrap";
 import '../assets/css/imagenModal.css';
 
 //Images
-import cruz from "../assets/img/multiply.png"
+import cruz from "../assets/img/close.png"
 
 class ImagenModal extends Component {
     render() {
+        var clase = this.props.className ? this.props.className : "";
         this.onHide = this.props.onHide;
         return (
             <div className="contenedorImagenModal">
@@ -19,7 +20,7 @@ class ImagenModal extends Component {
                     aria-labelledby="example-custom-modal-styling-title"
                 >
                     <Modal.Body>
-                        <img onClick={() => this.onHide()} className="imagenModal"
+                        <img onClick={() => this.onHide()} className={"imagenModal " + clase }
                              src={process.env.PUBLIC_URL + this.props.imagen}/>
                     </Modal.Body>
                 </Modal>

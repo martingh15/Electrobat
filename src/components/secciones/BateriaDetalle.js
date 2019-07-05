@@ -73,6 +73,7 @@ class BateriaDetalle extends Component {
             <div className="bateria-detalle">
                 <ImagenModal
                     key="modal-1"
+                    className="bateriaModal"
                     onHide={this.onHide.bind(this)}
                     show={this.state.show} imagen={this.state.imagen}/>
                 <div className="imagenBateriaDetalle imagenFondo">
