@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux';
 import $ from "jquery";
+import Scrollchor from "react-scrollchor";
 
 //CSS
 import "../../assets/css/Contacto.css";
@@ -12,13 +13,12 @@ import Header from "../Header";
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
 import ubicacion from "../../assets/img/location-pointer.png";
-import ubicacionF from "../../assets/img/ubicacionF.png";
+import ahora12 from "../../assets/img/ahora12.png";
 import telefono from "../../assets/img/call-answer.png";
 import email from "../../assets/img/envelope.png";
 import clock from "../../assets/img/clock.png";
 import creditCards from "../../assets/img/credit-cards-payment.png";
 import MensajeEmail from "../MensajeEmail";
-import Scrollchor from "react-scrollchor";
 
 class Contacto extends Component {
     constructor(props) {
@@ -110,7 +110,8 @@ class Contacto extends Component {
                     <Header/>
                     <div className="item"></div>
                     <div className="item" style={{display: "flex", flexDirection: "column"}}>
-                        <p className="textoFondo"><span className="chiquito"></span><span className="grandote">CONTACTO</span></p>
+                        <p className="textoFondo"><span className="chiquito"></span><span
+                            className="grandote">CONTACTO</span></p>
                     </div>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
@@ -140,9 +141,10 @@ class Contacto extends Component {
                             <p>Lunes a Viernes de 08:00 a 12:30 hs y de 15:00 a 19:30 hs.<br/>Sábados de 08:30 a 13:00
                                 hs.</p>
                         </div>
-                        <div className="linea">
-                            <img src={creditCards} alt="creditCards"/>
-                            <p>Tarjeta VISA | Master | Naranja | Cabal</p>
+                        <div className="linea lineaTarjetas">
+                            <img className="creditCards" src={creditCards} alt="creditCards"/>
+                            <p className="tarjeta">Tarjeta VISA | Master | Naranja | Cabal</p>
+                            <img className="ahora12" src={ahora12} alt="ahora12"/>
                         </div>
                     </div>
                     <div className="columnaFormulario">
@@ -159,7 +161,7 @@ class Contacto extends Component {
                             <input id="email" placeholder="CORREO" type="email" required={true}
                                    value={this.state.campos["email"]}
                                    onChange={(e) => this.onChangeContacto(e)}/>
-                            <input id="asunto" placeholder="ASUNTO (BATERIAS | VOLQUETES)" type="string" required={true}
+                            <input id="asunto" placeholder="ASUNTO" type="string" required={true}
                                    value={this.state.campos["asunto"]}
                                    onChange={(e) => this.onChangeContacto(e)}/>
                             <textarea id="mensaje" placeholder="MENSAJE" required={true}
