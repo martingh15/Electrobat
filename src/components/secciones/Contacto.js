@@ -159,7 +159,7 @@ class Contacto extends Component {
                             <input id="email" placeholder="CORREO" type="email" required={true}
                                    value={this.state.campos["email"]}
                                    onChange={(e) => this.onChangeContacto(e)}/>
-                            <input id="asunto" placeholder="ASUNTO (BATERIAS | VOLQUETES)" type="string" required={true}
+                            <input id="asunto" placeholder="ASUNTO" type="string" required={true}
                                    value={this.state.campos["asunto"]}
                                    onChange={(e) => this.onChangeContacto(e)}/>
                             <textarea id="mensaje" placeholder="MENSAJE" required={true}
