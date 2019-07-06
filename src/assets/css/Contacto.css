@@ -54,6 +54,10 @@
     border: 3px solid #061833;
 }
 
+.contacto .ahora12 {
+    width: 50px !important;
+}
+
 .contacto .forminput {
     display: flex;
     flex-direction: column;
@@ -98,21 +102,6 @@
     background-color: #061833;
     color: white;
     font-weight: bold;
-}
-
-.contacto .lineaTarjetas {
-    top: -30px;
-}
-.contacto .lineaTarjetas img:first-child {
-    margin-top: 33px;
-}
-
-.contacto .lineaTarjetas p {
-    margin-top: 33px;
-}
-
-.contacto .ahora12 {
-    width: 70px!important;
 }
 
 /*CONTACTO RESPONSIVE*/
@@ -163,22 +152,6 @@
     .contacto .linea {
         margin-left: 45px;
     }
-
-    .contacto .lineaTarjetas {
-        top: -20px;
-    }
-
-    .contacto .lineaTarjetas img:first-child {
-        margin-top: 20px;
-    }
-
-    .contacto .lineaTarjetas p {
-        margin-top: 23px;
-    }
-
-    .contacto .ahora12 {
-        width: 50px!important;
-    }
 }
 
 @media (max-width: 500px) {
@@ -206,21 +179,5 @@
 
     .contacto .linea {
         margin-left: 10px;
-    }
-
-    .contacto .lineaTarjetas {
-        top: -28px;
-    }
-
-    .contacto .lineaTarjetas img:first-child {
-        margin-top: 26px;
-    }
-
-    .contacto .lineaTarjetas p {
-        margin-top: 26px;
-    }
-
-    .contacto .ahora12 {
-        width: 50px!important;
     }
 }

@@ -74,7 +74,7 @@
         margin-right: 40px;
     }
     .header .logoElectrobat {
-        max-width: 120px;
+        max-width: 200px;
         margin-left: 40px;
     }
 
@@ -122,4 +122,11 @@
     width: 100%;
     top: 80px;
     text-align: center;
+}
+
+@media (max-width: 400px) {
+    .header .logoElectrobat {
+        max-width: 180px;
+        margin-left: 5px;
+    }
 }
