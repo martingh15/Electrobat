@@ -28,7 +28,7 @@ function bateriasById(state = {
 function allBaterias(state = [], action) {
     switch (action.type) {
         case RECEIVE_BATERIAS:
-            return [1,2,3,4,5,6,7,8];
+            return [1,2,3,4,5,6,7,8,9,10,11];
         default:
             return state
     }

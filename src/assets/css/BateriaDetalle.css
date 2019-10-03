@@ -55,6 +55,12 @@
     font-size: 20px;
 }
 
+.bateria-detalle .detallesBateria h4, .bateria-detalle .detallesBateria h5 {
+    text-align: center;
+    color: #061833;
+    margin: 0 auto;
+}
+
 .bateria-detalle .consultarPrecio {
     padding: 10px;
     width: fit-content;

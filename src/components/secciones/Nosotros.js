@@ -71,7 +71,8 @@ class Nosotros extends Component {
                     <Header/>
                     <div className="item"></div>
                     <div className="item" style={{display: "flex", flexDirection: "column"}}>
-                        <p className="textoFondo"><span className="chiquito"></span><span className="grandote">NOSOTROS</span></p>
+                        <h1 className="textoFondo"><span className="chiquito"></span><span
+                            className="grandote">NOSOTROS</span></h1>
                     </div>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
@@ -83,6 +84,7 @@ class Nosotros extends Component {
                     <div className="item iconos">
                         <div className="itemIco">
                             <img src={bateriaMini}
+                                 style={{padding: "15px"}}
                                  onClick={() => history.push("/baterias")}
                                  alt="bateria"/>
                             <p>VENTA DE BATERIAS</p>

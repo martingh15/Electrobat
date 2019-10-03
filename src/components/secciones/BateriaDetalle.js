@@ -14,7 +14,6 @@ import ImagenModal from "../ImagenModal";
 //Images
 import lupita from "../../assets/img/searcher.png";
 import history from "../../history";
-import {Col} from "react-bootstrap";
 
 class BateriaDetalle extends Component {
     constructor(props) {
@@ -38,7 +37,6 @@ class BateriaDetalle extends Component {
             if (this.props.match.params.idBateria) {
                 this.props.baterias.allIds.forEach((idBateria) => {
                     var bateria = this.props.baterias.byId.baterias[idBateria - 1];
-                    console.log(bateria);
                     if (bateria && bateria.id == this.props.match.params.idBateria) {
                         this.setState({bateria: bateria});
                     }
@@ -88,9 +86,9 @@ class BateriaDetalle extends Component {
                         </div>
                     </div>
                     <div className="item detallesBateria">
-                        <p><b>Baterias Electrobat</b></p>
-                        <p><b>{bateria ? bateria.voltios : ""}</b></p>
-                        <p>{bateria ? bateria.descripcion : ""}</p>
+                        <h4c><b>Baterias Electrobat</b></h4c>
+                        <h5><b>{bateria ? bateria.voltios : ""}</b></h5>
+                        <h5>{bateria ? bateria.descripcion : ""}</h5>
                         <br/>
                         <p><b>Medidas:</b></p>
                         <p>Largo: {bateria ? bateria.largo : ""}</p>

@@ -83,6 +83,36 @@ export function receiveBaterias() {
     bateria8.imagen  = "bateria8.png";
     baterias.push(bateria8);
 
+    var bateria9 = {};
+    bateria9.id = 9;
+    bateria9.voltios = "12 V. 40 AH. Modelo NS 40";
+    bateria9.descripcion = "Para vehiculos modelo Honda Fit Y KIA";
+    bateria9.largo = "200mm";
+    bateria9.ancho = "130mm";
+    bateria9.alto = "225mm";
+    bateria9.imagen  = "bateria9.png";
+    baterias.push(bateria9);
+
+    var bateria10 = {};
+    bateria10.id = 10;
+    bateria10.voltios = "12 V. 85 AH. Modelo N70Z";
+    bateria10.descripcion = "Para vehiculos modelo trafic y Toyota Hilux";
+    bateria10.largo = "280mm";
+    bateria10.ancho = "173mm";
+    bateria10.alto = "210mm";
+    bateria10.imagen  = "bateria10.png";
+    baterias.push(bateria10);
+
+    var bateria11 = {};
+    bateria11.id = 11;
+    bateria11.voltios = "12 V. 100 AH. Modelo N75Z";
+    bateria11.descripcion = "Para vehiculos modelo Toyota Hilux y KIA Sorento";
+    bateria11.largo = "300mm";
+    bateria11.ancho = "170mm";
+    bateria11.alto = "208mm";
+    bateria11.imagen  = "bateria11.png";
+    baterias.push(bateria11);
+
     return {
         type: RECEIVE_BATERIAS,
         baterias: baterias,
