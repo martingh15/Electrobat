@@ -31,7 +31,7 @@
 }
 
 .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
-    max-width: 600px;
+    max-width: 540px;
 }
 
 .bateria-detalle .contenedorImagen .lupita {
@@ -56,7 +56,7 @@
 }
 
 .bateria-detalle .detallesBateria h4, .bateria-detalle .detallesBateria h5 {
-    text-align: center;
+    text-align: center !important;
     color: #061833;
     margin: 0 auto;
 }

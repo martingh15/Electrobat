@@ -80,13 +80,13 @@ class BateriaDetalle extends Component {
                 <div className="contenedorBateria">
                     <div className="item contenedorImagen">
                         <div className="cuadradoImagen">
-                            <img className="imagenBateria" src={url} alt="imagenBateria"/>
+                            <img className="imagenBateria" src={url} alt="imagenBateria" title="imagenBateria"/>
                             <img src={lupita} onClick={(e) => this.resizeImage(e, url)} className="lupita"
-                                 alt="lupita"/>
+                                 alt="lupita" title="lupita"/>
                         </div>
                     </div>
                     <div className="item detallesBateria">
-                        <h4c><b>Baterias Electrobat</b></h4c>
+                        <h4><b>Baterias Electrobat</b></h4>
                         <h5><b>{bateria ? bateria.voltios : ""}</b></h5>
                         <h5>{bateria ? bateria.descripcion : ""}</h5>
                         <br/>

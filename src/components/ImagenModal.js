@@ -20,8 +20,9 @@ class ImagenModal extends Component {
                     aria-labelledby="example-custom-modal-styling-title"
                 >
                     <Modal.Body>
-                        <img onClick={() => this.onHide()} className={"imagenModal " + clase }
-                             src={process.env.PUBLIC_URL + this.props.imagen}/>
+                        <img onClick={() => this.onHide()} className={"imagenModal " + clase}
+                             src={process.env.PUBLIC_URL + this.props.imagen} alt="imagenBateria"
+                             title="imagenBateria"/>
                     </Modal.Body>
                 </Modal>
             </div>

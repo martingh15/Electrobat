@@ -28,7 +28,7 @@ class NotFound extends Component {
                 <div className="imagenNosotros imagenFondo" style={{height: "100vh"}}>
                     <Header/>
                     <p className="textoFondo">Página no encontrada, redirigiendo ...</p>
-                    <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                    <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo"/>
                 </div>
             </div>
         );

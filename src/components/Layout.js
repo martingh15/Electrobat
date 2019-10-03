@@ -32,8 +32,8 @@ class Layout extends Component {
                     <Route path="/contacto" exact component={Contacto}/>
                     <Route path="*" component={NotFound}/>
                 </Switch>
-                <a href={"https://wa.me/5493416868049"} target="_blank">
-                    <img className="whatsapp" src={whatsappVerde} alt="whatsap"/>
+                <a href={"https://wa.me/5493416868049"} target="_blank"  rel="noopener noreferrer">
+                    <img className="whatsapp" src={whatsappVerde} alt="whatsap" title="whatsap"/>
                 </a>
             </div>
         );

@@ -16,17 +16,20 @@ import acdelgo from "../../assets/img/logos/acdelgo.png";
 import yasua from "../../assets/img/logos/Baterias_Yuasa.jpg";
 import probattery from "../../assets/img/logos/logo-probattery-400x400.png";
 import trojan from "../../assets/img/logos/TROJAN-LogoL.jpg";
-import bateria1 from "../../assets/img/baterias/bateria1.png";
-import bateria2 from "../../assets/img/baterias/bateria2.png";
-import bateria3 from "../../assets/img/baterias/bateria3.png";
-import bateria4 from "../../assets/img/baterias/bateria4.png";
-import bateria5 from "../../assets/img/baterias/bateria5.png";
-import bateria6 from "../../assets/img/baterias/bateria6.png";
-import bateria7 from "../../assets/img/baterias/bateria7.png";
-import bateria8 from "../../assets/img/baterias/bateria8.png";
-import bateria9 from "../../assets/img/baterias/bateria9.png";
-import bateria10 from "../../assets/img/baterias/bateria10.png";
-import bateria11 from "../../assets/img/baterias/bateria11.png";
+import bateria12V70AHAutosNafterosGNC1 from "../../assets/img/baterias/bateria-12V-70AH-1-autos-nafteros-gnc.png";
+import bateria12V75AHAutosDiesel2 from "../../assets/img/baterias/bateria-12V-75AH-2-autos-diesel.png";
+import bateria12V100AHCamionesTractores3 from "../../assets/img/baterias/bateria-12V-100AH-3-camiones-tractores.png";
+import bateria12V100AHCamionetasDieselModeloSprinter4
+    from "../../assets/img/baterias/bateria-12V-100AH-camionetas-diesel-modelo-sprinter-4.png";
+import bateria12V110AHCamionetasTractores5
+    from "../../assets/img/baterias/bateria-12V-110AH-5-camionetas-tractores.png";
+import bateria12V180AHCamionesTractores6 from "../../assets/img/baterias/bateria-12V-180AH-6-camiones-tractores.png";
+import bateria12V45AHFordK7 from "../../assets/img/baterias/bateria-12V-45AH-7-ford-k.png";
+import bateria12V85AHModeloRanger8 from "../../assets/img/baterias/bateria-12V-85AH-8-modelo-ranger.png";
+import bateria12V40AHHondaFitKia9 from "../../assets/img/baterias/bateria-12V-40AH-9-honda-fit-kia.png";
+import bateria12V85AHTraficToyotaHilux10 from "../../assets/img/baterias/bateria-12V-85AH-10-trafic-toyota-hilux.png";
+import bateria12V100AHToyotaHiluxKiaSorento11
+    from "../../assets/img/baterias/bateria-12V-100AH-11-toyota-hilux-kia-sorento.png";
 import history from "../../history";
 
 class Baterias extends Component {
@@ -46,12 +49,13 @@ class Baterias extends Component {
                     <Header/>
                     <div className="item"></div>
                     <div className="item" style={{display: "flex", flexDirection: "column"}}>
-                        <h1 className="textoFondo"><span className="chiquito">VENTA DE</span><span className="grandote">BATERIAS</span></h1>
+                        <h1 className="textoFondo"><span className="chiquito">VENTA DE</span><span
+                            className="grandote">BATERIAS</span></h1>
                     </div>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
                                 to="#scroll-baterias">
-                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo"/>
                     </Scrollchor>
                 </div>
                 <div className="subseccionBaterias" id="scroll-baterias">
@@ -63,17 +67,19 @@ class Baterias extends Component {
                     </p>
                 </div>
                 <div className="logos">
-                    <img src={logo} alt="electrobat"/>
-                    <img src={moura} alt="logo1"/>
-                    <img src={acdelgo} alt="logo2"/>
-                    <img src={yasua} alt="logo3"/>
-                    <img style={{maxHeight: "120px", width: "80px"}} src={probattery} alt="logo4"/>
-                    <img src={trojan} alt="logo5"/>
+                    <img src={logo} alt="electrobat" title="electrobat"/>
+                    <img src={moura} alt="moura" title="moura"/>
+                    <img src={acdelgo} alt="acdelgo" title="acdelgo"/>
+                    <img src={yasua} alt="yasua" title="yasua"/>
+                    <img style={{maxHeight: "120px", width: "80px"}} src={probattery} alt="probattery"
+                         title="probattery"/>
+                    <img src={trojan} alt="trojan" title="trojan"/>
                 </div>
                 <div className="galeriaBaterias">
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 9)}>
-                        <img src={bateria9} alt="bateria6"/>
+                        <img src={bateria12V40AHHondaFitKia9} alt="bateria12V40AHHondaFitKia9"
+                             title="bateria12V40AHHondaFitKia9"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 40 AH. Modelo NS 40</p>
                         </span>
@@ -81,7 +87,7 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 7)}>
-                        <img src={bateria7} alt="bateria7"/>
+                        <img src={bateria12V45AHFordK7} alt="bateria12V45AHFordK7" title="bateria12V45AHFordK7"/>
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 45 AH. Modelo Ford K</p>
                         </span>
@@ -89,7 +95,8 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 1)}>
-                        <img src={bateria1} alt="bateria1"/>
+                        <img src={bateria12V70AHAutosNafterosGNC1} alt="bateria12V70AHAutosNafterosGNC1"
+                             title="bateria12V70AHAutosNafterosGNC1"/>
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 70 AH.</p>
                         </span>
@@ -99,7 +106,8 @@ class Baterias extends Component {
                 <div className="galeriaBaterias">
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 2)}>
-                        <img src={bateria2} alt="bateria2"/>
+                        <img src={bateria12V75AHAutosDiesel2} alt="bateria12V75AHAutosDiesel2"
+                             title="bateria12V75AHAutosDiesel2"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 75 AH.</p>
                         </span>
@@ -107,7 +115,8 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 8)}>
-                        <img src={bateria8} alt="bateria7"/>
+                        <img src={bateria12V85AHModeloRanger8} alt="bateria12V85AHModeloRanger8"
+                             title="bateria12V85AHModeloRanger8"/>
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 85 AH. Modelo Ranger</p>
                         </span>
@@ -115,7 +124,8 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 10)}>
-                        <img src={bateria10} alt="bateria10"/>
+                        <img src={bateria12V85AHTraficToyotaHilux10} alt="bateria12V85AHTraficToyotaHilux10"
+                             title="bateria12V85AHTraficToyotaHilux10"/>
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 85 AH. Modelo N70Z</p>
                         </span>
@@ -125,7 +135,8 @@ class Baterias extends Component {
                 <div className="galeriaBaterias">
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 3)}>
-                        <img src={bateria3} alt="bateria3"/>
+                        <img src={bateria12V100AHCamionesTractores3} alt="bateria12V70AHAutosNafterosGNC1"
+                             title="bateria12V70AHAutosNafterosGNC1"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 100 AH.</p>
                         </span>
@@ -133,7 +144,9 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 4)}>
-                        <img src={bateria4} alt="bateria4"/>
+                        <img src={bateria12V100AHCamionetasDieselModeloSprinter4}
+                             alt="bateria12V100AHCamionetasDieselModeloSprinter4"
+                             title="bateria12V100AHCamionetasDieselModeloSprinter4"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 100 AH.</p>
                         </span>
@@ -141,7 +154,8 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 11)}>
-                        <img src={bateria11} alt="bateria11"/>
+                        <img src={bateria12V100AHToyotaHiluxKiaSorento11} alt="bateria12V100AHToyotaHiluxKiaSorento11"
+                             title="bateria12V100AHToyotaHiluxKiaSorento11"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 100 AH. Modelo N75Z</p>
                         </span>
@@ -151,7 +165,8 @@ class Baterias extends Component {
                 <div className="galeriaBaterias">
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 5)}>
-                        <img src={bateria5} alt="bateria5"/>
+                        <img src={bateria12V110AHCamionetasTractores5} alt="bateria12V110AHCamionetasTractores5"
+                             title="bateria12V110AHCamionetasTractores5"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 110 AH.</p>
                         </span>
@@ -159,7 +174,8 @@ class Baterias extends Component {
                     </div>
                     <div className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 6)}>
-                        <img src={bateria6} alt="bateria6"/>
+                        <img src={bateria12V180AHCamionesTractores6} alt="bateria12V180AHCamionesTractores6"
+                             title="bateria12V180AHCamionesTractores6"/>
                         <span className="hoverImg">
                             <p className="innerText">12 V. 180 AH.</p>
                         </span>

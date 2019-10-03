@@ -41,17 +41,18 @@ class Volquetes extends Component {
                     <Header/>
                     <div className="item"></div>
                     <div className="item" style={{display: "flex", flexDirection: "column"}}>
-                        <p className="textoFondo"><span className="chiquito">ALQUILER DE</span><span className="grandote">VOLQUETES</span></p>
+                        <p className="textoFondo"><span className="chiquito">ALQUILER DE</span><span
+                            className="grandote">VOLQUETES</span></p>
                     </div>
                     <Scrollchor animate={{duration: 500, offset: 0}}
                                 disableHistory={true}
                                 to="#scroll-volquetes">
-                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo"/>
                     </Scrollchor>
                 </div>
                 <div className="dosImagenes" id="scroll-volquetes">
-                    <img className="item" src={volquete} alt="volquete"/>
-                    <img className="item" src={camion} alt="camion"/>
+                    <img className="item" src={volquete} alt="volquete" title="volquete"/>
+                    <img className="item" src={camion} alt="camion" title="volquete"/>
                 </div>
                 <div className="alquilerVolquetes">
                     <p className="alquiler">ALQUILER DE VOLQUETES</p>

@@ -10,7 +10,7 @@ export function receiveBaterias() {
     bateria1.largo = "240mm";
     bateria1.ancho = "174mm";
     bateria1.alto = "178mm";
-    bateria1.imagen  = "bateria1.png";
+    bateria1.imagen  = "bateria-12V-70AH-1-autos-nafteros-gnc.png";
     baterias.push(bateria1);
 
     var bateria2 = {};
@@ -20,7 +20,7 @@ export function receiveBaterias() {
     bateria2.largo = "277mm";
     bateria2.ancho = "175mm";
     bateria2.alto = "178mm";
-    bateria2.imagen  = "bateria2.png";
+    bateria2.imagen  = "bateria-12V-75AH-2-autos-diesel.png";
     baterias.push(bateria2);
 
     var bateria3 = {};
@@ -30,7 +30,7 @@ export function receiveBaterias() {
     bateria3.largo = "327mm";
     bateria3.ancho = "170mm";
     bateria3.alto = "215mm";
-    bateria3.imagen  = "bateria3.png";
+    bateria3.imagen  = "bateria-12V-100AH-3-camiones-tractores.png";
     baterias.push(bateria3);
 
     var bateria4 = {};
@@ -40,7 +40,7 @@ export function receiveBaterias() {
     bateria4.largo = "370mm";
     bateria4.ancho = "176mm";
     bateria4.alto = "194mm";
-    bateria4.imagen  = "bateria4.png";
+    bateria4.imagen  = "bateria-12V-100AH-camionetas-diesel-modelo-sprinter-4.png";
     baterias.push(bateria4);
 
     var bateria5 = {};
@@ -50,7 +50,7 @@ export function receiveBaterias() {
     bateria5.largo = "380mm";
     bateria5.ancho = "179mm";
     bateria5.alto = "226mm";
-    bateria5.imagen  = "bateria5.png";
+    bateria5.imagen  = "bateria-12V-110AH-5-camionetas-tractores.png";
     baterias.push(bateria5);
 
     var bateria6 = {};
@@ -60,7 +60,7 @@ export function receiveBaterias() {
     bateria6.largo = "508mm";
     bateria6.ancho = "214mm";
     bateria6.alto = "204mm";
-    bateria6.imagen  = "bateria6.png";
+    bateria6.imagen  = "bateria-12V-180AH-6-camiones-tractores.png";
     baterias.push(bateria6);
 
     var bateria7 = {};
@@ -70,7 +70,7 @@ export function receiveBaterias() {
     bateria7.largo = "210mm";
     bateria7.ancho = "175mm";
     bateria7.alto = "178mm";
-    bateria7.imagen  = "bateria7.png";
+    bateria7.imagen  = "bateria-12V-45AH-7-ford-k.png";
     baterias.push(bateria7);
 
     var bateria8 = {};
@@ -80,7 +80,7 @@ export function receiveBaterias() {
     bateria8.largo = "280mm";
     bateria8.ancho = "175mm";
     bateria8.alto = "190mm";
-    bateria8.imagen  = "bateria8.png";
+    bateria8.imagen  = "bateria-12V-85AH-8-modelo-ranger.png";
     baterias.push(bateria8);
 
     var bateria9 = {};
@@ -90,7 +90,7 @@ export function receiveBaterias() {
     bateria9.largo = "200mm";
     bateria9.ancho = "130mm";
     bateria9.alto = "225mm";
-    bateria9.imagen  = "bateria9.png";
+    bateria9.imagen  = "bateria-12V-40AH-9-honda-fit-kia.png";
     baterias.push(bateria9);
 
     var bateria10 = {};
@@ -100,7 +100,7 @@ export function receiveBaterias() {
     bateria10.largo = "280mm";
     bateria10.ancho = "173mm";
     bateria10.alto = "210mm";
-    bateria10.imagen  = "bateria10.png";
+    bateria10.imagen  = "bateria-12V-85AH-10-trafic-toyota-hilux.png";
     baterias.push(bateria10);
 
     var bateria11 = {};
@@ -110,7 +110,7 @@ export function receiveBaterias() {
     bateria11.largo = "300mm";
     bateria11.ancho = "170mm";
     bateria11.alto = "208mm";
-    bateria11.imagen  = "bateria11.png";
+    bateria11.imagen  = "bateria-12V-100AH-11-toyota-hilux-kia-sorento.png";
     baterias.push(bateria11);
 
     return {

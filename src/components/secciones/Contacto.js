@@ -117,7 +117,7 @@ class Contacto extends Component {
                                 disableHistory={true}
                                 className="item"
                                 to="#scroll-contacto">
-                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo"/>
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo"/>
                     </Scrollchor>
                 </div>
                 <div className="contenedorColumnas" id="scroll-contacto">
@@ -125,26 +125,26 @@ class Contacto extends Component {
                         <p className="textocontacto">CONTACTO</p>
                         <div className="lineaGruesa"></div>
                         <div className="linea">
-                            <img src={ubicacion} alt="ubicacion"/>
+                            <img src={ubicacion} alt="ubicacion" title="ubicacion"/>
                             <p>Av. Córdoba 4031, Rosario, Santa Fe</p>
                         </div>
                         <div className="linea">
-                            <img className="imgMasChica" src={telefono} alt="telefono"/>
+                            <img className="imgMasChica" src={telefono} alt="telefono" title="telefono"/>
                             <p>(0341) 439 5703 | (0341) 439 6347</p>
                         </div>
                         <div className="linea">
-                            <img className="imgMasChica" src={email} alt="email"/>
+                            <img className="imgMasChica" src={email} alt="email" title="email"/>
                             <p>electrobat.baterias@gmail.com</p>
                         </div>
                         <div className="linea">
-                            <img className="imgMasChica" src={clock} alt="clock"/>
+                            <img className="imgMasChica" src={clock} alt="clock" title="clock"/>
                             <p>Lunes a Viernes de 08:00 a 12:30 hs y de 15:00 a 19:30 hs.<br/>Sábados de 08:30 a 13:00
                                 hs.</p>
                         </div>
                         <div className="linea lineaTarjetas">
-                            <img className="creditCards" src={creditCards} alt="creditCards"/>
+                            <img className="creditCards" src={creditCards} alt="creditCards" title="creditCards"/>
                             <p className="tarjeta">Tarjeta VISA | Master | Naranja | Cabal</p>
-                            <img className="ahora12" src={ahora12} alt="ahora12"/>
+                            <img className="ahora12" src={ahora12} alt="ahora12" title="ahora12"/>
                         </div>
                     </div>
                     <div className="columnaFormulario">

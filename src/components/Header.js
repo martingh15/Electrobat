@@ -23,7 +23,7 @@ class Header extends Component {
         var list2 = document.getElementsByClassName("h-baterias");
         var list3 = document.getElementsByClassName("h-volquetes");
         var list4 = document.getElementsByClassName("h-contacto");
-        if (window.location.href.indexOf("nosotros") != -1) {
+        if (window.location.href.indexOf("nosotros") !== -1) {
             for (let item of list1)
                 item.classList.add("activo");
             for (let item of list2)
@@ -34,7 +34,7 @@ class Header extends Component {
                 item.classList.remove("activo");
         }
 
-        if (window.location.href.indexOf("baterias") != -1) {
+        if (window.location.href.indexOf("baterias") !== -1) {
             for (let item of list1)
                 item.classList.remove("activo");
             for (let item of list2)
@@ -45,7 +45,7 @@ class Header extends Component {
                 item.classList.remove("activo");
         }
 
-        if (window.location.href.indexOf("volquetes") != -1) {
+        if (window.location.href.indexOf("volquetes") !== -1) {
             for (let item of list1)
                 item.classList.remove("activo");
             for (let item of list2)
@@ -56,7 +56,7 @@ class Header extends Component {
                 item.classList.remove("activo");
         }
 
-        if (window.location.href.indexOf("contacto") != -1) {
+        if (window.location.href.indexOf("contacto") !== -1) {
             for (let item of list1)
                 item.classList.remove("activo");
             for (let item of list2)
@@ -73,7 +73,7 @@ class Header extends Component {
         var list2 = document.getElementsByClassName("h-baterias");
         var list3 = document.getElementsByClassName("h-volquetes");
         var list4 = document.getElementsByClassName("h-contacto");
-        if (clase == "h-nosotros") {
+        if (clase === "h-nosotros") {
             for (let item of list1)
                 item.classList.add("activo");
             for (let item of list2)
@@ -84,7 +84,7 @@ class Header extends Component {
                 item.classList.remove("activo");
         }
 
-        if (clase == "h-baterias") {
+        if (clase === "h-baterias") {
             for (let item of list1)
                 item.classList.remove("activo");
             for (let item of list2)
@@ -95,7 +95,7 @@ class Header extends Component {
                 item.classList.remove("activo");
         }
 
-        if (clase == "h-volquetes") {
+        if (clase === "h-volquetes") {
             for (let item of list1)
                 item.classList.remove("activo");
             for (let item of list2)
@@ -106,7 +106,7 @@ class Header extends Component {
                 item.classList.remove("activo");
         }
 
-        if (clase == "h-contacto") {
+        if (clase === "h-contacto") {
             for (let item of list1)
                 item.classList.remove("activo");
             for (let item of list2)
@@ -125,7 +125,7 @@ class Header extends Component {
         return (
             <div className="header item">
                 <div className="navegador">
-                    <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo"/>
+                    <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo" title="logo"/>
                     <div className="links">
                         <p id="h1-nosotros" className="h-nosotros"
                            onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
@@ -153,11 +153,11 @@ class Header extends Component {
                        onClick={() => this.activarLink("contacto")}>CONTACTO</p>
                 </div>
                 <div className="media">
-                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank">
-                        <img className="itemMedia" src={facebook} alt="facebook"/>
+                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank"  rel="noopener noreferrer">
+                        <img className="itemMedia" src={facebook} alt="facebook" title="facebook"/>
                     </a>
-                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.instagram.com/electrobatrosario" target="_blank">
-                        <img className="itemMedia" src={instagram} alt="instagram"/>
+                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.instagram.com/electrobatrosario" target="_blank"  rel="noopener noreferrer">
+                        <img className="itemMedia" src={instagram} alt="instagram" title="instagram"/>
                     </a>
                 </div>
             </div>
