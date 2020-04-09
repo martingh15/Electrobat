@@ -3,13 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 5px 5px 0 5px;
     flex-wrap: wrap;
     position: absolute;
     width: 100%;
-
 }
+
 .bateria-detalle .footer {
     /*bottom: 0;*/
 }

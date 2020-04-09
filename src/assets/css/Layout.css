@@ -28,6 +28,12 @@
     }
 }
 
+@media (max-width: 405px) {
+    .app .whatsapp {
+        margin-bottom: 14px;
+    }
+}
+
 .app .whatsapp {
     position: fixed;
     padding-top: 8px;
