@@ -11,25 +11,24 @@ import Scrollchor from "react-scrollchor";
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
 import logo from "../../assets/img/logoElectrobat.png";
-import moura from "../../assets/img/logos/moura.png";
-import acdelgo from "../../assets/img/logos/acdelgo.png";
-import yasua from "../../assets/img/logos/Baterias_Yuasa.jpg";
-import probattery from "../../assets/img/logos/logo-probattery-400x400.png";
-import trojan from "../../assets/img/logos/TROJAN-LogoL.jpg";
-import bateria12V70AHAutosNafterosGNC1 from "../../assets/img/baterias/bateria-12V-70AH-1-autos-nafteros-gnc.png";
-import bateria12V75AHAutosDiesel2 from "../../assets/img/baterias/bateria-12V-75AH-2-autos-diesel.png";
-import bateria12V100AHCamionesTractores3 from "../../assets/img/baterias/bateria-12V-100AH-3-camiones-tractores.png";
-import bateria12V100AHCamionetasDieselModeloSprinter4
-    from "../../assets/img/baterias/bateria-12V-100AH-camionetas-diesel-modelo-sprinter-4.png";
+import moura from "../../assets/img/logos/moura.webp";
+import acdelgo from "../../assets/img/logos/acdelgo.webp";
+import yasua from "../../assets/img/logos/Baterias_Yuasa.webp";
+import probattery from "../../assets/img/logos/logo-probattery-400x400.webp";
+import trojan from "../../assets/img/logos/TROJAN-LogoL.webp";
+import bateria12V70AHAutosNafterosGNC1 from "../../assets/img/baterias/bateria-12V-70AH-1-autos-nafteros-gnc.webp";
+import bateria12V75AHAutosDiesel2 from "../../assets/img/baterias/bateria-12V-75AH-2-autos-diesel.webp";
+import bateria12V100AHCamionesTractores3 from "../../assets/img/baterias/bateria-12V-100AH-3-camiones-tractores.webp";
+import bateria12V100AHCamionetasDieselModeloSprinter4 from "../../assets/img/baterias/bateria-12V-100AH-camionetas-diesel-modelo-sprinter-4.webp";
 import bateria12V110AHCamionetasTractores5
-    from "../../assets/img/baterias/bateria-12V-110AH-5-camionetas-tractores.png";
-import bateria12V180AHCamionesTractores6 from "../../assets/img/baterias/bateria-12V-180AH-6-camiones-tractores.png";
-import bateria12V45AHFordK7 from "../../assets/img/baterias/bateria-12V-45AH-7-ford-k.png";
-import bateria12V85AHModeloRanger8 from "../../assets/img/baterias/bateria-12V-85AH-8-modelo-ranger.png";
-import bateria12V40AHHondaFitKia9 from "../../assets/img/baterias/bateria-12V-40AH-9-honda-fit-kia.png";
-import bateria12V85AHTraficToyotaHilux10 from "../../assets/img/baterias/bateria-12V-85AH-10-trafic-toyota-hilux.png";
+    from "../../assets/img/baterias/bateria-12V-110AH-5-camionetas-tractores.webp";
+import bateria12V180AHCamionesTractores6 from "../../assets/img/baterias/bateria-12V-180AH-6-camiones-tractores.webp";
+import bateria12V45AHFordK7 from "../../assets/img/baterias/bateria-12V-45AH-7-ford-k.webp";
+import bateria12V85AHModeloRanger8 from "../../assets/img/baterias/bateria-12V-85AH-8-modelo-ranger.webp";
+import bateria12V40AHHondaFitKia9 from "../../assets/img/baterias/bateria-12V-40AH-9-honda-fit-kia.webp";
+import bateria12V85AHTraficToyotaHilux10 from "../../assets/img/baterias/bateria-12V-85AH-10-trafic-toyota-hilux.webp";
 import bateria12V100AHToyotaHiluxKiaSorento11
-    from "../../assets/img/baterias/bateria-12V-100AH-11-toyota-hilux-kia-sorento.png";
+    from "../../assets/img/baterias/bateria-12V-100AH-11-toyota-hilux-kia-sorento.webp";
 import history from "../../history";
 
 class Baterias extends Component {

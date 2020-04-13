@@ -13,8 +13,8 @@ import Scrollchor from "react-scrollchor";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
-import volquete from "../../assets/img/volquetes/volquete.jpg";
-import camion from "../../assets/img/volquetes/camion.jpg";
+import volquete from "../../assets/img/volquetes/volquete.webp";
+import camion from "../../assets/img/volquetes/camion.webp";
 
 //Actions
 import {consultarVolquete} from "../../actions/Actions";
