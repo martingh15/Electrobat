@@ -4,9 +4,6 @@ import {Modal} from "react-bootstrap";
 //CSS
 import '../assets/css/imagenModal.css';
 
-//Images
-import cruz from "../assets/img/close.png"
-
 class ImagenModal extends Component {
     render() {
         var clase = this.props.className ? this.props.className : "";

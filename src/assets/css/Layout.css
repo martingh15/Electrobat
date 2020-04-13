@@ -16,6 +16,7 @@
 .activo {
     color: yellow !important;
 }
+
 @media (min-width: 769px) {
     .app .whatsapp {
         display: none;
@@ -28,9 +29,14 @@
     }
 }
 
-@media (max-width: 405px) {
-    .app .whatsapp {
-        margin-bottom: 14px;
+.app .breakWsp {
+    display: none;
+}
+
+@media (max-width: 470px) {
+    .app .breakWsp {
+        display: block;
+        height: 1px;
     }
 }
 
