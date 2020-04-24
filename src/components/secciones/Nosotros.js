@@ -12,12 +12,12 @@ import Header from "../Header";
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
 import bateriaMini from "../../assets/img/bateriaMini.png";
 import volqueteMini from "../../assets/img/volqueteMini.png";
-import slider1 from "../../assets/img/sliders/slider1.webp";
-import slider2 from "../../assets/img/sliders/slider2.webp";
-import slider3 from "../../assets/img/sliders/slider3.webp";
-import slider4 from "../../assets/img/sliders/slider4.webp";
-import slider5 from "../../assets/img/sliders/slider5.webp";
-import slider6 from "../../assets/img/sliders/slider6.webp"
+import slider1 from "../../assets/img/sliders/originales/slider1.jpg";
+import slider2 from "../../assets/img/sliders/originales/slider2.jpg";
+import slider3 from "../../assets/img/sliders/originales/slider3.jpg";
+import slider4 from "../../assets/img/sliders/originales/slider4.jpg";
+import slider5 from "../../assets/img/sliders/originales/slider5.jpg";
+import slider6 from "../../assets/img/sliders/originales/slider6.jpg"
 import flechaIzq from "../../assets/img/left-arrow.png";
 import flechaDer from "../../assets/img/right-arrow.png";
 

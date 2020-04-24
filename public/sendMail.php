@@ -30,10 +30,10 @@ try {
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
     $mail->SMTPDebug = false;
-    $mail->Host = "mail.electrobatrosario.com"; // Poner SMTP a utilizar (si lo desconocen chequear el panel de administración del hosting donde está subida la web)
-    $mail->Username = "martin@electrobatrosario.com";
-    $mail->Password = "k!E;e3Zw=sC;"; // poner contraseña del correo info@sensortecnologia.com
-    $mail->Port = 25; // Cambiar Puerto a utilizar si fuese necesario
+    $mail->Host = getenv('SMTP_HOST');
+    $mail->Username = getenv('SMTP_USER');
+    $mail->Password = getenv('SMTP_CLAVE');
+    $mail->Port = 25;
     $mail->Timeout = 120;
     $mail->SMTPKeepAlive = true;
     $mail->From = $email;
