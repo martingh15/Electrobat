@@ -80,13 +80,13 @@ class Contacto extends Component {
             type: "POST",
             url: "sendMail.php",
             data: datos,
-            success: () => {
+            success: (succes) => {
                 this.setState({
                     show: true,
                     correcto: true,
                 });
             },
-            error: () => {
+            error: (error) => {
                 this.setState({
                     show: true,
                     correcto: false,
