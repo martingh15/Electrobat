@@ -46,3 +46,10 @@
 .promo-modal .imagenes-modal .close:hover {
     transform: scale(1.2);
 }
+
+@media (max-width: 430px) {
+    .promo-modal .imagenes-modal .wsp,
+    .promo-modal .imagenes-modal .facebook {
+        width: 35px;
+    }
+}
