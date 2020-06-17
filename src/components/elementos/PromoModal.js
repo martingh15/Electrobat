@@ -56,9 +56,9 @@ class PromoModal extends Component {
                 aria-labelledby="example-custom-modal-styling-title"
             >
                 <Modal.Body>
-                    <div className="imagenes-modal">
+                    <div className="imagenes-modal" ref={this.wrapperRef}>
                         <img src={cruz} className="close" onClick={() => this.onHide()} alt="Cruz"/>
-                        <img ref={this.wrapperRef} src={imgPromo} className="img-promo" alt="Promo Electrobat"
+                        <img  src={imgPromo} className="img-promo" alt="Promo Electrobat"
                          title="Promo Electobat"/>
                         <a href={"https://wa.me/5493416868049"} target="_blank"  rel="noopener noreferrer">
                             <img src={whatsap} className="wsp" alt="Whatsap"/>
