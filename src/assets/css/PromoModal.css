@@ -1,0 +1,48 @@
+.promo-modal  {
+    max-width: 95vh !important;
+    max-height: 95vh !important;
+}
+
+.promo-modal .imagenes-modal {
+    position: relative;
+    max-width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promo-modal .imagenes-modal .img-promo {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid white;
+}
+
+.promo-modal .imagenes-modal .wsp {
+    position: absolute;
+    width: 50px;
+    left: 10%;
+    bottom: 6%;
+    cursor: pointer;
+}
+
+.promo-modal .imagenes-modal .facebook {
+    position: absolute;
+    width: 50px;
+    right: 10%;
+    bottom: 6%;
+    cursor: pointer;
+}
+
+.promo-modal .imagenes-modal .close {
+    position: absolute;
+    width: 20px;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+.promo-modal .imagenes-modal .wsp:hover,
+.promo-modal .imagenes-modal .facebook:hover,
+.promo-modal .imagenes-modal .close:hover {
+    transform: scale(1.2);
+}

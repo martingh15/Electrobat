@@ -1,5 +1,11 @@
 .modal-body {
     padding: 0!important;
+    margin: 50vh auto 0 !important;
+    transform: translateY(-50%) !important;
+}
+
+.modal-dialog {
+    max-width: 100% !important;
 }
 
 .imagenModal {

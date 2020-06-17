@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-
-//Router
 import {Switch} from 'react-router';
-
-//Images
-import whatsappVerde from "../assets/img/whatsapp-verde.png";
 
 //CSS
 import "../assets/css/Layout.css";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+//Images
+import whatsappVerde from "../assets/img/whatsapp-verde.png";
 
 //Componentes
 import Nosotros from "./secciones/Nosotros";
@@ -19,6 +17,7 @@ import BateriaDetalle from "./secciones/BateriaDetalle";
 import Volquetes from "./secciones/Volquetes";
 import Contacto from "./secciones/Contacto";
 import NotFound from "./secciones/NotFound";
+import PromoModal from "./elementos/PromoModal";
 
 class Layout extends Component {
     render() {
@@ -35,6 +34,7 @@ class Layout extends Component {
                 <a href={"https://wa.me/5493416868049"} target="_blank"  rel="noopener noreferrer">
                     <img className="whatsapp" src={whatsappVerde} alt="whatsap" title="whatsap"/>
                 </a>
+                <PromoModal/>
             </div>
         );
     }

@@ -40,8 +40,8 @@ class Contacto extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
         if (this.props.baterias.byId.consulta && this.props.baterias.byId.consulta.consulta == "detalleBateria") {
-            var consulta = this.props.baterias.byId.consulta;
-            var campos = this.state.campos;
+            let consulta = this.props.baterias.byId.consulta;
+            let campos = this.state.campos;
             campos['asunto'] = "Consulta bateria: " + consulta.bateria.voltios;
             this.setState({
                 campos: campos,
@@ -49,8 +49,7 @@ class Contacto extends Component {
         }
 
         if (this.props.baterias.byId.consulta && this.props.baterias.byId.consulta.consulta == "volquete") {
-            var consulta = this.props.baterias.byId.consulta;
-            var campos = this.state.campos;
+            let campos = this.state.campos;
             campos['asunto'] = "Consulta alquiler volquete ";
             this.setState({
                 campos: campos,
@@ -59,7 +58,7 @@ class Contacto extends Component {
     }
 
     onChangeContacto(e) {
-        var campos = this.state.campos;
+        let campos = this.state.campos;
         campos[e.target.id] = e.target.value;
         this.setState({
             campos: campos,
@@ -68,7 +67,7 @@ class Contacto extends Component {
 
     submitFormulario(e) {
         e.preventDefault();
-        var datos = {
+        let datos = {
             'nombre': this.state.campos['nombre'],
             'email': this.state.campos['email'],
             'mensaje': this.state.campos['mensaje'],
@@ -172,6 +171,7 @@ class Contacto extends Component {
                     </div>
                 </div>
                 <iframe
+                    title="Google Maps Electrobat"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4402964078263!2d-60.680470685657276!3d-32.93938298092328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca90ca682cb%3A0x691aafc1a36aed83!2sElectrobat!5e0!3m2!1ses!2sar!4v1561856954461!5m2!1ses!2sar"
                     width="100%" height="300" frameBorder="0" style={{border: "0"}} allowFullScreen></iframe>
                 <Footer/>
