@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
-import {Switch} from 'react-router';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import { Switch } from 'react-router';
 
 //CSS
 import "../assets/css/Layout.css";
@@ -24,17 +24,17 @@ class Layout extends Component {
         return (
             <div className="app">
                 <Switch>
-                    <Route path={["/","/nosotros"]} exact component={Nosotros}/>
-                    <Route path="/baterias" exact component={Baterias}/>
-                    <Route path="/bateria-detalle/:idBateria" exact component={BateriaDetalle}/>
-                    <Route path="/volquetes" exact component={Volquetes}/>
-                    <Route path="/contacto" exact component={Contacto}/>
-                    <Route path="*" component={NotFound}/>
+                    <Route path={["/", "/nosotros"]} exact component={Nosotros} />
+                    <Route path="/baterias" exact component={Baterias} />
+                    <Route path="/bateria-detalle/:idBateria" exact component={BateriaDetalle} />
+                    <Route path="/volquetes" exact component={Volquetes} />
+                    <Route path="/contacto" exact component={Contacto} />
+                    <Route path="*" component={NotFound} />
                 </Switch>
-                <a href={"https://wa.me/5493416868049"} target="_blank"  rel="noopener noreferrer">
-                    <img className="whatsapp" src={whatsappVerde} alt="whatsap" title="whatsap"/>
+                <a href={"https://wa.me/5493416868049"} target="_blank" rel="noopener noreferrer">
+                    <img className="whatsapp" src={whatsappVerde} alt="whatsap" title="whatsap" />
                 </a>
-                {/*<PromoModal/>*/}
+                <PromoModal />
             </div>
         );
     }
