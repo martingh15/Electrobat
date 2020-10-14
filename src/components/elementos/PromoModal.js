@@ -5,7 +5,7 @@ import { Modal } from "react-bootstrap";
 import '../../assets/css/PromoModal.css';
 
 //Images
-import imgPromo from "../../assets/img/promo/promo-17-07-2020.png";
+import imgPromo from "../../assets/img/promo/promo-14-10-2020.jpeg";
 import cruz from "../../assets/img/close.png";
 import whatsap from "../../assets/img/promo/wsp-promo.png";
 import facebook from "../../assets/img/promo/face-promo.png";
