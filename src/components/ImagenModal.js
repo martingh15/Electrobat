@@ -6,7 +6,7 @@ import '../assets/css/imagenModal.css';
 
 class ImagenModal extends Component {
     render() {
-        var clase = this.props.className ? this.props.className : "";
+        let clase = this.props.className ? this.props.className : "";
         this.onHide = this.props.onHide;
         return (
             <div className="contenedorImagenModal">

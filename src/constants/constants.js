@@ -1,4 +1,4 @@
-var BASE_URL = "";
+let BASE_URL = "";
 //localhost
 if (process.env.NODE_ENV === 'development' && !process.env.REACT_APP_ENVI)
     BASE_URL = "http://localhost:3000";

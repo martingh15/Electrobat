@@ -2,8 +2,8 @@ export const RECEIVE_BATERIAS = 'RECEIVE_BATERIAS';
 export const CONSULTAR_PRECIO = 'CONSULTAR_PRECIO';
 
 export function receiveBaterias() {
-    var baterias = [];
-    var bateria1 = {};
+    let baterias = [];
+    let bateria1 = {};
     bateria1.id = 1;
     bateria1.voltios = "12 V. 70 AH.";
     bateria1.descripcion = "Libre de mantenimiento para autos Nafteros y GNC";
@@ -13,7 +13,7 @@ export function receiveBaterias() {
     bateria1.imagen  = "bateria-12V-70AH-1-autos-nafteros-gnc.png";
     baterias.push(bateria1);
 
-    var bateria2 = {};
+    let bateria2 = {};
     bateria2.id = 2;
     bateria2.voltios = "12 V. 75 AH.";
     bateria2.descripcion = "Libre de mantenimiento para autos Diesel";
@@ -23,7 +23,7 @@ export function receiveBaterias() {
     bateria2.imagen  = "bateria-12V-75AH-2-autos-diesel.png";
     baterias.push(bateria2);
 
-    var bateria3 = {};
+    let bateria3 = {};
     bateria3.id = 3;
     bateria3.voltios = "12 V. 100AH. Modelo Caterpillar";
     bateria3.descripcion = "Libre de mantenimiento para camiones y tractores";
@@ -33,7 +33,7 @@ export function receiveBaterias() {
     bateria3.imagen  = "bateria-12V-100AH-3-camiones-tractores.png";
     baterias.push(bateria3);
 
-    var bateria4 = {};
+    let bateria4 = {};
     bateria4.id = 4;
     bateria4.voltios = "12 V. 100 AH. Baja Modelo Sprinter";
     bateria4.descripcion = "Libre de mantenimiento para camionetas Diesel";
@@ -43,7 +43,7 @@ export function receiveBaterias() {
     bateria4.imagen  = "bateria-12V-100AH-camionetas-diesel-modelo-sprinter-4.png";
     baterias.push(bateria4);
 
-    var bateria5 = {};
+    let bateria5 = {};
     bateria5.id = 5;
     bateria5.voltios = "12 V. 110 AH.";
     bateria5.descripcion = "Libre de mantenimiento para camiones y tractores";
@@ -53,7 +53,7 @@ export function receiveBaterias() {
     bateria5.imagen  = "bateria-12V-110AH-5-camionetas-tractores.png";
     baterias.push(bateria5);
 
-    var bateria6 = {};
+    let bateria6 = {};
     bateria6.id = 6;
     bateria6.voltios = "12 V. 180 AH.";
     bateria6.descripcion = "Libre de mantenimiento para camiones y tractores de gran porte";
@@ -63,7 +63,7 @@ export function receiveBaterias() {
     bateria6.imagen  = "bateria-12V-180AH-6-camiones-tractores.png";
     baterias.push(bateria6);
 
-    var bateria7 = {};
+    let bateria7 = {};
     bateria7.id = 7;
     bateria7.voltios = "12 V. 45 AH. Modelo Ford K";
     bateria7.descripcion = "";
@@ -73,7 +73,7 @@ export function receiveBaterias() {
     bateria7.imagen  = "bateria-12V-45AH-7-ford-k.png";
     baterias.push(bateria7);
 
-    var bateria8 = {};
+    let bateria8 = {};
     bateria8.id = 8;
     bateria8.voltios = "12 V. 85 AH. Modelo Ranger";
     bateria8.descripcion = "";
@@ -83,7 +83,7 @@ export function receiveBaterias() {
     bateria8.imagen  = "bateria-12V-85AH-8-modelo-ranger.png";
     baterias.push(bateria8);
 
-    var bateria9 = {};
+    let bateria9 = {};
     bateria9.id = 9;
     bateria9.voltios = "12 V. 40 AH. Modelo NS 40";
     bateria9.descripcion = "Para vehiculos modelo Honda Fit Y KIA";
@@ -93,7 +93,7 @@ export function receiveBaterias() {
     bateria9.imagen  = "bateria-12V-40AH-9-honda-fit-kia.png";
     baterias.push(bateria9);
 
-    var bateria10 = {};
+    let bateria10 = {};
     bateria10.id = 10;
     bateria10.voltios = "12 V. 85 AH. Modelo N70Z";
     bateria10.descripcion = "Para vehiculos modelo trafic y Toyota Hilux";
@@ -103,7 +103,7 @@ export function receiveBaterias() {
     bateria10.imagen  = "bateria-12V-85AH-10-trafic-toyota-hilux.png";
     baterias.push(bateria10);
 
-    var bateria11 = {};
+    let bateria11 = {};
     bateria11.id = 11;
     bateria11.voltios = "12 V. 100 AH. Modelo N75Z";
     bateria11.descripcion = "Para vehiculos modelo Toyota Hilux y KIA Sorento";
@@ -121,7 +121,7 @@ export function receiveBaterias() {
 }
 
 export function consultarPrecio(bateria) {
-    var consulta = {};
+    let consulta = {};
     consulta.bateria = bateria;
     consulta.consulta = "detalleBateria";
 
@@ -133,7 +133,7 @@ export function consultarPrecio(bateria) {
 }
 
 export function consultarVolquete() {
-    var consulta = {};
+    let consulta = {};
     consulta.consulta = "volquete";
     return {
         type: CONSULTAR_PRECIO,

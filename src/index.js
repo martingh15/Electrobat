@@ -31,7 +31,7 @@ window.$ = window.jQuery = require("jquery");
 
 // Creates the Redux reducers with the redux-thunk middleware, which allows us
 // to do asynchronous things in the actions
-var createStoreWithMiddleware = null;
+let createStoreWithMiddleware = null;
 if (process.env.NODE_ENV !== 'production') {
     const loggerMiddleware = createLogger();
     createStoreWithMiddleware = applyMiddleware(thunk, loggerMiddleware)(createStore);
@@ -43,16 +43,16 @@ else{
 
     //chau console.los metodo 4 de esta pagina https://stapp.space/how-to-remove-javascript-console-log-pros-2/
     // (function () {
-    //     var method;
-    //     var noop = function noop() { };
-    //     var methods = [
+    //     let method;
+    //     let noop = function noop() { };
+    //     let methods = [
     //         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
     //         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
     //         'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
     //         'timeStamp', 'trace', 'warn'
     //     ];
-    //     var length = methods.length;
-    //     var console = (window.console = window.console || {});
+    //     let length = methods.length;
+    //     let console = (window.console = window.console || {});
     //
     //     while (length--) {
     //         method = methods[length];

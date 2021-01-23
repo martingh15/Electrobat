@@ -7,7 +7,7 @@ import '../assets/css/MensajeEmail.css';
 class MensajeEmail extends Component {
     render() {
         this.onHide = this.props.onHide;
-        var mensaje = "";
+        let mensaje = "";
         if (this.props.correcto) {
             mensaje = "El email ya ha sido enviado, muchas gracias por contatarnos!";
         } else {
