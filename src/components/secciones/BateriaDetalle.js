@@ -86,9 +86,9 @@ class BateriaDetalle extends Component {
                         </div>
                     </div>
                     <div className="item detallesBateria">
-                        <h4><b>Baterias Electrobat</b></h4>
-                        <h5><b>{bateria ? bateria.voltios : ""}</b></h5>
-                        <h5>{bateria ? bateria.descripcion : ""}</h5>
+                        <h1 className="titulo1"><b>Baterias Electrobat</b></h1>
+                        <h2 className="titulo2"><b>{bateria ? bateria.voltios : ""}</b></h2>
+                        <h3 className="titulo3">{bateria ? bateria.descripcion : ""}</h3>
                         <br/>
                         <p><b>Medidas:</b></p>
                         <p>Largo: {bateria ? bateria.largo : ""}</p>
@@ -96,7 +96,7 @@ class BateriaDetalle extends Component {
                         <p>Alto: {bateria ? bateria.alto : ""}</p>
                         <br/>
                         <div className="consultarPrecio" onClick={() => this.consultarPrecio()}>
-                            <p><b>CONSULTAR PRECIO</b></p>
+                            <button><b>CONSULTAR PRECIO</b></button>
                         </div>
                     </div>
                 </article>
