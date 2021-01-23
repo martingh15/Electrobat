@@ -87,13 +87,13 @@ class Nosotros extends Component {
                                  style={{padding: "15px"}}
                                  onClick={() => history.push("/baterias")}
                                  alt="bateria" title="bateria"/>
-                            <p>VENTA DE BATERIAS</p>
+                            <h2>VENTA DE BATERIAS</h2>
                         </div>
                         <div className="itemIco">
                             <img src={volqueteMini}
                                  onClick={() => history.push("/volquetes")}
                                  alt="volquete" title="volquete"/>
-                            <p>ALQUILER DE VOLQUETES</p>
+                            <h2>ALQUILER DE VOLQUETES</h2>
                         </div>
                     </div>
                     <p className="textoNosotros">

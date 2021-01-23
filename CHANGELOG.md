@@ -9,6 +9,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 - Menú hamburguesa con transición de altura.
 - Agregado de tags <article>.
 - Inicialización de variables "var" a "let".
+- Agregado de títulos h1,h2 y estilos footer.
 
 ### Changed
 -

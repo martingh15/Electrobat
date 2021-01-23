@@ -58,11 +58,12 @@
     flex-direction: column;
 }
 
-.baterias .galeriaBaterias .cajaBateria p {
+.baterias .galeriaBaterias .cajaBateria h2 {
     text-align: center;
     margin-top: 20px;
     color: #061833;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .baterias .galeriaBaterias img {

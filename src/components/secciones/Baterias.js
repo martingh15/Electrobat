@@ -82,7 +82,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 40 AH. Modelo NS 40</p>
                         </span>
-                        <p>12 V. 40 AH.</p>
+                        <h2>12 V. 40 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 7)}>
@@ -90,7 +90,7 @@ class Baterias extends Component {
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 45 AH. Modelo Ford K</p>
                         </span>
-                        <p>12 V. 45 AH.</p>
+                        <h2>12 V. 45 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 1)}>
@@ -99,7 +99,7 @@ class Baterias extends Component {
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 70 AH.</p>
                         </span>
-                        <p>12 V. 70 AH.</p>
+                        <h2>12 V. 70 AH.</h2>
                     </article>
                 </div>
                 <div className="galeriaBaterias">
@@ -110,7 +110,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 75 AH.</p>
                         </span>
-                        <p>12 V. 75 AH.</p>
+                        <h2>12 V. 75 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 8)}>
@@ -119,7 +119,7 @@ class Baterias extends Component {
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 85 AH. Modelo Ranger</p>
                         </span>
-                        <p>12 V. 85 AH.</p>
+                        <h2>12 V. 85 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 10)}>
@@ -128,7 +128,7 @@ class Baterias extends Component {
                         <span className="hoverImg ">
                             <p className="innerText">12 V. 85 AH. Modelo N70Z</p>
                         </span>
-                        <p>12 V. 85 AH.</p>
+                        <h2>12 V. 85 AH.</h2>
                     </article>
                 </div>
                 <div className="galeriaBaterias">
@@ -139,7 +139,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 100 AH.</p>
                         </span>
-                        <p>12 V. 100 AH.</p>
+                        <h2>12 V. 100 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 4)}>
@@ -149,7 +149,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 100 AH.</p>
                         </span>
-                        <p>12 V. 100 AH.</p>
+                        <h2>12 V. 100 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 11)}>
@@ -158,7 +158,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 100 AH. Modelo N75Z</p>
                         </span>
-                        <p>12 V. 100 AH.</p>
+                        <h2>12 V. 100 AH.</h2>
                     </article>
                 </div>
                 <div className="galeriaBaterias">
@@ -169,7 +169,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 110 AH.</p>
                         </span>
-                        <p>12 V. 110 AH.</p>
+                        <h2>12 V. 110 AH.</h2>
                     </article>
                     <article className="cajaBateria"
                          onClick={() => history.push("/bateria-detalle/" + 6)}>
@@ -178,7 +178,7 @@ class Baterias extends Component {
                         <span className="hoverImg">
                             <p className="innerText">12 V. 180 AH.</p>
                         </span>
-                        <p>12 V. 180 AH.</p>
+                        <h2>12 V. 180 AH.</h2>
                     </article>
                 </div>
                 <Footer/>

@@ -54,14 +54,14 @@ class Volquetes extends Component {
                     <img className="item" src={volquete} alt="volquete" title="volquete"/>
                     <img className="item" src={camion} alt="camion" title="volquete"/>
                 </div>
-                <div className="alquilerVolquetes">
-                    <p className="alquiler">ALQUILER DE VOLQUETES</p>
+                <article className="alquilerVolquetes">
+                    <h1 className="alquiler">ALQUILER DE VOLQUETES</h1>
                     <div className="lineaGruesa"></div>
-                    <p className="rosario">ROSARIO Y ALREDEDORES</p>
-                    <p className="mediano">MEDIANO | GRANDE</p>
+                    <h2 className="rosario">ROSARIO Y ALREDEDORES</h2>
+                    <h3 className="mediano">MEDIANO | GRANDE</h3>
                     <br/>
                     <p onClick={() => this.contactar()} className="contactar"><b>CONTACTAR</b></p>
-                </div>
+                </article>
                 <Footer/>
             </div>
         );
