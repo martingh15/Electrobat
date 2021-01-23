@@ -36,7 +36,7 @@ class BateriaDetalle extends Component {
         if (prevProps.baterias != this.props.baterias && this.props.baterias.allIds.length) {
             if (this.props.match.params.idBateria) {
                 this.props.baterias.allIds.forEach((idBateria) => {
-                    var bateria = this.props.baterias.byId.baterias[idBateria - 1];
+                    let bateria = this.props.baterias.byId.baterias[idBateria - 1];
                     if (bateria && bateria.id == this.props.match.params.idBateria) {
                         this.setState({bateria: bateria});
                     }
@@ -63,7 +63,7 @@ class BateriaDetalle extends Component {
 
     render() {
         const {bateria} = this.state;
-        var url = "";
+        let url = "";
         if (bateria) {
             url = process.env.PUBLIC_URL + "/img/" + bateria.imagen;
         }
@@ -77,7 +77,7 @@ class BateriaDetalle extends Component {
                 <div className="imagenBateriaDetalle imagenFondo">
                     <Header/>
                 </div>
-                <div className="contenedorBateria">
+                <article className="contenedorBateria">
                     <div className="item contenedorImagen">
                         <div className="cuadradoImagen">
                             <img className="imagenBateria" src={url} alt="imagenBateria" title="imagenBateria"/>
@@ -99,7 +99,7 @@ class BateriaDetalle extends Component {
                             <p><b>CONSULTAR PRECIO</b></p>
                         </div>
                     </div>
-                </div>
+                </article>
                 <Footer/>
             </div>
         );
