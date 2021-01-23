@@ -25,14 +25,29 @@
     margin-right: 30px;
 }
 
-.nosotros .subseccionNosotros .iconos img {
-    width: 80px;
-    height: 80px;
+
+
+.nosotros .subseccionNosotros .iconos .circulo {
+	width: 100px;
+    height: 100px;
+	border: none;
+	border-radius: 100%;
+	background-color: #082259;	
     margin: 0 auto;
     display: block;
-    border: none;
-    border-radius: 100%;
-    background-color: #082259;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros .subseccionNosotros .iconos .bateria {
+	width: 70px;
+    height: 70px;
+}
+
+.nosotros .subseccionNosotros .iconos .volquete {
+	width: 120px;
+    height: 120px;
 }
 
 .nosotros .subseccionNosotros .iconos .itemIco h2 {
@@ -40,13 +55,14 @@
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 .nosotros .subseccionNosotros .textoNosotros {
     text-align: center;
     color: white;
     padding: 0 25% 20px 25%;
+	font-size: 20px;
 }
 
 /*SUBSECCION NOSOTROS RESPONSIVE*/
@@ -57,7 +73,7 @@
     }
 
     .nosotros .subseccionNosotros .iconos .itemIco h2 {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .nosotros .subseccionNosotros .iconos .itemIco {
@@ -65,14 +81,13 @@
     }
 
     .nosotros .subseccionNosotros .textoNosotros {
-        font-size: 13px;
         padding: 0 15% 20px 15%;
     }
 }
 
 @media (max-width: 500px) {
     .nosotros .subseccionNosotros .textoNosotros {
-        font-size: 12px;
+        font-size: 16px;
         padding: 0 10% 20px 10%;
     }
 }

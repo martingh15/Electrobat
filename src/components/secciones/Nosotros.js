@@ -83,16 +83,19 @@ class Nosotros extends Component {
                 <div className="subseccionNosotros" id="scroll-nosotros">
                     <div className="item iconos">
                         <div className="itemIco">
-                            <img src={bateriaMini}
-                                 style={{padding: "15px"}}
-                                 onClick={() => history.push("/baterias")}
-                                 alt="bateria" title="bateria"/>
+						<div className="circulo" onClick={() => history.push("/baterias")}>
+							<img src={bateriaMini}
+								className="bateria"
+                                alt="bateria" title="bateria"/>
+						</div>
                             <h2>VENTA DE BATERIAS</h2>
                         </div>
                         <div className="itemIco">
-                            <img src={volqueteMini}
-                                 onClick={() => history.push("/volquetes")}
-                                 alt="volquete" title="volquete"/>
+							<div className="circulo" onClick={() => history.push("/volquetes")}>
+								<img src={volqueteMini}
+									className="volquete"
+									alt="volquete" title="volquete"/>
+							</div>
                             <h2>ALQUILER DE VOLQUETES</h2>
                         </div>
                     </div>
