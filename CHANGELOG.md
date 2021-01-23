@@ -6,7 +6,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Primer changelog con página funcional.
+-
 
 ### Changed
 -
@@ -19,3 +19,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ### Fixed
 -
+
+## [1.0.0] 23-01-2021
+### Added
+- Primer changelog con página funcional.
