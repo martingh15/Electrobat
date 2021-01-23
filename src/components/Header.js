@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 import history from "../history";
 
@@ -120,44 +120,44 @@ class Header extends Component {
     }
 
     render() {
-        const {collapse} = this.state;
+        const { collapse } = this.state;
 
         return (
             <div className="header item">
                 <div className="navegador">
-                    <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo" title="logo"/>
+                    <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo" title="logo" />
                     <div className="links">
                         <p id="h1-nosotros" className="h-nosotros"
-                           onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
+                            onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
                         <p id="h1-baterias" className="h-baterias"
-                           onClick={() => this.activarLink("baterias")}>BATERIAS</p>
+                            onClick={() => this.activarLink("baterias")}>BATERIAS</p>
                         <p id="h1-volquetes" className="h-volquetes"
-                           onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
+                            onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
                         <p id="h1-contacto" className="h-contacto"
-                           onClick={() => this.activarLink("contacto")}>CONTACTO</p>
-                        <div className="boton-responsive" onClick={() => this.setState({collapse: !collapse})}>
+                            onClick={() => this.activarLink("contacto")}>CONTACTO</p>
+                        <div className="boton-responsive" onClick={() => this.setState({ collapse: !collapse })}>
                             <div className="lineaBoton"></div>
                             <div className="lineaBoton"></div>
                             <div className="lineaBoton"></div>
                         </div>
                     </div>
                 </div>
-                <div className="navegadorCollapse" style={{display: collapse ? "block" : "none"}}>
+                <div className="navegadorCollapse" style={{ display: collapse ? "block" : "none" }}>
                     <p id="h2-nosotros" className="h-nosotros"
-                       onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
+                        onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
                     <p id="h2-baterias" className="h-baterias"
-                       onClick={() => this.activarLink("baterias")}>BATERIAS</p>
+                        onClick={() => this.activarLink("baterias")}>BATERIAS</p>
                     <p id="h2-volquetes" className="h-volquetes"
-                       onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
+                        onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
                     <p id="h2-contacto" className="h-contacto"
-                       onClick={() => this.activarLink("contacto")}>CONTACTO</p>
+                        onClick={() => this.activarLink("contacto")}>CONTACTO</p>
                 </div>
                 <div className="media">
-                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank"  rel="noopener noreferrer">
-                        <img className="itemMedia" src={facebook} alt="facebook" title="facebook"/>
+                    <a style={{ display: this.state.collapse ? "none" : "block" }} href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank" rel="noopener noreferrer">
+                        <img className="itemMedia" src={facebook} alt="facebook" title="facebook" />
                     </a>
-                    <a style={{display: this.state.collapse ? "none" : "block"}} href="https://m.instagram.com/electrobatrosario" target="_blank"  rel="noopener noreferrer">
-                        <img className="itemMedia" src={instagram} alt="instagram" title="instagram"/>
+                    <a style={{ display: this.state.collapse ? "none" : "block" }} href="https://m.instagram.com/electrobatrosario" target="_blank" rel="noopener noreferrer">
+                        <img className="itemMedia" src={instagram} alt="instagram" title="instagram" />
                     </a>
                 </div>
             </div>
