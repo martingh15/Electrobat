@@ -33,7 +33,7 @@
 
 .contacto .linea p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .contacto .linea img {
@@ -58,6 +58,10 @@
     width: 50px !important;
 }
 
+.contacto input, .contacto textarea, .contacto button {
+	font-size: 17px;
+}
+
 .contacto .forminput {
     display: flex;
     flex-direction: column;
@@ -75,22 +79,22 @@
 
 .contacto input::-webkit-input-placeholder, .contacto textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-family: DINCondensedBold;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .contacto input::-moz-placeholder, .contacto textarea::-moz-placeholder { /* Firefox 19+ */
     font-family: DINCondensedBold;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .contacto input::-ms-input-placeholder, .contacto textarea::-ms-input-placeholder { /* IE 10+ */
     font-family: DINCondensedBold;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .contacto input::-moz-placeholder, .contacto textarea::-moz-placeholder { /* Firefox 18- */
     font-family: DINCondensedBold;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .contacto button {
@@ -174,7 +178,7 @@
     }
 
     .contacto .linea p {
-        font-size: 10px !important;
+        font-size: 17px !important;
     }
 
     .contacto .linea {

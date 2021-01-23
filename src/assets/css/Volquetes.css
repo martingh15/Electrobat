@@ -123,12 +123,12 @@
     }
 
     .volquetes .alquilerVolquetes .rosario {
-        font-size: 16px;
+        font-size: 20px;
         margin-top: 5px;
     }
 
     .volquetes .alquilerVolquetes .mediano {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .volquetes .alquilerVolquetes br {
@@ -138,6 +138,6 @@
     .volquetes .alquilerVolquetes .contactar {
         padding: 7px 20px;
         margin-top: 20px;
-        font-size: 14px;
+        font-size: 17px;
     }
 }

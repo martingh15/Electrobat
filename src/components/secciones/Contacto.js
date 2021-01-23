@@ -30,10 +30,10 @@ class Contacto extends Component {
                 mensaje: '',
                 empresa: '',
                 telefono: '',
-                asunto: '',
+                asunto: ''
             },
             show: false,
-            correcto: false,
+            correcto: false
         };
     }
 
@@ -182,7 +182,7 @@ class Contacto extends Component {
 
 function mapStateToProps(state) {
     return {
-        baterias: state.baterias,
+        baterias: state.baterias
     };
 }
 
