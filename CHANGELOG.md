@@ -6,7 +6,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Promo modal activo día de la madre 2020.
+-
 
 ### Changed
 -
@@ -19,6 +19,10 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ### Fixed
 -
+
+## [1.0.1] 23-01-2021
+### Added
+- Promo modal activo día de la madre 2020.
 
 ## [1.0.0] 23-01-2021
 ### Added
