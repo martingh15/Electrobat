@@ -6,6 +6,19 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+-
+
+### Changed
+-
+
+### Deprecated
+-
+
+### Removed
+-
+
+## [1.1.0] 23-01-2021
+### Added
 - Menú hamburguesa con transición de altura.
 - Agregado de tags <article>.
 - Inicialización de variables "var" a "let".
@@ -14,12 +27,6 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ### Changed
 - Tamaño de letra mínimo 17px.
-
-### Deprecated
--
-
-### Removed
--
 
 ### Fixed
 - index.html: hreflang y meta description.
