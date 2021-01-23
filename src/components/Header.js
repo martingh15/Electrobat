@@ -142,7 +142,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </nav>
-                <nav className="navegadorCollapse" style={{ height: collapse ? "170px" : "0"}}>
+                <nav className="navegadorCollapse" style={{ height: collapse ? "170px" : "0", border: collapse ? "inherit" : "none"}}>
                     <a id="h2-nosotros" className="h-nosotros links-link"
                         onClick={() => this.activarLink("nosotros")}>NOSOTROS</a>
                     <a id="h2-baterias" className="h-baterias links-link"
