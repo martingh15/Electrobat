@@ -19,10 +19,10 @@ class Header extends Component {
     }
 
     componentDidMount() {
-        var list1 = document.getElementsByClassName("h-nosotros");
-        var list2 = document.getElementsByClassName("h-baterias");
-        var list3 = document.getElementsByClassName("h-volquetes");
-        var list4 = document.getElementsByClassName("h-contacto");
+        let list1 = document.getElementsByClassName("h-nosotros");
+        let list2 = document.getElementsByClassName("h-baterias");
+        let list3 = document.getElementsByClassName("h-volquetes");
+        let list4 = document.getElementsByClassName("h-contacto");
         if (window.location.href.indexOf("nosotros") !== -1) {
             for (let item of list1)
                 item.classList.add("activo");
@@ -69,10 +69,10 @@ class Header extends Component {
     }
 
     activarLink(clase) {
-        var list1 = document.getElementsByClassName("h-nosotros");
-        var list2 = document.getElementsByClassName("h-baterias");
-        var list3 = document.getElementsByClassName("h-volquetes");
-        var list4 = document.getElementsByClassName("h-contacto");
+        let list1 = document.getElementsByClassName("h-nosotros");
+        let list2 = document.getElementsByClassName("h-baterias");
+        let list3 = document.getElementsByClassName("h-volquetes");
+        let list4 = document.getElementsByClassName("h-contacto");
         if (clase === "h-nosotros") {
             for (let item of list1)
                 item.classList.add("activo");
@@ -123,44 +123,44 @@ class Header extends Component {
         const { collapse } = this.state;
 
         return (
-            <div className="header item">
-                <div className="navegador">
+            <header className="header item">
+                <nav className="navegador">
                     <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo" title="logo" />
                     <div className="links">
-                        <p id="h1-nosotros" className="h-nosotros"
-                            onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
-                        <p id="h1-baterias" className="h-baterias"
-                            onClick={() => this.activarLink("baterias")}>BATERIAS</p>
-                        <p id="h1-volquetes" className="h-volquetes"
-                            onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
-                        <p id="h1-contacto" className="h-contacto"
-                            onClick={() => this.activarLink("contacto")}>CONTACTO</p>
+                        <a id="h1-nosotros" className="h-nosotros links-link"
+                            onClick={() => this.activarLink("nosotros")}>NOSOTROS</a>
+                        <a id="h1-baterias" className="h-baterias links-link"
+                            onClick={() => this.activarLink("baterias")}>BATERIAS</a>
+                        <a id="h1-volquetes" className="h-volquetes links-link"
+                            onClick={() => this.activarLink("volquetes")}>VOLQUETES</a>
+                        <a id="h1-contacto" className="h-contacto links-link"
+                            onClick={() => this.activarLink("contacto")}>CONTACTO</a>
                         <div className="boton-responsive" onClick={() => this.setState({ collapse: !collapse })}>
                             <div className="lineaBoton"></div>
                             <div className="lineaBoton"></div>
                             <div className="lineaBoton"></div>
                         </div>
                     </div>
-                </div>
-                <div className="navegadorCollapse" style={{ display: collapse ? "block" : "none" }}>
-                    <p id="h2-nosotros" className="h-nosotros"
-                        onClick={() => this.activarLink("nosotros")}>NOSOTROS</p>
-                    <p id="h2-baterias" className="h-baterias"
-                        onClick={() => this.activarLink("baterias")}>BATERIAS</p>
-                    <p id="h2-volquetes" className="h-volquetes"
-                        onClick={() => this.activarLink("volquetes")}>VOLQUETES</p>
-                    <p id="h2-contacto" className="h-contacto"
-                        onClick={() => this.activarLink("contacto")}>CONTACTO</p>
-                </div>
-                <div className="media">
+                </nav>
+                <nav className="navegadorCollapse" style={{ height: collapse ? "170px" : "0"}}>
+                    <a id="h2-nosotros" className="h-nosotros links-link"
+                        onClick={() => this.activarLink("nosotros")}>NOSOTROS</a>
+                    <a id="h2-baterias" className="h-baterias links-link"
+                        onClick={() => this.activarLink("baterias")}>BATERIAS</a>
+                    <a id="h2-volquetes" className="h-volquetes links-link"
+                        onClick={() => this.activarLink("volquetes")}>VOLQUETES</a>
+                    <a id="h2-contacto" className="h-contacto links-link"
+                        onClick={() => this.activarLink("contacto")}>CONTACTO</a>
+                </nav>
+                <aside className="media">
                     <a style={{ display: this.state.collapse ? "none" : "block" }} href="https://m.facebook.com/profile.php?id=2455198884548919&changedcover=1" target="_blank" rel="noopener noreferrer">
                         <img className="itemMedia" src={facebook} alt="facebook" title="facebook" />
                     </a>
                     <a style={{ display: this.state.collapse ? "none" : "block" }} href="https://m.instagram.com/electrobatrosario" target="_blank" rel="noopener noreferrer">
                         <img className="itemMedia" src={instagram} alt="instagram" title="instagram" />
                     </a>
-                </div>
-            </div>
+                </aside>
+            </header>
         );
     }
 }
