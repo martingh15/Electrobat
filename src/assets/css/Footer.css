@@ -94,7 +94,7 @@ footer {
     }
     .footer .datos {
         display: flex;
-        min-width: 27px !important;
+        width: fit-content;
         margin: 2px;
         padding: 0;
     }
