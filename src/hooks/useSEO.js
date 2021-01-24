@@ -21,7 +21,8 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt, ke
     useEffect(() => {
 		const previousTitle   = prevTitle.current
 		const previousOgTitle = prevOgTitle.current
-		const metaOgTitle	  = document.querySelector(metaPropertyOgTitle)
+		
+		const metaOgTitle = document.querySelector(metaPropertyOgTitle)
 		if (title) {
 			document.title = `${title} | Electrobat`
 			metaOgTitle.setAttribute('content', title)
@@ -34,23 +35,27 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt, ke
     }, [title])
 	
     useEffect(() => {
-		const previousDesc	  = prevDesc.current
-		const previousOgDesc  = prevOgDesc.current
+		const previousDesc	 = prevDesc.current
+		const previousOgDesc = prevOgDesc.current
+		
 		const metaDescripcion = document.querySelector(metaNameDescripcion)
 		const metaOgDesc	  = document.querySelector(metaPropertyOgDescripcion)
+		
 		if (description) {
 			metaDescripcion.setAttribute('content', description)
 			metaOgDesc.setAttribute('content', description)
 		}
 		return () => {
 			metaDescripcion.setAttribute('content', previousDesc)
-			metaOgDesc.setAttribute('content', previousDesc)
+			metaOgDesc.setAttribute('content', previousOgDesc)
 		}
     }, [description])
 	
 	useEffect(() => {
 		const previousOgUrl = prevOgUrl.current
-		const metaOgUrl		= document.querySelector(metaPropertyOgUrl)
+		
+		const metaOgUrl = document.querySelector(metaPropertyOgUrl)
+		
 		if (url) {
 			metaOgUrl.setAttribute('content', url)
 		}
@@ -59,7 +64,9 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt, ke
 	
 	useEffect(() => {
 		const previousOgImage = prevOgImage.current
-		const metaOgImage     = document.querySelector(metaPropertyOgImage)
+		
+		const metaOgImage = document.querySelector(metaPropertyOgImage)
+		
 		if (ogImage) {
 			metaOgImage.setAttribute('content', ogImage)
 		}
@@ -68,7 +75,9 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt, ke
 	
 	useEffect(() => {
 		const previousOgImageAlt = prevOgImageAlt.current
-		const metaOgImageAlt     = document.querySelector(metaPropertyOgImageAlt)
+		
+		const metaOgImageAlt = document.querySelector(metaPropertyOgImageAlt)
+		
 		if (ogImageAlt) {
 			metaOgImageAlt.setAttribute('content', ogImageAlt)
 		}
@@ -77,7 +86,9 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt, ke
 	
 	useEffect(() => {
 		const previousKeywords = prevKeywords.current
-		const metaKeywords	   = document.querySelector(metaNameKeywords)
+		
+		const metaKeywords = document.querySelector(metaNameKeywords)
+		
 		if (keywords) {
 			metaKeywords.setAttribute('content', keywords)
 		}
