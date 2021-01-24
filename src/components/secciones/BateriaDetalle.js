@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import {Helmet} from "react-helmet";
 
 //CSS
 import "../../assets/css/BateriaDetalle.css";
@@ -12,6 +11,7 @@ import { receiveBaterias, consultarPrecio } from "../../actions/Actions";
 import Header from "../Header";
 import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
+import SEO from "../elementos/SEO";
 
 //Images
 import lupita from "../../assets/img/searcher.png";
@@ -74,17 +74,13 @@ class BateriaDetalle extends Component {
 		let descripcion	  = `Venta de baterias: ${title}.`;
         return (
             <div className="bateria-detalle">
-				<Helmet>
-					<title>{title}</title>
-					
-					<meta name="description" content={descripcion} />
-					
-					<meta property="og:url" content={window.location.href} />
-					<meta property="og:title" content={title} />
-					<meta property="og:image" content="https://www.electrobatrosario.com/img/baterias.jpg" />
-					<meta property="og:image:alt" content="Baterias Electrobat Rosario" />
-					<meta property="og:description" content={descripcion}/>
-				</Helmet>
+				<SEO 
+					title={title} 
+					description={descripcion} 
+					url={window.location.href}
+					ogImage="https://www.electrobatrosario.com/img/baterias.jpg"
+					ogImageAlt={`Batería: ${tituloBateria}`}
+				/>
                 <ImagenModal
                     key="modal-1"
                     className="bateriaModal"

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import OwlCarousel from 'react-owl-carousel';
 import Scrollchor from "react-scrollchor";
-import {Helmet} from "react-helmet";
+import history from "../../history";
 
 //CSS
 import "../../assets/css/Nosotros.css";
@@ -11,7 +11,7 @@ import "../../assets/css/Nosotros.css";
 import Header from "../Header";
 import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
-import history from "../../history";
+import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -65,17 +65,13 @@ class Nosotros extends Component {
 		let descripcion = "Somos una empresa dedicada al abastecimiento, prestación de servicios, ventas de baterias y alquiler de volquetes con 20 años de trayectoria en el rubro.";
         return (
             <div className="nosotros">
-                <Helmet>
-					<title>{title}</title>
-					
-					<meta name="description" content={descripcion} />
-					
-					<meta property="og:url" content="https://www.electrobatrosario.com/nosotros" />
-					<meta property="og:title" content={title} />
-					<meta property="og:image" content="https://www.electrobatrosario.com/img/frente-electrobat.jpg" />
-					<meta property="og:image:alt" content="Electrobat Rosario" />
-					<meta property="og:description" content={descripcion}/>
-				</Helmet>
+				<SEO 
+					title={title} 
+					description={descripcion} 
+					url="https://www.electrobatrosario.com/nosotros"
+					ogImage="https://www.electrobatrosario.com/img/frente-electrobat.jpg"
+					ogImageAlt={`Electrobat Rosario`}
+				/>
                 <ImagenModal
                     key="modal-1"
                     onHide={this.onHide.bind(this)}

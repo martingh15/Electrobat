@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import history from "../../history";
-import {Helmet} from "react-helmet";
+import Scrollchor from "react-scrollchor";
 
 //CSS
 import "../../assets/css/Baterias.css";
@@ -8,7 +8,7 @@ import "../../assets/css/Baterias.css";
 //Components
 import Header from "../Header";
 import Footer from "../../components/Footer";
-import Scrollchor from "react-scrollchor";
+import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -47,17 +47,13 @@ class Baterias extends Component {
 		let descripcion = "Venta de baterias para autos Nafteros, GNC, Diesel, también camiones, y tractores de gran porte. Modelos: Caterpillar, Sprinter, Ford K, Ranger, NS 40, N70Z, N75Z, entre otros."
         return (
             <div className="baterias">
-                <Helmet>
-					<title>{title}</title>
-					
-					<meta name="description" content={descripcion} />
-					
-					<meta property="og:url" content="https://www.electrobatrosario.com/baterias" />
-					<meta property="og:title" content={title} />
-					<meta property="og:image" content="https://www.electrobatrosario.com/img/baterias.jpg" />
-					<meta property="og:image:alt" content="Baterias Electrobat Rosario" />
-					<meta property="og:description" content={descripcion}/>
-				</Helmet>
+				<SEO 
+					title={title} 
+					description={descripcion} 
+					url="https://www.electrobatrosario.com/baterias"
+					ogImage="https://www.electrobatrosario.com/img/baterias.jpg"
+					ogImageAlt="Baterias Electrobat Rosario"
+				/>
                 <div className="imagenBaterias imagenFondo">
                     <Header />
                     <div className="item"></div>
