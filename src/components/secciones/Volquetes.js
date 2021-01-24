@@ -42,7 +42,14 @@ class Volquetes extends Component {
             <div className="volquetes">
                 <Helmet>
 					<title>{title}</title>
+					
 					<meta name="description" content={descripcion} />
+					
+					<meta property="og:url" content="https://www.electrobatrosario.com/volquetes" />
+					<meta property="og:title" content={title} />
+					<meta property="og:image" content="https://www.electrobatrosario.com/img/volquete.jpg" />
+					<meta property="og:image:alt" content="Volquetes Electrobat Rosario" />
+					<meta property="og:description" content={descripcion}/>
 				</Helmet>
                 <div className="imagenVolquetes imagenFondo">
                     <Header />

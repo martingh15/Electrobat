@@ -61,13 +61,20 @@ class Nosotros extends Component {
     }
 
     render() {
-		let titulo		= "Nosotros - Electrobat";
+		let title		= "Nosotros - Electrobat";
 		let descripcion = "Somos una empresa dedicada al abastecimiento, prestación de servicios, ventas de baterias y alquiler de volquetes con 20 años de trayectoria en el rubro.";
         return (
             <div className="nosotros">
                 <Helmet>
-					<title>{titulo}</title>
+					<title>{title}</title>
+					
 					<meta name="description" content={descripcion} />
+					
+					<meta property="og:url" content="https://www.electrobatrosario.com/nosotros" />
+					<meta property="og:title" content={title} />
+					<meta property="og:image" content="https://www.electrobatrosario.com/img/frente-electrobat.jpg" />
+					<meta property="og:image:alt" content="Electrobat Rosario" />
+					<meta property="og:description" content={descripcion}/>
 				</Helmet>
                 <ImagenModal
                     key="modal-1"

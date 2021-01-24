@@ -76,7 +76,14 @@ class BateriaDetalle extends Component {
             <div className="bateria-detalle">
 				<Helmet>
 					<title>{title}</title>
+					
 					<meta name="description" content={descripcion} />
+					
+					<meta property="og:url" content={window.location.href} />
+					<meta property="og:title" content={title} />
+					<meta property="og:image" content="https://www.electrobatrosario.com/img/baterias.jpg" />
+					<meta property="og:image:alt" content="Baterias Electrobat Rosario" />
+					<meta property="og:description" content={descripcion}/>
 				</Helmet>
                 <ImagenModal
                     key="modal-1"

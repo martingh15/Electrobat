@@ -106,7 +106,14 @@ class Contacto extends Component {
             <div className="contacto">
                 <Helmet>
 					<title>{title}</title>
+					
 					<meta name="description" content={descripcion} />
+					
+					<meta property="og:url" content="https://www.electrobatrosario.com/contacto" />
+					<meta property="og:title" content={title} />
+					<meta property="og:image" content="https://www.electrobatrosario.com/img/contacto.jpg" />
+					<meta property="og:image:alt" content="Volquetes Electrobat Rosario" />
+					<meta property="og:description" content={descripcion}/>
 				</Helmet>
                 <MensajeEmail
                     key="modal-2"
