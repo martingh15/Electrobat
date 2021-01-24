@@ -70,6 +70,7 @@ class BateriaDetalle extends Component {
             url = process.env.PUBLIC_URL + "/img/" + bateria.imagen;
         }
         let tituloBateria = bateria ? bateria.voltios : "";
+		let keywords	  = bateria ? bateria.keywords : "";
         let title		  = `Detalle de bateria ${tituloBateria} - Electrobat.`;
 		let descripcion	  = `Venta de baterias: ${title}.`;
         return (
@@ -78,6 +79,7 @@ class BateriaDetalle extends Component {
 					title={title} 
 					description={descripcion} 
 					url={window.location.href}
+					keywords={keywords}
 					ogImage="https://www.electrobatrosario.com/img/baterias.jpg"
 					ogImageAlt={`Batería: ${tituloBateria}`}
 				/>
