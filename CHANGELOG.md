@@ -6,13 +6,23 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- SEO con hooks.
+-
 
 ### Changed
 -
 
 ### Deprecated
 -
+
+### Removed
+-
+
+### Fixed
+-
+
+## [1.2.3] 24-01-2021
+### Added
+- SEO con hooks.
 
 ### Removed
 - React helmet.
