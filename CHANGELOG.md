@@ -15,7 +15,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 -
 
 ### Removed
--
+- React helmet.
 
 ### Fixed
 - Cambios menores index.js.
