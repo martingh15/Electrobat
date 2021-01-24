@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
 
 export default function useSEO({title, description}) {
+	const meta		= 'meta[name="description"]';
 	const prevTitle = useRef(document.title)
-	const prevDesc  = useRef(document.querySelector('meta[name="description"]').getAttribute('content'))
+	const prevDesc  = useRef(document.querySelector(meta).getAttribute('content'))
 	
     useEffect(() => {
 		const previousTitle = prevTitle.current
@@ -15,7 +16,7 @@ export default function useSEO({title, description}) {
 	
     useEffect(() => {
 		const previousDesc = prevDesc.current
-		const metaDescripcion = document.querySelector('meta[name="description"]')
+		const metaDescripcion = document.querySelector(meta)
 		if (description) {
 			metaDescripcion.setAttribute('content', description)
 		}
