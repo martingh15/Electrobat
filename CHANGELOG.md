@@ -18,6 +18,10 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 -
 
 ### Fixed
+-
+
+## [1.1.2] 24-01-2021
+### Fixed
 - Advertencias de js.
 - Footer responsive v2.
 
