@@ -1,7 +1,12 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux';
 import history from "../../history";
+
+//Components
 import Header from "../Header";
+import Titulo from "../elementos/Titulo";
+
+//Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
 
 class NotFound extends Component {
@@ -23,8 +28,9 @@ class NotFound extends Component {
     }
 
     render() {
-        return (
+		return (
             <div>
+				<Titulo title={"Página no encontrada"} />
                 <div className="imagenNosotros imagenFondo" style={{height: "100vh"}}>
                     <Header/>
                     <p className="textoFondo">Página no encontrada, redirigiendo ...</p>

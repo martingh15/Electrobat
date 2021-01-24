@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import {connect} from 'react-redux';
+import React, { Component } from "react";
+import { connect } from 'react-redux';
 import OwlCarousel from 'react-owl-carousel';
 
 //CSS
@@ -26,6 +26,7 @@ import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
 import history from "../../history";
 import Scrollchor from "react-scrollchor";
+import Titulo from "../elementos/Titulo";
 
 class Nosotros extends Component {
     constructor(props) {
@@ -49,7 +50,7 @@ class Nosotros extends Component {
     }
 
     onHide() {
-        this.setState({show: false});
+        this.setState({ show: false });
     }
 
     next() {
@@ -63,39 +64,40 @@ class Nosotros extends Component {
     render() {
         return (
             <div className="nosotros">
+                <Titulo title={"Nosotros"} />
                 <ImagenModal
                     key="modal-1"
                     onHide={this.onHide.bind(this)}
-                    show={this.state.show} imagen={this.state.imagen}/>
+                    show={this.state.show} imagen={this.state.imagen} />
                 <div className="imagenNosotros imagenFondo">
-                    <Header/>
+                    <Header />
                     <div className="item"></div>
-                    <div className="item" style={{display: "flex", flexDirection: "column"}}>
+                    <div className="item" style={{ display: "flex", flexDirection: "column" }}>
                         <h1 className="textoFondo"><span className="chiquito"></span><span
                             className="grandote">NOSOTROS</span></h1>
                     </div>
-                    <Scrollchor animate={{duration: 500, offset: 0}}
-                                disableHistory={true}
-                                to="#scroll-nosotros">
-                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo"/>
+                    <Scrollchor animate={{ duration: 500, offset: 0 }}
+                        disableHistory={true}
+                        to="#scroll-nosotros">
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo" />
                     </Scrollchor>
                 </div>
                 <div className="subseccionNosotros" id="scroll-nosotros">
                     <div className="item iconos">
                         <div className="itemIco">
-						<div className="circulo" onClick={() => history.push("/baterias")}>
-							<img src={bateriaMini}
-								className="bateria"
-                                alt="bateria" title="bateria"/>
-						</div>
+                            <div className="circulo" onClick={() => history.push("/baterias")}>
+                                <img src={bateriaMini}
+                                    className="bateria"
+                                    alt="bateria" title="bateria" />
+                            </div>
                             <h2>VENTA DE BATERIAS</h2>
                         </div>
                         <div className="itemIco">
-							<div className="circulo" onClick={() => history.push("/volquetes")}>
-								<img src={volqueteMini}
-									className="volquete"
-									alt="volquete" title="volquete"/>
-							</div>
+                            <div className="circulo" onClick={() => history.push("/volquetes")}>
+                                <img src={volqueteMini}
+                                    className="volquete"
+                                    alt="volquete" title="volquete" />
+                            </div>
                             <h2>ALQUILER DE VOLQUETES</h2>
                         </div>
                     </div>
@@ -112,50 +114,50 @@ class Nosotros extends Component {
                 </div>
                 <div className="carousel">
                     <OwlCarousel ref="owldemo" className="owl-theme itemC" loop
-                                 items={4}
-                                 margin={10}
-                                 autoplay
-                                 responsive={
-                                     {
-                                         0: {
-                                             items: 2
-                                         },
-                                         // breakpoint from 480 up
-                                         480: {
-                                             items: 2
-                                         },
-                                         // breakpoint from 768 up
-                                         768: {
-                                             items: 3
-                                         },
-                                         // breakpoint from 768 up
-                                         991: {
-                                             items: 4
-                                         }
-                                     }
-                                 }
-                                 dots={false}
-                                 autoplayTimeout={3000}>
+                        items={4}
+                        margin={10}
+                        autoplay
+                        responsive={
+                            {
+                                0: {
+                                    items: 2
+                                },
+                                // breakpoint from 480 up
+                                480: {
+                                    items: 2
+                                },
+                                // breakpoint from 768 up
+                                768: {
+                                    items: 3
+                                },
+                                // breakpoint from 768 up
+                                991: {
+                                    items: 4
+                                }
+                            }
+                        }
+                        dots={false}
+                        autoplayTimeout={3000}>
                         <div className="item"><img src={slider1} onClick={(e) => this.resizeImage(e, slider1)}
-                                                   alt="slider1" title="slider1"/></div>
+                            alt="slider1" title="slider1" /></div>
                         <div className="item"><img src={slider2} onClick={(e) => this.resizeImage(e, slider2)}
-                                                   alt="slider2" title="slider2"/></div>
+                            alt="slider2" title="slider2" /></div>
                         <div className="item"><img src={slider3} onClick={(e) => this.resizeImage(e, slider3)}
-                                                   alt="slider3" title="slider3"/></div>
+                            alt="slider3" title="slider3" /></div>
                         <div className="item"><img src={slider4} onClick={(e) => this.resizeImage(e, slider4)}
-                                                   alt="slider4" title="slider4"/></div>
+                            alt="slider4" title="slider4" /></div>
                         <div className="item"><img src={slider5} onClick={(e) => this.resizeImage(e, slider5)}
-                                                   alt="slider5" title="slider5"/></div>
+                            alt="slider5" title="slider5" /></div>
                         <div className="item"><img src={slider6} onClick={(e) => this.resizeImage(e, slider6)}
-                                                   alt="slider6" title="slider6"/></div>
+                            alt="slider6" title="slider6" /></div>
                     </OwlCarousel>
                     <div>
-                        <img className="flechaIzq flecha" onClick={() => this.prev()} src={flechaIzq} alt="flecha-izq" title="flecha-izq"/>
+                        <img className="flechaIzq flecha" onClick={() => this.prev()} src={flechaIzq} alt="flecha-izq" title="flecha-izq" />
                         <img className="flechaDer flecha" onClick={() => this.next()} src={flechaDer}
-                             alt="flecha-next" title="flecha-next"/>
+                            alt="flecha-next" title="flecha-next" />
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         );
     }

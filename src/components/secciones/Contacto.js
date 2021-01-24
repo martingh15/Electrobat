@@ -9,6 +9,7 @@ import "../../assets/css/Contacto.css";
 //Componentes
 import Footer from "../Footer";
 import Header from "../Header";
+import Titulo from "../elementos/Titulo";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -101,6 +102,7 @@ class Contacto extends Component {
     render() {
         return (
             <div className="contacto">
+                <Titulo title={"Contacto"} />
                 <MensajeEmail
                     key="modal-2"
                     onHide={this.onHide.bind(this)}

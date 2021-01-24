@@ -17,6 +17,7 @@
     "owl.carousel": "^2.3.4",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
+    "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^16.8.6",
     "react-google-maps": "^9.4.5",
     "react-owl-carousel": "^2.3.1",

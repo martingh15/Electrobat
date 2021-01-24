@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import {connect} from "react-redux";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import history from "../../history";
 
 //CSS
@@ -17,7 +17,8 @@ import volquete from "../../assets/img/volquetes/originales/volquete.jpg";
 import camion from "../../assets/img/volquetes/originales/camion.jpg";
 
 //Actions
-import {consultarVolquete} from "../../actions/Actions";
+import { consultarVolquete } from "../../actions/Actions";
+import Titulo from "../elementos/Titulo";
 
 class Volquetes extends Component {
     constructor(props) {
@@ -37,32 +38,33 @@ class Volquetes extends Component {
     render() {
         return (
             <div className="volquetes">
+                <Titulo title={"Alquiler de volquetes"} />
                 <div className="imagenVolquetes imagenFondo">
-                    <Header/>
+                    <Header />
                     <div className="item"></div>
-                    <div className="item" style={{display: "flex", flexDirection: "column"}}>
+                    <div className="item" style={{ display: "flex", flexDirection: "column" }}>
                         <p className="textoFondo"><span className="chiquito">ALQUILER DE</span><span
                             className="grandote">VOLQUETES</span></p>
                     </div>
-                    <Scrollchor animate={{duration: 500, offset: 0}}
-                                disableHistory={true}
-                                to="#scroll-volquetes">
-                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo"/>
+                    <Scrollchor animate={{ duration: 500, offset: 0 }}
+                        disableHistory={true}
+                        to="#scroll-volquetes">
+                        <img className="angle-arrow-down" src={flechaAbajo} alt="flechaAbajo" title="flechaAbajo" />
                     </Scrollchor>
                 </div>
                 <div className="dosImagenes" id="scroll-volquetes">
-                    <img className="item" src={volquete} alt="volquete" title="volquete"/>
-                    <img className="item" src={camion} alt="camion" title="volquete"/>
+                    <img className="item" src={volquete} alt="volquete" title="volquete" />
+                    <img className="item" src={camion} alt="camion" title="volquete" />
                 </div>
                 <article className="alquilerVolquetes">
                     <h1 className="alquiler">ALQUILER DE VOLQUETES</h1>
                     <div className="lineaGruesa"></div>
                     <h2 className="rosario">ROSARIO Y ALREDEDORES</h2>
                     <h3 className="mediano">MEDIANO | GRANDE</h3>
-                    <br/>
+                    <br />
                     <p onClick={() => this.contactar()} className="contactar"><b>CONTACTAR</b></p>
                 </article>
-                <Footer/>
+                <Footer />
             </div>
         );
     }
