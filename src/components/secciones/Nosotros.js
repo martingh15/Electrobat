@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import OwlCarousel from 'react-owl-carousel';
 import Scrollchor from "react-scrollchor";
+import {Helmet} from "react-helmet";
 
 //CSS
 import "../../assets/css/Nosotros.css";
@@ -11,7 +12,6 @@ import Header from "../Header";
 import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
 import history from "../../history";
-import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -61,11 +61,14 @@ class Nosotros extends Component {
     }
 
     render() {
-		let titulo		= "Nosotros";
+		let titulo		= "Nosotros - Electrobat";
 		let descripcion = "Somos una empresa dedicada al abastecimiento, prestación de servicios, ventas de baterias y alquiler de volquetes con 20 años de trayectoria en el rubro.";
         return (
             <div className="nosotros">
-                <SEO title={titulo} description={descripcion} />
+                <Helmet>
+					<title>{titulo}</title>
+					<meta name="description" content={descripcion}></meta>
+				</Helmet>
                 <ImagenModal
                     key="modal-1"
                     onHide={this.onHide.bind(this)}

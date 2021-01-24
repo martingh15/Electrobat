@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import $ from "jquery";
 import Scrollchor from "react-scrollchor";
+import {Helmet} from "react-helmet";
 
 //CSS
 import "../../assets/css/Contacto.css";
@@ -9,7 +10,6 @@ import "../../assets/css/Contacto.css";
 //Componentes
 import Footer from "../Footer";
 import Header from "../Header";
-import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -100,11 +100,14 @@ class Contacto extends Component {
     }
 
     render() {
-		let title = "Contacto";
+		let title = "Contacto - Electrobat";
 		let descripcion = "Contáctate para consultar precios de baterias, volquetes y otros servicios.";
         return (
             <div className="contacto">
-                <SEO title={title} description={descripcion}/>
+                <Helmet>
+					<title>{title}</title>
+					<meta name="description" content={descripcion}></meta>
+				</Helmet>
                 <MensajeEmail
                     key="modal-2"
                     onHide={this.onHide.bind(this)}

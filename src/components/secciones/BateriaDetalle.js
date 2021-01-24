@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import {Helmet} from "react-helmet";
+
 //CSS
 import "../../assets/css/BateriaDetalle.css";
 
@@ -10,7 +12,6 @@ import { receiveBaterias, consultarPrecio } from "../../actions/Actions";
 import Header from "../Header";
 import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
-import SEO from "../elementos/SEO";
 
 //Images
 import lupita from "../../assets/img/searcher.png";
@@ -69,11 +70,14 @@ class BateriaDetalle extends Component {
             url = process.env.PUBLIC_URL + "/img/" + bateria.imagen;
         }
         let tituloBateria = bateria ? bateria.voltios : "";
-        let title		  = `Detalle de bateria ${tituloBateria}.`;
-		let detalle		  = `Venta de baterias: ${title}.`;
+        let title		  = `Detalle de bateria ${tituloBateria} - Electrobat.`;
+		let descripcion	  = `Venta de baterias: ${title}.`;
         return (
             <div className="bateria-detalle">
-                <SEO title={title} description={detalle} />
+				<Helmet>
+					<title>{title}</title>
+					<meta name="description" content={descripcion}></meta>
+				</Helmet>
                 <ImagenModal
                     key="modal-1"
                     className="bateriaModal"

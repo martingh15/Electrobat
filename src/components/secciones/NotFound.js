@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux';
 import history from "../../history";
+import {Helmet} from "react-helmet";
 
 //Components
 import Header from "../Header";
-import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -28,9 +28,14 @@ class NotFound extends Component {
     }
 
     render() {
+		let title		= "Página no encontrada - Electrobat";
+		let descripcion = "Somos una empresa dedicada al abastecimiento, prestación de servicios, ventas de baterias y alquiler de volquetes con 20 años de trayectoria en el rubro.";
 		return (
             <div>
-				<SEO title={"Página no encontrada"} />
+				<Helmet>
+					<title>{title}</title>
+					<meta name="description" content={descripcion}></meta>
+				</Helmet>
                 <div className="imagenNosotros imagenFondo" style={{height: "100vh"}}>
                     <Header/>
                     <p className="textoFondo">Página no encontrada, redirigiendo ...</p>
