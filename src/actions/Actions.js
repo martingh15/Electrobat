@@ -139,6 +139,7 @@ function createBateria(id, alto, largo, ancho, imagen, voltios, descripcion) {
 		ancho		: ancho,
 		imagen		: imagen,
 		voltios		: voltios,
+		keywords	: `${voltios}. ${descripcion} Alto: ${alto}. Largo: ${largo}. Ancho: ${ancho}`,
 		descripcion	: descripcion
 	};
     return bateria;

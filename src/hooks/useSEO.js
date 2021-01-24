@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 
 export default function useSEO({title, description, url, ogImage, ogImageAlt, keywords}) {
+		
+	console.log(keywords);
 	const metaNameKeywords			= 'meta[name="keywords"]'
 	const metaPropertyOgUrl			= 'meta[property="og:url"]'
 	const metaNameDescripcion		= 'meta[name="description"]'

@@ -42,6 +42,7 @@ class Volquetes extends Component {
             <div className="volquetes">
 				<SEO 
 					title={title} 
+					keywords={descripcion}
 					description={descripcion} 
 					url="https://www.electrobatrosario.com/volquetes"
 					ogImage="https://www.electrobatrosario.com/img/volquete.jpg"
