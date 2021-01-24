@@ -19,6 +19,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Desactualizo dependencias.
+- Links de navegador sin history.
 
 ## [1.1.2] 24-01-2021
 ### Fixed
