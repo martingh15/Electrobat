@@ -21,50 +21,34 @@ class Header extends Component {
         let list2 = document.getElementsByClassName("h-baterias");
         let list3 = document.getElementsByClassName("h-volquetes");
         let list4 = document.getElementsByClassName("h-contacto");
-        if (window.location.href.indexOf("nosotros") !== -1) {
-            for (let item of list1)
-                item.classList.add("activo");
-            for (let item of list2)
-                item.classList.remove("activo");
-            for (let item of list3)
-                item.classList.remove("activo");
-            for (let item of list4)
-                item.classList.remove("activo");
-        }
-
-        if (window.location.href.indexOf("baterias") !== -1) {
-            for (let item of list1)
-                item.classList.remove("activo");
-            for (let item of list2)
-                item.classList.add("activo");
-            for (let item of list3)
-                item.classList.remove("activo");
-            for (let item of list4)
-                item.classList.remove("activo");
-        }
-
-        if (window.location.href.indexOf("volquetes") !== -1) {
-            for (let item of list1)
-                item.classList.remove("activo");
-            for (let item of list2)
-                item.classList.remove("activo");
-            for (let item of list3)
-                item.classList.add("activo");
-            for (let item of list4)
-                item.classList.remove("activo");
-        }
-
-        if (window.location.href.indexOf("contacto") !== -1) {
-            for (let item of list1)
-                item.classList.remove("activo");
-            for (let item of list2)
-                item.classList.remove("activo");
-            for (let item of list3)
-                item.classList.remove("activo");
-            for (let item of list4)
-                item.classList.add("activo");
+		this.activarLink(list1, list2, list3, list3);
+		if (window.location.href.indexOf("baterias") !== -1 || window.location.href.indexOf("bateria-detalle") !== -1) {
+            this.activarLink(list2, list1, list3, list3);
+        } 
+		if (window.location.href.indexOf("volquetes") !== -1) {
+			this.activarLink(list3, list1, list2, list4);
+        } 
+		if (window.location.href.indexOf("contacto") !== -1) {
+			this.activarLink(list4, list1, list2, list3);
         }
     }
+	
+	activarLink(listaActivar, listaDesactivar1, listaDesactivar2, listaDesactivar3) {
+		this.activar(listaActivar);
+		this.desactivar(listaDesactivar1);
+		this.desactivar(listaDesactivar2);
+		this.desactivar(listaDesactivar3);
+	}
+	
+	activar(lista) {
+		for (let item of lista)
+            item.classList.add("activo");
+	}
+	
+	desactivar(lista) {
+		for (let item of lista)
+			item.classList.remove("activo");
+	}
 
     render() {
         const { collapse } = this.state;
