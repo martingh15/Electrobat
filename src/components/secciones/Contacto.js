@@ -106,7 +106,7 @@ class Contacto extends Component {
             <div className="contacto">
                 <Helmet>
 					<title>{title}</title>
-					<meta name="description" content={descripcion}></meta>
+					<meta name="description" content={descripcion} />
 				</Helmet>
                 <MensajeEmail
                     key="modal-2"

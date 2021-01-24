@@ -34,7 +34,7 @@ class NotFound extends Component {
             <div>
 				<Helmet>
 					<title>{title}</title>
-					<meta name="description" content={descripcion}></meta>
+					<meta name="description" content={descripcion} />
 				</Helmet>
                 <div className="imagenNosotros imagenFondo" style={{height: "100vh"}}>
                     <Header/>

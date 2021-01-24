@@ -76,7 +76,7 @@ class BateriaDetalle extends Component {
             <div className="bateria-detalle">
 				<Helmet>
 					<title>{title}</title>
-					<meta name="description" content={descripcion}></meta>
+					<meta name="description" content={descripcion} />
 				</Helmet>
                 <ImagenModal
                     key="modal-1"

@@ -67,7 +67,7 @@ class Nosotros extends Component {
             <div className="nosotros">
                 <Helmet>
 					<title>{titulo}</title>
-					<meta name="description" content={descripcion}></meta>
+					<meta name="description" content={descripcion} />
 				</Helmet>
                 <ImagenModal
                     key="modal-1"

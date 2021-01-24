@@ -49,7 +49,7 @@ class Baterias extends Component {
             <div className="baterias">
                 <Helmet>
 					<title>{title}</title>
-					<meta name="description" content={descripcion}></meta>
+					<meta name="description" content={descripcion} />
 				</Helmet>
                 <div className="imagenBaterias imagenFondo">
                     <Header />

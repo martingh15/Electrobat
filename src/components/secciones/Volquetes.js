@@ -42,7 +42,7 @@ class Volquetes extends Component {
             <div className="volquetes">
                 <Helmet>
 					<title>{title}</title>
-					<meta name="description" content={descripcion}></meta>
+					<meta name="description" content={descripcion} />
 				</Helmet>
                 <div className="imagenVolquetes imagenFondo">
                     <Header />
