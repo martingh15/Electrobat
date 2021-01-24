@@ -1,19 +1,21 @@
 import { useEffect, useRef } from 'react';
 
-export default function useSEO({title, description, url, ogImage, ogImageAlt}) {
-	const metaNameDescripcion		= 'meta[name="description"]';
-	const metaPropertyOgUrl			= 'meta[property="og:url"]';
-	const metaPropertyOgTitle		= 'meta[property="og:title"]';
-	const metaPropertyOgImage		= 'meta[property="og:image"]';
-	const metaPropertyOgImageAlt	= 'meta[property="og:image:alt"]';
-	const metaPropertyOgDescripcion = 'meta[property="og:description"]';
+export default function useSEO({title, description, url, ogImage, ogImageAlt, keywords}) {
+	const metaNameKeywords			= 'meta[name="keywords"]'
+	const metaPropertyOgUrl			= 'meta[property="og:url"]'
+	const metaNameDescripcion		= 'meta[name="description"]'
+	const metaPropertyOgTitle		= 'meta[property="og:title"]'
+	const metaPropertyOgImage		= 'meta[property="og:image"]'
+	const metaPropertyOgImageAlt	= 'meta[property="og:image:alt"]'
+	const metaPropertyOgDescripcion = 'meta[property="og:description"]'
 	
-	const prevTitle		 = useRef(document.title)
 	const prevDesc		 = useRef(document.querySelector(metaNameDescripcion).getAttribute('content'))
+	const prevTitle		 = useRef(document.title)
 	const prevOgUrl		 = useRef(document.querySelector(metaPropertyOgUrl).getAttribute('content'))
 	const prevOgDesc	 = useRef(document.querySelector(metaPropertyOgDescripcion).getAttribute('content'))
 	const prevOgTitle	 = useRef(document.querySelector(metaPropertyOgTitle).getAttribute('content'))
 	const prevOgImage	 = useRef(document.querySelector(metaPropertyOgImage).getAttribute('content'))
+	const prevKeywords	 = useRef(document.querySelector(metaNameKeywords).getAttribute('content'))
 	const prevOgImageAlt = useRef(document.querySelector(metaPropertyOgImageAlt).getAttribute('content'))
 	
     useEffect(() => {
@@ -72,4 +74,13 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt}) {
 		}
 		return () => metaOgImageAlt.setAttribute('content', previousOgImageAlt)
     }, [ogImageAlt])
+	
+	useEffect(() => {
+		const previousKeywords = prevKeywords.current
+		const metaKeywords	   = document.querySelector(metaNameKeywords)
+		if (keywords) {
+			metaKeywords.setAttribute('content', keywords)
+		}
+		return () => metaKeywords.setAttribute('content', previousKeywords)
+    }, [keywords])
 }
