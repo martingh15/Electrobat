@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import OwlCarousel from 'react-owl-carousel';
+import Scrollchor from "react-scrollchor";
 
 //CSS
 import "../../assets/css/Nosotros.css";
 
 //Components
 import Header from "../Header";
+import Footer from "../../components/Footer";
+import ImagenModal from "../ImagenModal";
+import history from "../../history";
+import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -21,12 +26,6 @@ import slider6 from "../../assets/img/sliders/originales/slider6.jpg"
 import flechaIzq from "../../assets/img/left-arrow.png";
 import flechaDer from "../../assets/img/right-arrow.png";
 
-//Components
-import Footer from "../../components/Footer";
-import ImagenModal from "../ImagenModal";
-import history from "../../history";
-import Scrollchor from "react-scrollchor";
-import Titulo from "../elementos/Titulo";
 
 class Nosotros extends Component {
     constructor(props) {
@@ -62,9 +61,11 @@ class Nosotros extends Component {
     }
 
     render() {
+		let titulo		= "Nosotros";
+		let descripcion = "Somos una empresa dedicada al abastecimiento, prestación de servicios, ventas de baterias y alquiler de volquetes con 20 años de trayectoria en el rubro.";
         return (
             <div className="nosotros">
-                <Titulo title={"Nosotros"} />
+                <SEO title={titulo} description={descripcion} />
                 <ImagenModal
                     key="modal-1"
                     onHide={this.onHide.bind(this)}

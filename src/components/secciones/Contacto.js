@@ -9,7 +9,7 @@ import "../../assets/css/Contacto.css";
 //Componentes
 import Footer from "../Footer";
 import Header from "../Header";
-import Titulo from "../elementos/Titulo";
+import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -100,9 +100,11 @@ class Contacto extends Component {
     }
 
     render() {
+		let title = "Contacto";
+		let descripcion = "Contáctate para consultar precios de baterias, volquetes y otros servicios.";
         return (
             <div className="contacto">
-                <Titulo title={"Contacto"} />
+                <SEO title={title} description={descripcion}/>
                 <MensajeEmail
                     key="modal-2"
                     onHide={this.onHide.bind(this)}

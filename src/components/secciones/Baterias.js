@@ -8,7 +8,7 @@ import "../../assets/css/Baterias.css";
 import Header from "../Header";
 import Footer from "../../components/Footer";
 import Scrollchor from "react-scrollchor";
-import Titulo from "../elementos/Titulo";
+import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -43,9 +43,11 @@ class Baterias extends Component {
     }
 
     render() {
+		let title = "Venta de baterias";
+		let descripcion = "Venta de baterias para autos Nafteros, GNC, Diesel, también camiones, y tractores de gran porte. Modelos: Caterpillar, Sprinter, Ford K, Ranger, NS 40, N70Z, N75Z, entre otros."
         return (
             <div className="baterias">
-                <Titulo title={"Venta de baterias"} />
+                <SEO title={title} description={descripcion}/>
                 <div className="imagenBaterias imagenFondo">
                     <Header />
                     <div className="item"></div>

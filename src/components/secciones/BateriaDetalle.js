@@ -10,7 +10,7 @@ import { receiveBaterias, consultarPrecio } from "../../actions/Actions";
 import Header from "../Header";
 import Footer from "../../components/Footer";
 import ImagenModal from "../ImagenModal";
-import Titulo from "../elementos/Titulo";
+import SEO from "../elementos/SEO";
 
 //Images
 import lupita from "../../assets/img/searcher.png";
@@ -68,11 +68,12 @@ class BateriaDetalle extends Component {
         if (bateria) {
             url = process.env.PUBLIC_URL + "/img/" + bateria.imagen;
         }
-        let detalle = bateria ? bateria.voltios : "";
-        let title = "Detalle de bateria " + detalle;
+        let tituloBateria = bateria ? bateria.voltios : "";
+        let title		  = `Detalle de bateria ${tituloBateria}.`;
+		let detalle		  = `Venta de baterias: ${title}.`;
         return (
             <div className="bateria-detalle">
-                <Titulo title={title} />
+                <SEO title={title} description={detalle} />
                 <ImagenModal
                     key="modal-1"
                     className="bateriaModal"

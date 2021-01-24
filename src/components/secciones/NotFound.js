@@ -4,7 +4,7 @@ import history from "../../history";
 
 //Components
 import Header from "../Header";
-import Titulo from "../elementos/Titulo";
+import SEO from "../elementos/SEO";
 
 //Images
 import flechaAbajo from "../../assets/img/angle-arrow-down.png";
@@ -30,7 +30,7 @@ class NotFound extends Component {
     render() {
 		return (
             <div>
-				<Titulo title={"Página no encontrada"} />
+				<SEO title={"Página no encontrada"} />
                 <div className="imagenNosotros imagenFondo" style={{height: "100vh"}}>
                     <Header/>
                     <p className="textoFondo">Página no encontrada, redirigiendo ...</p>

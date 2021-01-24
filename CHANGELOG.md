@@ -6,7 +6,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Cambio dinámico de título.
+- SEO: cambio dinámico de título y descripción.
 
 ### Changed
 -

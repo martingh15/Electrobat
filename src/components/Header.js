@@ -72,8 +72,10 @@ class Header extends Component {
         return (
             <header className="header item">
                 <nav className="navegador">
-                    <img className="logoElectrobat" onClick={() => this.activarLink("nosotros")} src={logoElectrobat} alt="logo" title="logo" />
-                    <div className="links">
+					<a href="/" >
+						<img className="logoElectrobat" src={logoElectrobat} alt="logo" title="logo" />
+					</a>
+					<div className="links">
                         <a id="h1-nosotros" className="h-nosotros links-link" href="/nosotros">NOSOTROS</a>
                         <a id="h1-baterias" className="h-baterias links-link" href="/baterias">BATERIAS</a>
                         <a id="h1-volquetes" className="h-volquetes links-link" href="/volquetes">VOLQUETES</a>

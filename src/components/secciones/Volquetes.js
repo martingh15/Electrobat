@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import history from "../../history";
+import Scrollchor from "react-scrollchor";
 
 //CSS
 import "../../assets/css/Volquetes.css";
@@ -8,7 +9,7 @@ import "../../assets/css/Volquetes.css";
 //Components
 import Header from "../Header";
 import Footer from "../../components/Footer";
-import Scrollchor from "react-scrollchor";
+import SEO from "../elementos/SEO";
 
 
 //Images
@@ -18,7 +19,6 @@ import camion from "../../assets/img/volquetes/originales/camion.jpg";
 
 //Actions
 import { consultarVolquete } from "../../actions/Actions";
-import Titulo from "../elementos/Titulo";
 
 class Volquetes extends Component {
     constructor(props) {
@@ -36,9 +36,11 @@ class Volquetes extends Component {
     }
 
     render() {
+		let title		= "Alquiler de volquetes";
+		let descripcion = title + ". Rosario y alrededores. Tamaño mediano y grande.";
         return (
             <div className="volquetes">
-                <Titulo title={"Alquiler de volquetes"} />
+                <SEO title={title} description={descripcion} />
                 <div className="imagenVolquetes imagenFondo">
                     <Header />
                     <div className="item"></div>
