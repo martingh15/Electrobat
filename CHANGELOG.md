@@ -6,16 +6,26 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- SEO: cambio dinámico de título y descripción.
+-
 
 ### Changed
-- Optimización de activación de links.
+-
 
 ### Deprecated
 -
 
 ### Removed
 -
+
+### Fixed
+-
+
+## [1.2.0] 24-01-2021
+### Added
+- SEO: cambio dinámico de título y descripción.
+
+### Changed
+- Optimización de activación de links.
 
 ### Fixed
 - Desactualizo dependencias.
