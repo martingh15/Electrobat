@@ -3,9 +3,6 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
-//import registerServiceWorker from './registerServiceWorker';
-
 //Router
 import {Switch} from 'react-router';
 import {Router, Route} from 'react-router-dom'
@@ -18,13 +15,8 @@ import appReducers from './reducers/index';
 import {createLogger} from 'redux-logger';
 import {Provider} from 'react-redux';
 
-
-// Import the CSS file, which webpack transfers to the build folder
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/css/bootstrap-theme.css';
+//CSS
 import './assets/css/index.css';
-
-// Import the components used as pages
 
 import Layout from "./components/Layout";
 window.$ = window.jQuery = require("jquery");
@@ -41,24 +33,24 @@ else{
     console.log("hola estoy en produccion");
     createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
-    //chau console.los metodo 4 de esta pagina https://stapp.space/how-to-remove-javascript-console-log-pros-2/
-    // (function () {
-    //     let method;
-    //     let noop = function noop() { };
-    //     let methods = [
-    //         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-    //         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-    //         'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-    //         'timeStamp', 'trace', 'warn'
-    //     ];
-    //     let length = methods.length;
-    //     let console = (window.console = window.console || {});
-    //
-    //     while (length--) {
-    //         method = methods[length];
-    //         console[method] = noop;
-    //     }
-    // }());
+//    chau console.los metodo 4 de esta pagina https://stapp.space/how-to-remove-javascript-console-log-pros-2/
+     (function () {
+         let method;
+         let noop = function noop() { };
+         let methods = [
+             'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+             'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+             'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+             'timeStamp', 'trace', 'warn'
+         ];
+         let length = methods.length;
+         let console = (window.console = window.console || {});
+    
+         while (length--) {
+             method = methods[length];
+             console[method] = noop;
+         }
+     }());
 }
 
 const store = createStoreWithMiddleware(appReducers);
@@ -72,6 +64,3 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-
-
-// registerServiceWorker();
