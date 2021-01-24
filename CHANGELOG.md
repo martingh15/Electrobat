@@ -6,6 +6,22 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+-
+
+### Changed
+-
+
+### Deprecated
+-
+
+### Removed
+-
+
+### Fixed
+-
+
+## [1.2.1] 24-01-2021
+### Added
 - Meta tags de localización.
 - Meta tags Open Graph Protocol.
 
