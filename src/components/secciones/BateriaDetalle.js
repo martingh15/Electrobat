@@ -33,11 +33,11 @@ class BateriaDetalle extends Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if (prevProps.baterias != this.props.baterias && this.props.baterias.allIds.length) {
+        if (prevProps.baterias !== this.props.baterias && this.props.baterias.allIds.length) {
             if (this.props.match.params.idBateria) {
                 this.props.baterias.allIds.forEach((idBateria) => {
                     let bateria = this.props.baterias.byId.baterias[idBateria - 1];
-                    if (bateria && bateria.id == this.props.match.params.idBateria) {
+                    if (bateria && parseInt(bateria.id) === parseInt(this.props.match.params.idBateria)) {
                         this.setState({bateria: bateria});
                     }
                 });
