@@ -36,14 +36,13 @@ class Volquetes extends Component {
     }
 
     render() {
-		let title		= "Alquiler de volquetes - Electrobat";
-		let descripcion = title + ". Rosario y alrededores. Tamaño mediano y grande.";
+		let title = "Alquiler de volquetes. Rosario y alrededores. Tamaño mediano y grande";
         return (
             <div className="volquetes">
 				<SEO 
 					title={title} 
-					keywords={descripcion}
-					description={descripcion} 
+					keywords={title}
+					description={title} 
 					url="https://www.electrobatrosario.com/volquetes"
 					ogImage="https://www.electrobatrosario.com/img/volquete.jpg"
 					ogImageAlt="Volquetes Electrobat Rosario"

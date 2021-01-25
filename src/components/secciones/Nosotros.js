@@ -61,7 +61,7 @@ class Nosotros extends Component {
     }
 
     render() {
-		let title		= "Nosotros - Electrobat Rosario";
+		let title		= "Electrobat Rosario - Venta de baterias y alquiler de volquetes";
 		let descripcion = "Somos una empresa dedicada al abastecimiento, prestación de servicios, ventas de baterias y alquiler de volquetes con 20 años de trayectoria en el rubro.";
         return (
             <div className="nosotros">

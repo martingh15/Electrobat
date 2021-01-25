@@ -71,7 +71,7 @@ class BateriaDetalle extends Component {
         }
         let tituloBateria = bateria ? bateria.voltios : "";
 		let keywords	  = bateria ? bateria.keywords : "";
-        let title		  = `Detalle de bateria ${tituloBateria} - Electrobat.`;
+        let title		  = `Detalle de bateria ${tituloBateria}.`;
 		let descripcion	  = `Venta de baterias: ${title}.`;
         return (
             <div className="bateria-detalle">

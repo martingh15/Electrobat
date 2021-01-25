@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 
 export default function useSEO({title, description, url, ogImage, ogImageAlt, keywords}) {
 		
-	console.log(keywords);
 	const metaNameKeywords			= 'meta[name="keywords"]'
 	const metaPropertyOgUrl			= 'meta[property="og:url"]'
 	const metaNameDescripcion		= 'meta[name="description"]'
@@ -26,7 +25,7 @@ export default function useSEO({title, description, url, ogImage, ogImageAlt, ke
 		
 		const metaOgTitle = document.querySelector(metaPropertyOgTitle)
 		if (title) {
-			document.title = `${title} | Electrobat`
+			document.title = title
 			metaOgTitle.setAttribute('content', title)
 		}
 		

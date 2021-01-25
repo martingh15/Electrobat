@@ -100,15 +100,14 @@ class Contacto extends Component {
     }
 
     render() {
-		let title		= "Contacto - Electrobat";
-		let keywords	= "Contacto, email, telefono, whatsapp, ubicación, facebook, instragram. ";
-		let descripcion = "Contáctate para consultar precios de baterias, volquetes y otros servicios.";
+		let title		= "Contáctate para consultar precios de baterias y volquetes";
+		let keywords	= "Email, telefono, whatsapp, ubicación, facebook, instragram";
         return (
             <div className="contacto">
 				<SEO 
 					title={title} 
-					keywords={keywords + descripcion}
-					description={descripcion} 
+					keywords={`${keywords}. ${title}`}
+					description={title} 
 					url="https://www.electrobatrosario.com/contacto"
 					ogImage="https://www.electrobatrosario.com/img/contacto.jpg"
 					ogImageAlt={`Contacto Electrobat`}

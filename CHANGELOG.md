@@ -19,7 +19,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 - Sitemap generator.
 
 ### Fixed
--
+- Titles: longitud entre 50 – 70 caracteres.
 
 ## [1.2.3] 24-01-2021
 ### Added

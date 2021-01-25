@@ -43,8 +43,8 @@ class Baterias extends Component {
     }
 
     render() {
-		let title		= "Venta de baterias - Electrobat";
-		let descripcion = "Venta de baterias para autos Nafteros, GNC, Diesel, también camiones, y tractores de gran porte. Modelos: Caterpillar, Sprinter, Ford K, Ranger, NS 40, N70Z, N75Z, entre otros."
+		let title		= "Venta de baterias para autos, camiones y tractores de gran porte";
+		let descripcion = `${title}. Modelos: Caterpillar, Sprinter, Ford K, Ranger, NS 40, N70Z, N75Z, entre otros.`
         return (
             <div className="baterias">
 				<SEO 
