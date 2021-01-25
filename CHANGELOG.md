@@ -20,6 +20,7 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Titles: longitud entre 50 – 70 caracteres.
+- Corrección de título p a h1 en volquetes.
 
 ## [1.2.3] 24-01-2021
 ### Added
