@@ -9,11 +9,21 @@ y este proyecto adhiere a [Semantic Versioning]( https://semver.org/spec/v2.0.0.
 -
 
 ### Changed
-- SEO: soporte de keywords.
-- Optimización de creación de baterias.
+-
 
 ### Deprecated
 -
+
+### Removed
+-
+
+### Fixed
+-
+
+## [1.2.4] 24-01-2021
+### Changed
+- SEO: soporte de keywords.
+- Optimización de creación de baterias.
 
 ### Removed
 - Sitemap generator.
