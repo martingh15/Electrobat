@@ -8,23 +8,18 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 ## [Unreleased]
 
 ### Added
-
--
+- Versión final presupuesto 26 enero 2021.
 
 ### Changed
-
 -
 
 ### Deprecated
-
 -
 
 ### Removed
-
 -
 
 ### Fixed
-
 -
 
 ## [1.2.4] 24-01-2021
