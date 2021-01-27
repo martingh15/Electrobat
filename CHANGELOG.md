@@ -6,9 +6,8 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
 ### Added
-- Versión final presupuesto 26 enero 2021.
+-
 
 ### Changed
 -
@@ -21,6 +20,11 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Fixed
 -
+
+
+## [2.0.0] 26-01-2021
+### Added
+- Versión final presupuesto 26 enero 2021.
 
 ## [1.2.4] 24-01-2021
 
