@@ -19,8 +19,11 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 -
 
 ### Fixed
-- Arreglos finales responsive.
+-
 
+## [2.0.1] 04-02-2021
+### Fixed
+- Arreglos finales responsive.
 
 ## [2.0.0] 26-01-2021
 ### Added
