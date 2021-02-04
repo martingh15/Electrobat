@@ -12,10 +12,6 @@
     justify-content: space-between;
 }
 
-.bateria-detalle .imagenFondo {
-    min-height: 150px;
-}
-
 .textoFondo {
     margin-top: 150px !important;
     text-align: center;
