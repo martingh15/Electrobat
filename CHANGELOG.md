@@ -19,7 +19,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 -
 
 ### Fixed
--
+- Menu responsive en detalle baterias.
 
 ## [2.0.1] 04-02-2021
 ### Fixed

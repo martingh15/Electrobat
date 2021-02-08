@@ -173,11 +173,14 @@
     .bateria-detalle .contenedorImagen .cuadradoImagen {
         top: -30px;
     }
+    .bateria-detalle .imagenFondo {
+        height: 290px;
+    }
 }
 
 @media (max-width: 350px) {
     .bateria-detalle .contenedorBateria .contenedorImagen .imagenBateria {
-        width: 230px;
+        width: 170px;
     }
 
     .bateria-detalle .contenedorImagen .lupita {
